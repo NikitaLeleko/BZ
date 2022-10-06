@@ -1,0 +1,33 @@
+concept_Bayern_battleship_engine <-sc_node_not_relation;;
+concept_Bayern_battleship_engine=> nrel_main_idtf: [Двигатель линкора «Байерн»](*<- lang_ru;;*);;
+concept_Bayern_battleship_engine=> nrel_main_idtf: [«Bayern» battleship engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель линкора «Байерн» - это его энергетическая установка.](*<- lang_ru;;*);;
+	        -> [The engine of the battleship Bayern is its power plant.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель линкора «Байерн»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Bayern» battleship engine)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главная энергетическая установка включала в себя 3 одинаковых независимых комплекта турбин Парсонса, работавших на 3 вала, и 14 водотрубных котлов системы Шульца-Торникрофта. Каждый турбоагрегат состоял соответственно из турбин высокого и низкого давления (последняя была соединена с турбиной обратного хода), которые были установлены друг за другом и работали на один вал. Все три комплекта турбин были разделены продольными переборками, при этом турбины высокого и низкого давления (обратного хода) в каждом случае разделялись ещё и поперечной переборкой, так что вся турбинная установка фактически делилась на шесть отсеков (турбины высокого давления размещались в носовых). В кормовых отсеках рядом с турбиной низкого давления располагался главный холодильник каждого агрегата вместе с главным циркуляционным и воздушным насосами. ](*<- lang_ru;;*);;
+            -> [The main power plant included 3 identical independent sets of Parsons turbines operating on 3 shafts, and 14 Schulz-Thornycroft water-tube boilers. Each turbine unit consisted of high and low pressure turbines, respectively (the latter was connected to a reverse turbine), which were installed one after the other and worked on one shaft. All three sets of turbines were separated by longitudinal bulkheads, while the high and low pressure (reverse) turbines were in each case also separated by a transverse bulkhead, so that the entire turbine plant was actually divided into six compartments (high pressure turbines were located in the bow). In the aft compartments, next to the low-pressure turbine, the main refrigerator of each unit was located along with the main circulation and air pumps.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель линкора «Байерн»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Bayern» battleship engine)](*<- lang_en;;*);;
+*);;
+
+concept_Bayern_battleship_engine=>nrel_parameters:
+[Дальность плавания равна 5000 миль на скорости в 13 узлов];
+[Максимальная скорость равна 22 узла];
+[Максимальная мощность 48000 л. с.];;

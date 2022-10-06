@@ -1,0 +1,56 @@
+concept_destroyer<-sc_node_not_relation;;
+concept_destroyer => nrel_main_idtf: [Эсминец](*<- lang_ru;;*);;
+concept_destroyer=> nrel_main_idtf: [Destroyer](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эскадренный миноносец (сокр. эсминец) — класс многоцелевых боевых быстроходных манёвренных кораблей, предназначенных для борьбы с подводными лодками, летательными аппаратами (в том числе ракетами) и кораблями противника, а также для охраны и обороны соединений кораблей или конвоев судов при переходе морем.](*<- lang_ru;;*);;
+	        -> [Destroyer squadron (abbreviated destroyer) is a class of multi—purpose high-speed maneuverable combat ships designed to combat submarines, aircraft (including missiles) and enemy ships, as well as for the protection and defense of formations of ships or convoys of ships when crossing by sea.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Эсминец)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Destroyer)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Крупнейшие из современных эсминцев равны по водоизмещению лёгким крейсерам эпохи Второй мировой войны, но значительно превосходят их по огневой мощи.](*<- lang_ru;;*);;
+            -> [The largest of the modern destroyers are equal in displacement to the light cruisers of the World War II era, but significantly surpass them in firepower.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Эсминец)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Destroyer)](*<- lang_en;;*);;
+*);;
+
+
+concept_destroyer=>nrel_inclusion:
+concept_Swift_destroyer;
+concept_Minsk_destroyer;;
+
+concept_destroyer=>nrel_functions:
+[Борьба с подводными лодками.];
+[Служат для разведывательной и дозорной службы.];
+[Служат для артиллерийской поддержки при высадке десанта.];
+[Используются для постановки минных заграждений, а также дымовых завес.];
+[Борьба с летательными аппаратами (в том числе ракетами).];
+[Охрана и оборона соединений кораблей или конвоев судов при переходе морем.];
+[Борьба с кораблям противника.];;
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,37 @@
+concept_Northampton_cruiser_armor<-sc_node_not_relation;;
+concept_Northampton_cruiser_armor=> nrel_main_idtf: [Броня крейсера «Нортхэмптон»](*<- lang_ru;;*);;
+concept_Northampton_cruiser_armor => nrel_main_idtf: [Armor of the cruiser "Northampton"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня крейсера «Нортхэмптон» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника.](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the cruiser "Northampton" is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the cruiser "Northampton")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Внешний вертикальный броневой пояс был толщиной 95 мм. На протяжении носовых погребов, в районе центрального поста, а также помещений передних динамо-машин высота пояса равнялась 3,75 м, и достигала 4,45 м в районе турбинно-котельной установки. В корме, в районе задних погребов высота пояса уменьшалась до 2,45 м. Пояс выполнялся из гомогенной никелевой стали высокой прочности. Вешней пояс дополнялся внутренним 76-мм, переходящим в торпедную переборку. Внутренний пояс выполнялся из менее твердой, но более эластичной брони. Палуба на протяжении механической установки (между 60 и 130 шпангоутами) имела толщину 80 мм между внутренними 40-мм броневыми переборками; вне их к борту шли 30-мм плиты. Палуба была бронирована от 25 мм до 51 мм, а кормовые погреба прикрывались 80-мм броней в середине и 30-мм — у бортов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The outer vertical armor belt was 95 mm thick. Throughout the bow cellars, in the area of ​​​​the central post, as well as the premises of the front dynamos, the height of the belt was 3.75 m, and reached 4.45 m in the area of ​​​​the turbine and boiler plant. In the stern, in the area of ​​​​the rear cellars, the height of the belt decreased to 2.45 m. The belt was made of homogeneous high-strength nickel steel. The outer belt was supplemented with an internal 76-mm one, turning into a torpedo bulkhead. The inner belt was made of less hard, but more elastic armor. The deck throughout the mechanical installation (between 60 and 130 frames) had a thickness of 80 mm between internal 40 mm armored bulkheads; outside them, 30-mm plates went to the board. The deck was armored from 25 mm to 51 mm, and the aft cellars were covered with 80 mm armor in the middle and 30 mm at the sides.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the cruiser "Northampton")](*<- lang_en;;*);;
+*);;
+
+
+concept_Northampton_cruiser_armor=>nrel_parameters:
+external_vertical_armor_belt_95;
+internal_vertical_armor_belt_76;
+deck_51;;

@@ -1,0 +1,24 @@
+undirected_graph
+<-sc_node_not_relation;
+=> nrel_main_idtf: [неориентированный граф] (* <- lang_ru;; *);
+=> nrel_main_idtf: [undirected graph] (* 	<- lang_en;; *);;
+
+rrel_vertex 
+<-sc_node_role_relation;
+=> nrel_main_idtf: [вершина'] (* <- lang_ru;; *);
+=> nrel_main_idtf: [vertex'] (* <- lang_en;; *);;
+
+rrel_amount_of_vertices
+<-sc_node_role_relation;
+=> nrel_main_idtf: [количество вершин'] (* <- lang_ru;; *);
+=> nrel_main_idtf: [amount of vertices'] (* <- lang_en;; *);;
+
+rrel_amount_of_edges
+<-sc_node_role_relation;
+=> nrel_main_idtf: [количество ребер'] (* <- lang_ru;; *);
+=> nrel_main_idtf: [amount of edges'] (* <- lang_en;; *);;
+
+rrel_edge 
+<-sc_node_role_relation;
+=> nrel_main_idtf: [ребро'] (*  <- lang_ru;; *);
+=> nrel_main_idtf: [edge'] (* <- lang_en;;	*);;

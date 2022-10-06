@@ -1,0 +1,33 @@
+concept_Algerie_cruiser_engine <-sc_node_not_relation;;
+concept_Algerie_cruiser_engine => nrel_main_idtf: [Двигатель крейсера «Алжир»](*<- lang_ru;;*);;
+concept_Algerie_cruiser_engine => nrel_main_idtf: [«Algerie» cruiser engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Энергетическая установка включала в себя 4 турбозубчатых агрегата марки «Рато». Каждый из них состоял из четырёх турбин: высокого, среднего и низкого давления, а также заднего хода.](*<- lang_ru;;*);;
+	        -> [Power plant detection in itself 4 turbo-gear units of the Rato brand. Each of them occupied four turbines: high, medium and low pressure, as well as reverse.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель крейсера «Алжир»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Algerie» cruiser engine)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Использовался одноступенчатый зубчатый редуктор с передаточными числами 1/9,75 для ТНД, 1/13,5 для ТСД и 1/18 для ТВД. Валы приводили во вращение четыре трехлопастных винта диаметром 3,6 м. В этих агрегатах применялся умеренно перегретый пар высокого давления — 27 кгс/см² (26,6 атм.) при 325°C. Нормальная мощность каждого ТЗА составляла 21 000 л. с., при форсаже достигалось значение 24 000 л. с. Удельная мощность энергетической установки «Альжери» была весьма высока — 15,6 кг/л. с. У предшествующей серии крейсеров это значение колебалось от 17,6 до 18 кг/л. с. Общий вес энергетической установки с конденсаторами, мазутом и маслом в магистралях, запасами котельной воды, составил 1347,45 тонны. Установки отличались высокой надёжностью и экономичностью. Максимальная скорость на испытаниях составила 33,2 узла при мощности 95 700 л. с. Полный запас топлива включал 2935 тонн мазута. Крейсер с чистым днищем мог пройти 8700 миль при скорости 15 узлов, 7000 миль при скорости 20 узлов и 4000 миль на 27 узлах при боевом запасе топлива 2142 т. Разница в расходе топлива между результатами испытаний и спустя 6 месяцев после докования составляла около 30 %. ](*<- lang_ru;;*);;
+            -> [A single-stage gear reducer was used with gear ratios of 1/9.75 for LPT, 1/13.5 for TSD and 1/18 for TVD. The shafts drove four three-blade propellers with a diameter of 3.6 m. These units used moderately superheated high-pressure steam - 27 kgf / cm² (26.6 atm.) At 325 ° C. The normal power of each TZA was 21,000 liters. s., with afterburner, a value of 24,000 liters was achieved. with. The specific power of the Algeri power plant was very high - 15.6 kg / l. with. In the previous series of cruisers, this value ranged from 17.6 to 18 kg / l. with. The total weight of the power plant with condensers, fuel oil and oil in the mains, boiler water supplies, amounted to 1347.45 tons. The installations were distinguished by high reliability and efficiency. The maximum test speed was 33.2 knots with a power of 95,700 hp. with. The total fuel supply included 2935 tons of fuel oil. A cruiser with a clean bottom could cover 8,700 miles at 15 knots, 7,000 miles at 20 knots, and 4,000 miles at 27 knots with a combat fuel reserve of 2,142 tons. The difference in fuel consumption between the test results and 6 months after docking was about 30%.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель крейсера «Алжир»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Algerie» cruiser engine)](*<- lang_en;;*);;
+*);;
+
+concept_Algerie_cruiser_engine=>nrel_parameters:
+[Вес снаряженной энергетической установки равен 1347 тонн];
+[Запас топлива равен 2935 тонн мазута];
+[Максимальная мощность 95700 л. с.];;

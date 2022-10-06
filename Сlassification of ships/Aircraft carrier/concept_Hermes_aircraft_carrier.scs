@@ -1,0 +1,78 @@
+concept_Hermes_aircraft_carrier<-sc_node_not_relation;;
+concept_Hermes_aircraft_carrier=> nrel_main_idtf: [Авианосец «Гермес»](*<- lang_ru;;*);;
+concept_Hermes_aircraft_carrier=> nrel_main_idtf: [Aircraft carrier "Hermes"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Hermes_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Гермес — британский авианосец. При закладке стал первым авианесущим кораблём специальной постройки, однако его строительство продлилось около семи лет и поэтому первым на воду был спущен японский авианосец «Хосё».](*<- lang_ru;;*);;
+
+	        -> [Hermes is a british aircraft carrier. When laid down, it became the first aircraft-carrying ship of a special construction, but its construction lasted about seven years, and therefore the Japanese aircraft carrier Hosho was the first to be launched.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Авианосец «Гермес»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Aircraft carrier "Hermes")](*<- lang_en;;*);;
+*);;
+
+concept_Hermes_aircraft_carrier<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Авианосец «Гермес»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_aircraft_carriers/hermes.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Hermes_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Так как Первая мировая война заканчивалась, то строительство шло вяло, а судно спустили на воду в сентябре 1919 года. Достройка проходила до 1923 года. В результате корабль вошёл в строй позже гораздо более крупного, и переделанного авианосца «Игл», который к этому времени успел доказать правильность идеи о надстройке типа «башня».  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [As the First World War ended, construction progressed sluggishly, and the ship was launched in September 1919. The completion took place until 1923. As a result, the ship entered service later than the much larger and converted Eagle aircraft carrier, which by this time had managed to prove the correctness of the idea of ​​a tower-type superstructure.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Авианосец «Гермес»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Aircraft carrier "Hermes")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Hermes_aircraft_carrier;;
+    =>nrel_using_constants:{
+    	concept_Hermes_aircraft_carrier_armor;
+        concept_Hermes_aircraft_carrier_cannon;
+        concept_Hermes_aircraft_carrier_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_armor">(Броня авианосца «Гермес»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_cannon">(Вооружение авианосца «Гермес»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_engine">(Энергетическая установка авианосца «Гермес»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_armor">(Hermes aircraft carrier armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_cannon">(Hermes weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Hermes_aircraft_carrier_engine">(Hermes power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Авианосец «Гермес»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Aircraft carrier "Hermes")](*<- lang_en;;*);;
+*);;
+
+
+concept_Hermes_aircraft_carrier=>nrel_elements:
+concept_Hermes_aircraft_carrier_armor;
+        concept_Hermes_aircraft_carrier_cannon;
+        concept_Hermes_aircraft_carrier_engine;;
+
+concept_Hermes_aircraft_carrier=>nrel_parameters:
+displacement_10850;
+length_182_3;
+width_21_4;
+precipitation_4_7;
+[Экипаж составлял 664 человека(без авиагруппы)];
+speed_25;;

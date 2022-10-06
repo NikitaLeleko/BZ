@@ -1,0 +1,50 @@
+concept_Swift_destroyer_cannon<-sc_node_not_relation;;
+concept_Swift_destroyer_cannon => nrel_main_idtf: [Вооружение эсминца «Свифт»](*<- lang_ru;;*);;
+concept_Swift_destroyer_cannon => nrel_main_idtf: [«Swift» destroyer cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  эсминца «Свифт» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Swift» destroyer are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение эсминца «Свифт»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Swift» destroyer cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Swift_destroyer_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение эсминца «Свифт»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/swift_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вес орудия составлял 7 654 кг, длина ствола — 45 калибров, вес снаряда — 45 кг, дальность стрельбы — 12 500-14 400 м в зависимости от типа заряда, скорострельность — 8 выстрелов в минуту. Орудие имело щитовое прикрытие. Однако, как и на некоторых других эсминцах того времени, введение 152-мм калибра оказалось неоправданным из-за проблем с подачей боеприпасов, управлением огнем.  ](*<- lang_ru;;*);;
+            -> [The weight of the gun was 7,654 kg, barrel length - 45 calibers, projectile weight - 45 kg, firing range - 12,500-14,400 m, depending on the type of charge, rate of fire - 8 rounds per minute. The gun had a shield cover. However, as on some other destroyers of that time, the introduction of the 152-mm caliber turned out to be unjustified due to problems with the supply of ammunition and fire control.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение эсминца «Свифт»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Swift» destroyer cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Swift_destroyer_cannon=>nrel_inclusion: 
+concept_artillery_cannon;
+concept_torpedo_cannon;;
+
+concept_Swift_destroyer_cannon=>nrel_parameters:
+rate_fire_8;
+barrel_length_45;
+shell_weight_45;
+weapon_weight_45;
+fireng_range_14400;;
+

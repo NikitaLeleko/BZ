@@ -1,0 +1,33 @@
+concept_Bismarck_battleship_engine <-sc_node_not_relation;;
+concept_Bismarck_battleship_engine=> nrel_main_idtf: [Двигатель линкора «Бисмарк»](*<- lang_ru;;*);;
+concept_Bismarck_battleship_engine=> nrel_main_idtf: [«Bismarck» battleship engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель линкора «Бисмарк» - это его энергетическая установка.](*<- lang_ru;;*);;
+	        -> [The engine of the battleship Bismarck is its power plant.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель линкора «Бисмарк»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Bismarck» battleship engine)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главная энергетическая установка корабля состояла из 12 котлов «Вагнера» (58 кг/см2 , 475°С) и 3 турбозубчатых агрегатов фирмы Blohm und Voss по 46,000 л.с. каждый, что давало общую мощность силовой установки в 138,000 л.с. Корабль приводился в движение трехлопастными винтами из специальной марганцевой бронзы. На испытаниях при водоизмещении 41 700 т линкор Bismarck показал среднюю продолжительную скорость 30,12 уз. при мощности машин в 148,116 л.с. и 265 об/мин. Максимальная емкость топливных цистерн корабля — 7,900 м³. При этом дальность плавания Bismarck составляла 8410 миль при скорости в 15 узлов или 3740 миль на 30 узлах.  ](*<- lang_ru;;*);;
+            -> [The ship's main power plant consisted of 12 Wagner boilers (58 kg/cm2 , 475°C) and 3 Blohm und Voss turbo-gear units of 46,000 hp each. each, which gave a total power plant output of 138,000 hp. The ship was propelled by three-blade propellers made of special manganese bronze. In tests with a displacement of 41,700 tons, the battleship Bismarck showed an average continuous speed of 30.12 knots. with a machine power of 148.116 hp and 265 rpm. The maximum capacity of the ship's fuel tanks is 7,900 m³. At the same time, the cruising range of Bismarck was 8410 miles at a speed of 15 knots or 3740 miles at 30 knots.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель линкора «Бисмарк»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Bismarck» battleship engine)](*<- lang_en;;*);;
+*);;
+
+concept_Bismarck_battleship_engine=>nrel_parameters:
+[Дальность плавания равна 8410 миль];
+[Максимальная емкость топливных цистерн корабля — 7,900 м³.];
+[Максимальная мощность 148116 л. с.];;

@@ -1,0 +1,37 @@
+concept_Algerie_cruiser_armor<-sc_node_not_relation;;
+concept_Algerie_cruiser_armor=> nrel_main_idtf: [Броня крейсера «Алжир»](*<- lang_ru;;*);;
+concept_Algerie_cruiser_armor => nrel_main_idtf: [Armor of the cruiser «Algerie»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [К концу 1928 года французский ВМФ имел в строю и постройке 6 тяжёлых крейсеров типа «Дюкень» и «Сюффрен», но характеристики этих кораблей не радовали французских адмиралов. Французский Генеральный морской штаб потребовал создания крейсера с защитой от 155-мм снарядов. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [By the end of 1928, the French Navy had 6 heavy cruisers of the Duquesne and Suffren type in service and construction, but the characteristics of these ships did not please the French admirals. The French General Naval Staff demanded the creation of a cruiser with protection from 155-mm shells.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня крейсера «Алжир»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the cruiser "Algerie")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Внешний вертикальный броневой пояс был толщиной 110 мм. На протяжении носовых погребов, в районе центрального поста, а также помещений передних динамо-машин высота пояса равнялась 3,75 м, и достигала 4,45 м в районе турбинно-котельной установки. В корме, в районе задних погребов высота пояса уменьшалась до 2,45 м. Пояс выполнялся из гомогенной никелевой стали высокой прочности. Вешней пояс дополнялся внутренним 40-мм, переходящим в торпедную переборку. Внутренний пояс выполнялся из менее твердой, но более эластичной брони. Палуба на протяжении механической установки (между 60 и 130 шпангоутами) имела толщину 80 мм между внутренними 40-мм броневыми переборками; вне их к борту шли 30-мм плиты. В районе носовых погребов (от 130 до 144-го шпангоута) палуба оставалась однородной — 80-миллиметровой, а кормовые погреба прикрывались 80-мм броней в середине и 30-мм — у бортов.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The outer vertical armor belt was 110 mm thick. Throughout the bow cellars, in the area of the central post, as well as the premises of the front dynamos, the belt height was 3.75 m, and reached 4.45 m in the area of the turbine-boiler plant. In the stern, in the area of the rear cellars, the height of the belt decreased to 2.45 m. The belt was made of homogeneous nickel steel of high strength. The upper belt was supplemented with an internal 40 mm, passing into the torpedo bulkhead. The inner belt was made of less solid, but more elastic armor. The deck during the mechanical installation (between 60 and 130 frames) had a thickness of 80 mm between the inner 40 mm armor bulkheads; outside of them, 30 mm plates went to the side. In the area of the bow cellars (from 130 to 144 frames), the deck remained uniform — 80 mm, and the aft cellars were covered with 80 mm armor in the middle and 30 mm at the sides.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня крейсера «Алжир»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the cruiser "Algerie")](*<- lang_en;;*);;
+*);;
+
+
+concept_Algerie_cruiser_armor=>nrel_parameters:
+external_vertical_armor_belt_110;
+internal_vertical_armor_belt_40;
+deck_80;;

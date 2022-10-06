@@ -1,0 +1,41 @@
+concept_deck<-sc_node_not_relation;;
+concept_deck => nrel_main_idtf: [Палуба](*<- lang_ru;;*);;
+concept_deck=> nrel_main_idtf: [Deck](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_deck;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Палуба(англ. deck) — архитектурный элемент судна, горизонтальное перекрытие в корпусе или надстройках, опирающееся на борта, переборки и пиллерсы (при их наличии) и состоящее из набора (бимсов, карлингсов и прочего) и настила (обычно деревянного или металлического). Она разделяет внутреннее пространство корпуса корабля на помещения по вертикали.](*<- lang_ru;;*);;
+
+	        -> [Deck - an architectural element of the vessel, a horizontal ceiling in the hull or superstructures, based on the sides, bulkheads and pillars (if any) and consisting of a set (beams, carlings, etc.) and flooring (usually wooden or metal). It divides the interior of the ship's hull into rooms vertically.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Палуба)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Deck)](*<- lang_en;;*);;
+*);;
+
+concept_deck<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Палуба)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_termins/deck.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_deck;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [На верхней палубе размещаются надстройки, палубные механизмы, вооружение и так далее.](*<- lang_ru;;*);;
+
+            -> [Superstructures, deck mechanisms, armament and so on are placed on the upper deck.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Палуба)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Deck)](*<- lang_en;;*);;
+*);;
+

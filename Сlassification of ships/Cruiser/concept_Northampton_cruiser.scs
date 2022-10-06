@@ -1,0 +1,78 @@
+concept_Northampton_cruiser<-sc_node_not_relation;;
+concept_Northampton_cruiser => nrel_main_idtf: [Крейсер «Нортхэмптон»](*<- lang_ru;;*);;
+concept_Northampton_cruiser=> nrel_main_idtf: [Cruiser «Northampton»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Нортхэмптон — тяжёлый крейсер ВМС США периода Второй мировой войны.](*<- lang_ru;;*);;
+
+	        -> [Northampton is a heavy cruiser of the USN during the Second World War.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Крейсер «Нортхэмптон»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Cruiser «Northampton»)](*<- lang_en;;*);;
+*);;
+
+concept_Northampton_cruiser<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Крейсер «Нортхэмптон»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cruisers/cruiser_northampton.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Как и прототип, «Нортхэмптоны» строились в рамках ограничений Вашингтонского договора, то есть стандартное водоизмещение не могло превышать 10160 т (10000 английских тонн). Проектное водоизмещение составило 9779 дл. тонн (+ 221 дл. тонну резерва до 10 000 дл. тонн). Резерв не был израсходован. Был даже недогруз порядка 500 тонн. Одна из причин этому было, то что 37-мм автоматы Кольта не были доведены до ума и не устанавливались. Схема размещения главного калибра была изменена на 3х3, то есть общее число стволов сокращено до девяти. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [Like the prototype, the Northamptons were built within the limitations of the Washington Treaty, that is, the standard displacement could not exceed 10,160 tons (10,000 English tons). The design displacement was 9779 dl. tons (+ 221 long tons reserve up to 10,000 long tons). The reserve has not been used up. There was even an underload of about 500 tons. One of the reasons for this was that the 37 mm Colt assault rifles were not brought to mind and were not installed. The layout of the main caliber was changed to 3x3, that is, the total number of barrels was reduced to nine.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Крейсер «Нортхэмптон»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cruiser «Northampton»)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser;;
+    =>nrel_using_constants:{
+    	concept_Northampton_cruiser_armor;
+        concept_Northampton_cruiser_cannon;
+        concept_Northampton_cruiser_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Northampton_cruiser_armor">(Броня крейсера «Нортхэмптон»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Northampton_cruiser_cannon">(Вооружение крейсера «Нортхэмптон»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Northampton_cruiser_engine">(Энергетическая установка крейсера «Нортхэмптон»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Northampton_cruiser_armor">(Northampton cruiser armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Northampton_cruiser_cannon">(Northampton cruiser weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Northampton_cruiser_engine">(Northampton cruiser power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Крейсер «Нортхэмптон»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cruiser «Northampton»)](*<- lang_en;;*);;
+*);;
+
+
+concept_Northampton_cruiser=>nrel_elements:
+concept_Northampton_cruiser_armor;
+        concept_Northampton_cruiser_cannon;
+        concept_Northampton_cruiser_engine;;
+
+concept_Northampton_cruiser=>nrel_parameters:
+displacement_12350;
+length_183;
+width_20_1;
+precipitation_5_9;
+[Экипаж  составлял 734 человека];
+speed_32_5;;

@@ -1,0 +1,34 @@
+concept_Minsk_destroyer_engine <-sc_node_not_relation;;
+concept_Minsk_destroyer_engine=> nrel_main_idtf: [Двигатель эсминца «Минск»](*<- lang_ru;;*);;
+concept_Minsk_destroyer_engine=> nrel_main_idtf: ["Minsk" destroyer engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель эсминца «Минск» - это его энергетическая установка.](*<- lang_ru;;*);;
+	        -> [The engine of the destroyer Minsk is its power plant.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель эсминца «Минск»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Minsk» destroyer engine)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Силовая установка состояла из трёх водотрубных паровых котлов треугольного типа, производительностью 417 тонн/час. После пароперегревателя температура пара составляла 1335°C, дав­ле­ние пара было 21,5 кг/см2. Каждый котёл располагался в своём котельном отделении. Пар подавался на три ак­тив­но-ре­ак­тив­ных двух­кор­пус­ных тур­бо­зуб­ча­тых аг­ре­га­та. Об­щая мощ­но­сть составляла 66 тыс. л.с. Каждая турбина работала на свой вал. Две бортовые находились в носовом машинном отделении, третья в кормовом. Максимальная скорость хода составляла 40 - 40.7 узлов. Дальность плавания полным/ экономическим ходом (26 узлов) составляла: при нормальном запасе топлива (210 тонн мазута) - 300/ 780 миль, при полном (600 тонн мазута) - 835/ 2100. Максимальный запас топлива был 613.5 тонн.   ](*<- lang_ru;;*);;
+            -> [The power plant consisted of three triangular-type water-tube steam boilers with a capacity of 417 tons / hour. After the superheater, the steam temperature was 1335°C, the steam pressure was 21.5 kg/cm2. Each boiler was located in its boiler room. Steam was supplied to three active-jet two-hull turbo-gear units. The total power was 66 thousand hp. Each turbine worked on its own shaft. Two airborne were in the bow engine room, the third in the stern. The maximum speed was 40 - 40.7 knots. The cruising range at full / economic speed (26 knots) was: with a normal fuel supply (210 tons of fuel oil) - 300 / 780 miles, with full (600 tons of fuel oil) - 835 / 2100. The maximum fuel supply was 613.5 tons.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель эсминца «Минск»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Minsk» destroyer engine)](*<- lang_en;;*);;
+*);;
+
+concept_Minsk_destroyer_engine=>nrel_parameters:
+[Максимальная скорость порядка 41 узла];
+[Общая мощность составляла 66000 л. с.];
+[Максимальная дальность плавания 2100 при запасе топлива в 600 тонн мазута];;

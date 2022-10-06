@@ -1,0 +1,49 @@
+concept_Bismarck_battleship_armor<-sc_node_not_relation;;
+concept_Bismarck_battleship_armor=> nrel_main_idtf: [Броня линкора «Бисмарк»](*<- lang_ru;;*);;
+concept_Bismarck_battleship_armor => nrel_main_idtf: [Armor of the battleship «Bismarck»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня линкора «Бисмарк» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the battleship "Bismarck" is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня линкора «Бисмарк»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the battleship "Bismarck")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bismarck_battleship_armor<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Схема бронирования линкора «Бисмарк»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_armor/battleship_bismarck_armor.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Общий вес <b><sc_element sys_idtf="concept_armor">брони</b> на Bismarck составлял 18 700 метрических тонн или 40 % от проектного боевого водоизмещения. Только японский линкор IJN Yamato превосходил немецкий корабль по суммарному весу бронирования, но при этом существенно уступал по его процентному отношению к водоизмещению — всего 33,2 %. Все броневые материалы для тяжёлых надводных кораблей Кригсмарине изготавливались заводами концерна Krupp AG. Основным материалом для изготовления толстых броневых плит для Bismarck являлся состав КС (нем. Krupp Cementiert) — поверхностно-укрепленный (цементированный) — он был использован для бронирования мостика, бокового пояса, барбетов. В свою очередь специально разработанные виды бронестали семейства Wotan, получившие названия Wh (нем. Wotan Hart), Wsh (нем. Wotan Starrheit) и Ww (нем. Wotan Weich) — были использованы для бронирования <b><sc_element sys_idtf="concept_deck">палуб</b> и продольных переборок.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The total weight of the <b><sc_element sys_idtf="concept_armor">armor</b> on the Bismarck was 18,700 metric tons, or 40% of the design combat displacement. Only the Japanese battleship IJN Yamato surpassed the German ship in terms of the total weight of the armor, but at the same time it was significantly inferior in terms of its percentage to the displacement - only 33.2%. All armor materials for heavy surface ships of the Kriegsmarine were manufactured by Krupp AG. The main material for the manufacture of thick armor plates for Bismarck was the composition of the COP (German: Krupp Cementiert) - surface-reinforced (cemented) - it was used to armor the bridge, side belt, barbettes. In turn, specially designed types of armored steel of the Wotan family, called Wh (German Wotan Hart), Wsh (German Wotan Starrheit) and Ww (German Wotan Weich) were used to armor <b><sc_element sys_idtf="concept_deck">decks</b> and longitudinal bulkheads.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня линкора «Бисмарк»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the battleship "Bismarck")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bismarck_battleship_armor=>nrel_parameters:
+external_vertical_armor_belt_145;
+internal_vertical_armor_belt_70;
+deck_100;;

@@ -1,0 +1,51 @@
+concept_cruiser<-sc_node_not_relation;;
+concept_cruiser => nrel_main_idtf: [Крейсер](*<- lang_ru;;*);;
+concept_cruiser=> nrel_main_idtf: [Cruiser](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Крейсер — класс боевых надводных кораблей, способных выполнять задачи независимо от основного флота.](*<- lang_ru;;*);;
+	        -> [A cruiser is a class of combat surface ships capable of performing tasks independently of the main fleet.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Крейсер)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Cruiser)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Крейсера обладают хорошей бронёй и мощным вооружением. При этом они достаточно манёвренны, чтобы уходить от огня линкоров и уклоняться от торпед эсминцев или авианосцев.](*<- lang_ru;;*);;
+            -> [Cruisers have good armor and powerful weapons. At the same time, they are maneuverable enough to evade fire of battleships and evade torpedoes of destroyers or aircraft carriers.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Крейсер)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cruiser)](*<- lang_en;;*);;
+*);;
+
+
+concept_cruiser=>nrel_inclusion:
+concept_Algerie_cruiser;
+concept_Northampton_cruiser;;
+
+concept_cruiser=>nrel_functions:
+[Борьба с эсминцами и крейсерами противника];
+[Артиллерийская поддержка и прикрытие союзников огнём ПВО];;
+
+
+
+
+
+
+
+
+
+
+
+

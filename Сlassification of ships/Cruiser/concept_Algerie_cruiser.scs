@@ -1,0 +1,78 @@
+concept_Algerie_cruiser<-sc_node_not_relation;;
+concept_Algerie_cruiser => nrel_main_idtf: [Крейсер «Алжир»](*<- lang_ru;;*);;
+concept_Algerie_cruiser=> nrel_main_idtf: [Cruiser "Algerie"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Алжир — тяжёлый крейсер французского флота периода Второй мировой войны.](*<- lang_ru;;*);;
+
+	        -> [Algerie is a heavy cruiser of the French Navy during the Second World War.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Крейсер «Алжир»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Cruiser "Algerie")](*<- lang_en;;*);;
+*);;
+
+concept_Algerie_cruiser<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Крейсер «Алжир»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cruisers/cruiser_algerie.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [К достоинствам «Алжир» следует отнести: достаточно надёжное вертикальное бронирование, защищавшее крейсер на основных дистанциях боя от снарядов 203-мм калибра, весьма мощное для корабля таких размеров горизонтальное бронирование, способное спасти крейсер при попаданиях 250-кг бомб и дававшее определённые шансы при попаданий 500-кг бомб, хорошая система противоторпедной защиты, способная выдержать без фатальных последствий до двух попаданий торпед.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The advantages of the Algerie include: a fairly reliable vertical reservation that protected the cruiser at the main battle distances from 203-mm caliber shells, a very powerful horizontal reservation for a ship of this size, capable of saving the cruiser when hit by 250-kg bombs and giving certain chances when hit by 500-kg bombs, a good anti-torpedo protection system, capable of withstanding up to two torpedo hits without fatal consequences.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Крейсер «Алжир»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cruiser "Algerie")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser;;
+    =>nrel_using_constants:{
+    	concept_Algerie_cruiser_armor;
+        concept_Algerie_cruiser_cannon;
+        concept_Algerie_cruiser_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Algerie_cruiser_armor">(Броня крейсера «Алжир»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Algerie_cruiser_cannon">(Вооружение крейсера «Алжир»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Algerie_cruiser_engine">(Энергетическая установка крейсера «Алжир»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Algerie_cruiser_armor">(Algerie cruiser armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Algerie_cruiser_cannon">(Algerie cruiser weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Algerie_cruiser_engine">( Algerie cruiser power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Крейсер «Алжир»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cruiser "Algerie")](*<- lang_en;;*);;
+*);;
+
+
+concept_Algerie_cruiser=>nrel_elements:
+concept_Algerie_cruiser_armor;
+        concept_Algerie_cruiser_cannon;
+        concept_Algerie_cruiser_engine;;
+
+concept_Algerie_cruiser=>nrel_parameters:
+displacement_13461;
+length_186;
+width_20;
+precipitation_7_1;
+[Экипаж  составлял 616 человек];
+speed_31;;

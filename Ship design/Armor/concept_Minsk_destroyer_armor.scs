@@ -1,0 +1,38 @@
+concept_Minsk_destroyer_armor<-sc_node_not_relation;;
+concept_Minsk_destroyer_armor=> nrel_main_idtf: [Броня эсминца «Минск»](*<- lang_ru;;*);;
+concept_Minsk_destroyer_armor => nrel_main_idtf: [Armor of the destroyer «Minsk»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня эсминца «Минск» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the destroyer "Minsk" is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня эсминца «Минск»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the destroyer «Minsk»)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Силовая схема корпуса была смешанной - в носу и корме поперечная, в средней части - продольная. Шпангоутов - 250, шпация 0.5м. Носовая часть пристыковывалась по 75 шпангоуту, кормовая по 185 шпангоуту. Корпус делился водонепроницаемыми переборками на 15 водонепроницаемых отсеков. Двойное дно тянулось от 16 до 185 шпангоута. Цистерны для питательной воды, топлива и масла были расположены между 16 и 75 шпангоутами.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The power scheme of the hull was mixed - transverse in the bow and stern, longitudinal in the middle part. Frames - 250, spacing 0.5m. The bow was docked along the 75th frame, the aft along the 185th frame. The hull was divided by watertight bulkheads into 15 watertight compartments. The double bottom stretched from 16 to 185 frames. Tanks for feed water, fuel and oil were located between 16 and 75 frames.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня эсминца «Минск»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the destroyer «Minsk»)](*<- lang_en;;*);;
+*);;
+
+
+concept_Minsk_destroyer_armor=>nrel_parameters:
+external_vertical_armor_belt_95;
+internal_vertical_armor_belt_70;
+deck_50;;

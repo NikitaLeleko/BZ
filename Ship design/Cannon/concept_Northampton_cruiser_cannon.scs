@@ -1,0 +1,48 @@
+concept_Northampton_cruiser_cannon<-sc_node_not_relation;;
+concept_Northampton_cruiser_cannon => nrel_main_idtf: [Вооружение крейсера «Нортхэмптон»](*<- lang_ru;;*);;
+concept_Northampton_cruiser_cannon => nrel_main_idtf: [«Northampton» cruiser cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  крейсера «Нортхэмптон» являются артиллерийские установки, размещающающиеся на <b><sc_element sys_idtf="concept_deck">палубах</b> и <b><sc_element sys_idtf="concept_sponson">спонсонах</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the Algeri cruiser are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b> and <b><sc_element sys_idtf="concept_sponson">sponsons</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Northampton» cruiser cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Northampton_cruiser_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение крейсера «Нортхэмптон»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/northampton_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Размещение главного калибра линейно-возвышенное, в трёх 3-орудийных башнях Mk 14 (2 в носу, 1 в корме). Вспомогательный калибр — побортно в районе кормовой надстройки. Согласно проекту, универсальная артиллерия кораблей состояла из четырёх 127-мм пушек Mk 13 L/25 на установках Mk 19. Они стреляли унитарными боеприпасами, масса патрона составила 36,4 кг, снаряда 24,4 кг, начальная скорость 643 м/с, дальность около 13 000 м, вертикальная 8000 м, скорострельность до 14 выстрелов в минуту, диапазон углов из от −15° до 85°. Должны были быть установлены 37-мм автоматы, но фирма Кольт не справилась с разработкой 37-мм автомата. В результате крейсера получили восемь 12,7 мм пулеметов Браунинга.  ](*<- lang_ru;;*);;
+            -> [The placement of the main caliber is linearly elevated, in three 3-gun turrets Mk 14 (2 in the bow, 1 in the stern). Auxiliary caliber - on board in the area of ​​\u200b\u200bthe aft superstructure. According to the project, the universal artillery of the ships consisted of four 127 mm Mk 13 L / 25 cannons on Mk 19 mounts. They fired unitary ammunition, the mass of the cartridge was 36.4 kg, the projectile was 24.4 kg, the muzzle velocity was 643 m / s, the range about 13,000 m, vertical 8,000 m, rate of fire up to 14 rounds per minute, angle range from −15° to 85°. 37 mm machine guns were supposed to be installed, but Colt did not cope with the development of a 37 mm machine gun. As a result, the cruisers received eight 12.7 mm Browning machine guns.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Northampton» cruiser cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Northampton_cruiser_cannon=>nrel_inclusion: 
+concept_artillery_cannon;;
+
+concept_Northampton_cruiser_cannon=>nrel_parameters:
+rate_fire_14;
+flight_speed_643;
+fireng_range_13000;;
+

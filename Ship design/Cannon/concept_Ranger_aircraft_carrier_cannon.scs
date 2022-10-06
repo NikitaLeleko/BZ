@@ -1,0 +1,35 @@
+concept_Ranger_aircraft_carrier_cannon<-sc_node_not_relation;;
+concept_Ranger_aircraft_carrier_cannon => nrel_main_idtf: [Вооружение авианосца «Рейнджер»](*<- lang_ru;;*);;
+concept_Ranger_aircraft_carrier_cannon => nrel_main_idtf: [«Ranger» aircraft carrier cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  авианосца «Рейнджер» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Ranger» aircraft carrier are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение авианосца «Рейнджер»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Ranger» aircraft carrier cannon)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Вооружение авианосца «Рейнджер»: орудия 8 127 мм, зенитные установки: 24 Бофорс и 40 Эрликон, самолеты: 88.](*<- lang_ru;;*);;
+            -> [The weaponry of the Ranger aircraft carrier: 8 127 mm guns, anti-aircraft guns: 24 Bofors and 40 Oerlikon, aircraft: 88](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение авианосца «Рейнджер»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Ranger» aircraft carrier cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Ranger_aircraft_carrier_cannon=>nrel_inclusion: 
+concept_artillery_cannon;;
+
+concept_Ranger_aircraft_carrier_cannon=>nrel_parameters:
+[Авиационная группа составляла 88 самолётов];;
+

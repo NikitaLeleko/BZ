@@ -1,0 +1,41 @@
+concept_artillery_cannon<-sc_node_not_relation;;
+concept_artillery_cannon => nrel_main_idtf: [Артиллерийское орудие](*<- lang_ru;;*);;
+concept_artillery_cannon => nrel_main_idtf: [Artillery cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_artillery_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Артиллерийское орудие — разновидность огнестрельного и иного (например парового) ствольного оружия калибром более 20 мм.](*<- lang_ru;;*);;
+
+            -> [An artillery gun is a variety of firearms and other (for example, steam) barreled weapons with a caliber of more than 20 mm.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Артиллерийское орудие)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Artillery cannon)](*<- lang_en;;*);;
+*);;
+
+concept_artillery_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Артиллерийское орудие)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/artillery.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_artillery_cannon;;
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Как правило, данный тип оружия непригоден для транспортирования силами одного человека на поле боя. Предназначено для метания <b><sc_element sys_idtf="concept_shell">снарядов</b> (мин), уничтожения укреплений (оборонительных сооружений), вооружений и военной техники и подавления живой силы, огневых средств противника, и выполнения других аналогичных задач на суше, на море и в воздухе. Артиллерийское орудие — мощная тепловая машина, использующая энергию пороховых газов, давление которых составляет 300—400 МПа, а темпеpaтура достигает 3000°С.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [As a rule, this type of weapon is unsuitable for transportation by one person on the battlefield. Designed for throwing <b><sc_element sys_idtf="concept_shell">shells</b> (mines), destroying fortifications (defensive structures), weapons and military equipment and suppressing enemy manpower, fire weapons, and performing other similar tasks on land , at sea and in the air. An artillery gun is a powerful heat engine that uses the energy of powder gases, the pressure of which is 300-400 MPa, and the temperature reaches 3000 ° C.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Артиллерийское орудие)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Artillery cannon)](*<- lang_en;;*);;
+*);;

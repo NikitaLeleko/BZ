@@ -1,0 +1,78 @@
+concept_Minsk_destroyer<-sc_node_not_relation;;
+concept_Minsk_destroyer=> nrel_main_idtf: [Эсминец «Минск»](*<- lang_ru;;*);;
+concept_Minsk_destroyer=> nrel_main_idtf: [Destroyer "Minsk"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Минск — лидер эскадренных миноносцев проекта 38, построенный для Военно-Морского Флота СССР. Входил в состав Балтийского флота. Лидер участвовал в Советско-финской и Великой Отечественной войнах.](*<- lang_ru;;*);;
+
+	        -> [Minsk is the leader of Project 38 destroyers built for the Soviet Navy. He was a member of the Baltic Fleet. The leader participated in the Soviet-Finnish and Great Patriotic Wars.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Эсминец «Минск»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Destroyer "Minsk")](*<- lang_en;;*);;
+*);;
+
+concept_Minsk_destroyer<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Эсминец «Минск»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_destroyers/destroyer_minsk.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лидер был заложен 5 октября 1934 года на судостроительном заводе имени А.А.Жданова. Получил заводской номер 471, строился на заводе №190. Был спущен на воду 6 ноября 1935 года, будучи уже достроенным (в отличие от лидера «Ленинград»). Постройка лидера продвигалась очень медленно; постоянно задерживались контрагентские поставки, многие узлы и агрегаты корабля приходилось неоднократно переделывать. Лишь в мае 1938 г. «Минск» смог выйти на заводские испытания. 10 ноября был передан Военно-Морскому Флоту, а 15 февраля 1939 г. на нем был поднят военно-морской флаг.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The leader was laid down on October 5, 1934 at the shipyard named after A.A. Zhdanov. Received serial number 471, built at plant number 190. It was launched on November 6, 1935, being already completed (unlike the leader "Leningrad"). The construction of the leader progressed very slowly; counterparty deliveries were constantly delayed, many components and assemblies of the ship had to be redone several times. Only in May 1938 "Minsk" was able to enter the factory tests. On November 10, it was transferred to the Navy, and on February 15, 1939, the naval flag was raised on it.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Эсминец «Минск»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Destroyer "Minsk")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer;;
+    =>nrel_using_constants:{
+    	concept_Minsk_destroyer_armor;
+        concept_Minsk_destroyer_cannon;
+        concept_Minsk_destroyer_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Minsk_destroyer_armor">(Броня эсминца «Минск»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Minsk_destroyer_cannon">(Вооружение эсминца «Минск»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Minsk_destroyer_engine">(Энергетическая установка эсминца «Минск»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Minsk_destroyer_armor">(Minsk destroyer armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Minsk_destroyer_cannon">(Minsk weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Minsk_destroyer_engine">(Minsk power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Эсминец «Минск»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Destroyer "Minsk")](*<- lang_en;;*);;
+*);;
+
+
+concept_Minsk_destroyer=>nrel_elements:
+concept_Minsk_destroyer_armor;
+        concept_Minsk_destroyer_cannon;
+        concept_Minsk_destroyer_engine;;
+
+concept_Minsk_destroyer=>nrel_parameters:
+displacement_2237;
+length_127;
+width_11_7;
+precipitation_4_1;
+[Экипаж составлял 250 человек];
+speed_43;;

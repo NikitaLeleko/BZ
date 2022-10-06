@@ -1,0 +1,49 @@
+concept_Minsk_destroyer_cannon<-sc_node_not_relation;;
+concept_Minsk_destroyer_cannon => nrel_main_idtf: [Вооружение эсминца «Минск»](*<- lang_ru;;*);;
+concept_Minsk_destroyer_cannon => nrel_main_idtf: [«Minsk» destroyer cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  эсминца «Минск» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Minsk» destroyer are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение эсминца «Минск»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Minsk» destroyer cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Minsk_destroyer_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение эсминца «Минск»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/minsk_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Minsk_destroyer_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лидеры проекта 38 вооружались пятью 130-мм артилле­рийскими установками Б-13 с длинной ствола 50 калибров. Орудия располагались в диаметральной плоскости — два на баке, одно за носовой надстройкой и два в корме. Каждое орудие в палубной установке имело щит из противопульной брони толщиной 13 мм. Расчет орудия включал 11 человек, заряжение осуществлялось вручную. Скорострельность установки, в зависимости от угла возвышения стволов, составляла 6-10 выстрелов/мин. Угол вертикального наведения от -5° до +45°. Начальная скорость снаряда 870 м/с, дальность стрельбы до 27.5 км.  ](*<- lang_ru;;*);;
+            -> [TProject 38 leaders were armed with five 130-mm B-13 artillery mounts with a barrel length of 50 calibers. The guns were located in the diametrical plane - two on the tank, one behind the bow superstructure and two in the stern. Each gun in the deck installation had a shield of bulletproof armor 13 mm thick. The calculation of the gun included 11 people, the loading was carried out manually. The rate of fire of the installation, depending on the elevation angle of the trunks, was 6-10 shots / min. Elevation angle from -5° to +45°. The initial velocity of the projectile is 870 m/s, the firing range is up to 27.5 km.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение эсминца «Минск»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Minsk» destroyer cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Minsk_destroyer_cannon=>nrel_inclusion: 
+concept_artillery_cannon;
+concept_torpedo_cannon;;
+
+concept_Minsk_destroyer_cannon=>nrel_parameters:
+rate_fire_8;
+flight_speed_870;
+barrel_length_50;
+fireng_range_27500;;
+

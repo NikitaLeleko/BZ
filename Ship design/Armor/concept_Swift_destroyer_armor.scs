@@ -1,0 +1,38 @@
+concept_Swift_destroyer_armor<-sc_node_not_relation;;
+concept_Swift_destroyer_armor=> nrel_main_idtf: [Броня эсминца «Свифт»](*<- lang_ru;;*);;
+concept_Swift_destroyer_armor => nrel_main_idtf: [Armor of the destroyer «Swift»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня эсминца «Свифт» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the destroyer "Swift" is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня эсминца «Свифт»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the destroyer «Swift»)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Swift имел характерный для британских кораблей того времени корпус с небольшим полубаком, заканчивающимся почти сразу за носовым мостиком. Кормовой мостик отсутствовал. Над палубой возвышались 3 массивные дымовые трубы, придававшие кораблю уникальный, легко узнаваемый вид. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [Swift had a hull, typical for British ships of that time, with a small forecastle ending almost immediately behind the bow bridge. The stern bridge was missing. 3 massive chimneys towered above the deck, giving the ship a unique, easily recognizable look.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня эсминца «Свифт»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the destroyer «Swift»)](*<- lang_en;;*);;
+*);;
+
+
+concept_Swift_destroyer_armor=>nrel_parameters:
+external_vertical_armor_belt_110;
+internal_vertical_armor_belt_40;
+deck_49;;

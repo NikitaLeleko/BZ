@@ -1,0 +1,39 @@
+concept_engine<-sc_node_not_relation;;
+concept_engine => nrel_main_idtf: [Двигатель](*<- lang_ru;;*);;
+concept_engine => nrel_main_idtf: [Engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель - устройство, преобразующее какой-либо вид энергии в механическую работу.](*<- lang_ru;;*);;
+	        -> [An engine is a device that converts any kind of energy into mechanical work.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Engine)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Чаще всего на судах используются двс — дизели, обладающие наибольшей экономичностью из всех типов судовых двигателей.](*<- lang_ru;;*);;
+            -> [Most often, internal combustion engines are used on ships, which have the greatest efficiency of all types of marine engines](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Engine)](*<- lang_en;;*);;
+*);;
+
+concept_engine=>nrel_inclusion:
+concept_Algerie_cruiser_engine;
+concept_Bismarck_battleship_engine;
+concept_Hermes_aircraft_carrier_engine;
+concept_Minsk_destroyer_engine;
+concept_Swift_destroyer_engine;
+concept_Ranger_aircraft_carrier_engine;
+concept_Bayern_battleship_engine;
+concept_Northampton_cruiser_engine;;
+

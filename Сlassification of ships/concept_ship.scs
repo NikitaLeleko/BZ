@@ -1,0 +1,40 @@
+concept_ship<-sc_node_not_relation;;
+concept_ship => nrel_main_idtf: [Корабль](*<- lang_ru;;*);;
+concept_ship=> nrel_main_idtf: [Ship](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Корабль (англ. ship) — это крупное морское судно.](*<- lang_ru;;*);;
+
+	        -> [Ship is a large watercraft.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Понятие корабля)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(The concept of a ship](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ship;;
+    =>nrel_using_constants:{
+    concept_classification_of_ships
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Определения корабля как боевой единицы были разными в разных армиях, так как их назначение и способы применения в разные эпохи менялись.Есть <b><sc_element sys_idtf="concept_classification_of_ships">классификация кораблей</b> по типу.](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+            -> [Definitions of a ship as a combat point were different 
+            in different armies, since their purpose and the methods of application have 
+            changed in different eras.There is a <b><sc_element sys_idtf="concept_classification_of_ships">classification of ships</b> by type.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Понятие корабля)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(The concept of a ship)](*<- lang_en;;*);;
+*);;
+
+
+concept_ship=>nrel_inclusion:concept_classification_of_ships;;

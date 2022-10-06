@@ -1,0 +1,46 @@
+concept_classification_of_ships<-sc_node_not_relation;;
+concept_classification_of_ships => nrel_main_idtf: [Классификация кораблей](*<- lang_ru;;*);;
+concept_classification_of_ships=> nrel_main_idtf: [Classification of ships](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_classification_of_ships;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Классификация кораблей — разделение военных кораблей (судов) на классы, подклассы и типы (проекты) в зависимости от их предназначения, водоизмещения, вооружения и других тактико-технических данных.](*<- lang_ru;;*);;
+	        -> [Classification of ships is the division of warships (vessels) into classes, subclasses and types (projects) depending on their purpose, displacement, armament and other tactical and technical data.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Классификация кораблей)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Classification of ships)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_classification_of_ships;;
+    =>nrel_using_constants:{
+    	concept_destroyer;
+        concept_battleship;
+        concept_cruiser;
+        concept_aircraft_carrier;
+        concept_submarine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ударную мощь американского флота некогда составляли <b><sc_element sys_idtf="concept_battleship">линкоры</b> (англ. Battleship), а ныне их роль перешла к <b><sc_element sys_idtf="concept_aircraft_carrier">авианосцам</b> (англ. Aircraft carrier). Крупнейшими военными кораблями США являются авианосцы типа «Нимиц» (Авраам Линкольн, Гарри Трумэн, Джордж Вашингтон), водоизмещением 97 тыс. тонн и длиной 333 метра. Авианосцы обыкновенно носят имена президентов США. Командир авианосца имеет звание Rear Admiral, соответствующее российскому контр-адмиралу, поскольку он координирует свою деятельность с капитанами других кораблей. Кроме авианосцев крупными кораблями ВМС США являются тяжелые <b><sc_element sys_idtf="concept_cruiser">крейсеры</b> (англ. cruiser), водоизмещение колебалось от 10 до 17 тыс. тонн. Следующий класс кораблей занимают <b><sc_element sys_idtf="concept_destroyer">эсминцы</b> (англ. destroyer: истребитель). Их водоизмещение достигает 6-9 тыс. тонн, а длина колеблется от 110 до 153 метров. <b><sc_element sys_idtf="concept_submarine">Подводные лодки</b> - класс кораблей, способный оставаться незаметным под водой долгое время и выполнят различные функции.](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+            -> [The striking power of the American fleet was once <b><sc_element sys_idtf="concept_battleship">battleships </b>, and now their role has passed to <b><sc_element sys_idtf="concept_aircraft_carrier">aircraft carriers</b>. The largest US warships are aircraft carriers of the Nimitz type (Abraham Lincoln, Harry Truman, George Washington), with a displacement of 97 thousand tons and a length of 333 meters. Aircraft carriers usually bear the names of US presidents. The commander of the aircraft carrier has the rank of Rear Admiral, corresponding to the Russian rear admiral, since he coordinates his activities with the captains of other ships. In addition to aircraft carriers, large ships of the US Navy are heavy <b><sc_element sys_idtf="concept_cruiser">cruisers </b>, displacement ranged from 10 to 17 thousand tons. The next class of ships is occupied by <b><sc_element sys_idtf="concept_destroyer">destroyers</b>. Their displacement reaches 6-9 thousand tons, and the length ranges from 110 to 153 meters. <b><sc_element sys_idtf="concept_submarine">Submarines</b> is a class of ships capable of remaining invisible under water for a long time and will perform various functions.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Классификация кораблей)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Classification of ships)](*<- lang_en;;*);;
+*);;
+
+
+concept_classification_of_ships=>nrel_inclusion:
+concept_destroyer;
+        concept_battleship;
+        concept_cruiser;
+        concept_submarine;
+        concept_aircraft_carrier;;

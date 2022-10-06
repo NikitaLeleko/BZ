@@ -1,0 +1,78 @@
+concept_Swift_destroyer<-sc_node_not_relation;;
+concept_Swift_destroyer=> nrel_main_idtf: [Эсминец «Свифт»](*<- lang_ru;;*);;
+concept_Swift_destroyer=> nrel_main_idtf: [Destroyer "Swift"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Свифт — британский эсминец. По своим габаритам и вооружению он приблизился к крейсерам.](*<- lang_ru;;*);;
+
+	        -> [Swift is a british destroyer. In terms of its dimensions and armament, it approached the cruisers.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Эсминец «Свифт»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Destroyer "Swift")](*<- lang_en;;*);;
+*);;
+
+concept_Swift_destroyer<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Эсминец «Свифт»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_destroyers/destroyer_swift.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Спроектирован в полном соответствии с концепцией, утверждённой лично адмиралом Д. Фишером, занимавшим в 1904—1910 годах пост Первого морского лорда, который считал, что «малые крейсера» теряют свои боевые качества в штормовую погоду, вследствие снижения эффективности применения своей артиллерии. Согласно взглядам Фишера, английский флот должен был состоять из линкоров-дредноутов, линейных крейсеров и крупных миноносцев обладающих высокой мореходностью и скоростью хода.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [Designed in full accordance with the concept approved personally by Admiral D. Fisher, who held the post of First Sea Lord in 1904-1910, who believed that "small cruisers" lose their combat qualities in stormy weather due to a decrease in the effectiveness of their artillery. According to Fisher's views, the English fleet should have consisted of dreadnought battleships, battlecruisers and large destroyers with high seaworthiness and speed.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Эсминец «Свифт»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Destroyer "Swift")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer;;
+    =>nrel_using_constants:{
+    	concept_Swift_destroyer_armor;
+        concept_Swift_destroyer_cannon;
+        concept_Swift_destroyer_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Swift_destroyer_armor">(Броня эсминца «Свифт»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Swift_destroyer_cannon">(Вооружение эсминца «Свифт»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Swift_destroyer_engine">(Энергетическая установка эсминца «Свифт»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Swift_destroyer_armor">(Swift destroyer armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Swift_destroyer_cannon">(Swift weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Swift_destroyer_engine">(Swift power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Эсминец «Свифт»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Destroyer "Swift")](*<- lang_en;;*);;
+*);;
+
+
+concept_Swift_destroyer=>nrel_elements:
+concept_Swift_destroyer_armor;
+        concept_Swift_destroyer_cannon;
+        concept_Swift_destroyer_engine;;
+
+concept_Swift_destroyer=>nrel_parameters:
+displacement_2390;
+length_107_8;
+width_10_4;
+precipitation_3_2;
+[Экипаж составлял 126 человек];
+speed_35;;

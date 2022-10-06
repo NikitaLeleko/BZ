@@ -1,0 +1,50 @@
+concept_Bayern_battleship_cannon<-sc_node_not_relation;;
+concept_Bayern_battleship_cannon => nrel_main_idtf: [Вооружение линкора «Байерн»](*<- lang_ru;;*);;
+concept_Bayern_battleship_cannon => nrel_main_idtf: [«Bayern» battleship cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  линкора «Байерн» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b> и <b><sc_element sys_idtf="concept_sponson">спонсонах</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Bayern» battleship are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b> and <b><sc_element sys_idtf="concept_sponson">sponsons</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение линкора «Байерн»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Bayern» battleship cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Bayern_battleship_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение линкора «Байерн»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/bayern_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главный калибр линкора состоял из восьми 380-мм морских орудий (нем. 38-cm SK L/45), размещённых в четырёх двухорудийных башнях Drh LC/1913. Боекомплект 60 бронебойных и 30 фугасных снарядов на ствол (720 на корабль). Торпеды: пять подводных 600-мм торпедных аппаратов типа H-8: носовой и четыре бортовых, установленных с углом снижения 2° и повёрнутых на 20° в нос от траверза. Боезапас составлял 4 торпеды на аппарат (20 — на весь корабль). ](*<- lang_ru;;*);;
+            -> [The main armament of the battleship consisted of eight 380 mm naval guns (German: 38 cm SK L/45) placed in four Drh LC/1913 twin turrets. Ammunition 60 armor-piercing and 30 high-explosive shells per barrel (720 per ship). Torpedoes: five underwater 600 mm H-8 torpedo tubes: bow and four side mounted with a descent angle of 2° and rotated 20° forward from the beam. Ammunition was 4 torpedoes per vehicle (20 for the entire ship).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение линкора «Байерн»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Bayern» battleship cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Bayern_battleship_cannon=>nrel_inclusion: 
+concept_artillery_cannon;
+concept_torpedo_cannon;;
+
+concept_Bayern_battleship_cannon=>nrel_parameters:
+rate_fire_2;
+shell_weight_750;
+flight_speed_800;
+fireng_range_16000;;
+

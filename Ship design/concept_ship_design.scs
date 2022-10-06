@@ -1,0 +1,51 @@
+concept_ship_design<-sc_node_not_relation;;
+concept_ship_design => nrel_main_idtf: [Конструкция корабля](*<- lang_ru;;*);;
+concept_ship_design => nrel_main_idtf: [Ship design](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ship_design;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля — совокупность технических (конструктивных) решений и инженерных узлов, определяющая тактико-технические и эксплуатационные характеристики корабля.](*<- lang_ru;;*);;
+	        -> [Ship design — a set of technical (constructive) solutions and engineering components that determine the tactical, technical and operational characteristics of the ship](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Конструкция корабля)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Ship design)](*<- lang_en;;*);;
+*);;
+
+concept_ship_design<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Глаз)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://construction/construction.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ship_design;;
+     =>nrel_using_constants:{
+    	concept_cannon;
+        concept_engine;
+        concept_armor
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля проектируется таким образом, чтобы обеспечивать оптимальный для выполнения 
+            его задач баланс трёх основных составляющих корабля — <b><sc_element sys_idtf="concept_cannon">орудие</b>, 
+            <b><sc_element sys_idtf="concept_engine">двигатель</b> и <b><sc_element sys_idtf="concept_armor">броня</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship is designed in such a way as to ensure an optimal balance of the three main components of 
+            the ship — <b><sc_element sys_idtf="concept_cannon">cannon</b>, 
+            <b><sc_element sys_idtf="concept_engine">engine</b> and <b><sc_element sys_idtf="concept_armor">armor</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Конструкция корабля)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Ship design)](*<- lang_en;;*);;
+*);;
+
+concept_ship_design=>nrel_inclusion:concept_cannon;concept_engine;
+concept_armor;;

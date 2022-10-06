@@ -1,0 +1,78 @@
+concept_Bismarck_battleship<-sc_node_not_relation;;
+concept_Bismarck_battleship=> nrel_main_idtf: [Линкор «Бисмарк»](*<- lang_ru;;*);;
+concept_Bismarck_battleship=> nrel_main_idtf: [Battleship "Bismarck"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бисмарк — линкор немецкого военного флота, один из самых известных кораблей Второй мировой войны. Назван в честь первого канцлера Германской империи Отто фон Бисмарка.](*<- lang_ru;;*);;
+
+	        -> [Bismarck is a battleship of the German navy, one of the most famous ships of World War II. Named after the first chancellor of the German Empire, Otto von Bismarck.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Линкор «Бисмарк»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Battleship "Bismarck")](*<- lang_en;;*);;
+*);;
+
+concept_Bismarck_battleship<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Линкор «Бисмарк»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_battleships/battleship_bismarck.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Тип «Бисмарк» (позднее был построен ещё один корабль этого типа — линкор «Тирпиц») первоначально создавался как наследник «карманных линкоров» и в основном предназначался для ведения рейдерских операций против торговых кораблей. Так, объём топливных резервуаров «Бисмарка» скорее характерен для тихоокеанских линкоров, а показанная на испытаниях в Балтийском море скорость в 30,1 узлов была одним из лучших в мире значений для таких кораблей. После спуска на воду второго французского линкора типа «Дюнкерк» проект был изменён в сторону дальнейшего увеличения размеров. «Бисмарк» был первым после Первой мировой войны полноценным линкором германского флота: вооружение, включавшее восемь 380-мм пушек SKC-34 в четырёх башнях, позволяло ему на равных противостоять любому линейному кораблю. Корабль сошёл со стапелей 14 февраля 1939 года, в день святого Валентина. При спуске на воду присутствовали фюрер Адольф Гитлер и внучка князя Бисмарка Доротея фон Лёвенфельд, по традиции «окрестившая» корабль бутылкой шампанского. 24 августа 1940 года линкор был сдан под командование капитану первого ранга Эрнсту Линдеману. Установка оборудования и испытания продолжались до весны 1941 года. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The Bismarck type (later another ship of this type, the battleship Tirpitz, was built) was originally created as the heir to the "pocket battleships" and was mainly intended for raiding operations against merchant ships. Thus, the volume of Bismarck's fuel tanks is more typical for Pacific battleships, and the speed of 30.1 knots shown during trials in the Baltic Sea was one of the best values ​​in the world for such ships. After the launch of the second French Dunkirk-class battleship, the project was changed towards a further increase in size. The Bismarck was the first full-fledged battleship of the German Navy after the First World War: the armament, which included eight 380-mm SKC-34 cannons in four turrets, allowed it to compete on equal terms with any battleship. The ship left the stocks on February 14, 1939, on Valentine's Day. The Fuhrer Adolf Hitler and the granddaughter of Prince Bismarck Dorothea von Löwenfeld were present at the launch, traditionally “christening” the ship with a bottle of champagne. On August 24, 1940, the battleship was handed over to Captain First Rank Ernst Lindemann. Installation of equipment and testing continued until the spring of 1941.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Линкор «Бисмарк»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Battleship "Bismarck")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship;;
+    =>nrel_using_constants:{
+    	concept_Bismarck_battleship_armor;
+        concept_Bismarck_battleship_cannon;
+        concept_Bismarck_battleship_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Bismarck_battleship_armor">(Броня линкора «Бисмарк»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Bismarck_battleship_cannon">(Вооружение линкора «Бисмарк»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Bismarck_battleship_engine">(Энергетическая установка линкора «Бисмарк»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Bismarck_battleship_armor">(Bismarck battleship armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Bismarck_battleship_cannon">(Bismarck weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Bismarck_battleship_engine">(Bismarck power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Линкор «Бисмарк»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Battleship "Bismarck")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bismarck_battleship=>nrel_elements:
+concept_Bismarck_battleship_armor;
+        concept_Bismarck_battleship_cannon;
+        concept_Bismarck_battleship_engine;;
+
+concept_Bismarck_battleship=>nrel_parameters:
+displacement_50900;
+length_251;
+width_36;
+precipitation_10_2;
+[Экипаж  составлял 2200 человек];
+speed_30;;

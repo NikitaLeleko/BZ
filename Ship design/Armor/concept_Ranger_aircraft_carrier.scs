@@ -1,0 +1,32 @@
+concept_Ranger_aircraft_carrier_armor<-sc_node_not_relation;;
+concept_Ranger_aircraft_carrier_armor=> nrel_main_idtf: [Броня авианосца «Рейнджер»](*<- lang_ru;;*);;
+concept_Ranger_aircraft_carrier_armor => nrel_main_idtf: [Armor of the aircraft carrier "Ranger"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня авианосца «Рейнджер» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the "Ranger" aircraft carrier  is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня авианосца «Рейнджер»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the aircraft carrier "Ranger")](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Отличительной особенностью полётной палубы было ее возвышение над кораблем, предназначенное для удобной посадки на <b><sc_element sys_idtf="concept_deck">палубy</b> самолёта. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [A distinctive feature of the flight deck was its elevation above the ship, designed for comfortable landing on the <b><sc_element sys_idtf="concept_deck">deck</b> of the aircraft.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня авианосца «Рейнджер»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the aircraft carrier "Ranger")](*<- lang_en;;*);;
+*);;

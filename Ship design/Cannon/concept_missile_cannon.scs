@@ -1,0 +1,42 @@
+concept_missile_cannon<-sc_node_not_relation;;
+concept_missile_cannon => nrel_main_idtf: [Ракетное орудие](*<- lang_ru;;*);;
+concept_missile_cannon => nrel_main_idtf: [Missile cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_missile_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ракетное орудие - оружие дальнего боя, в котором средства поражения доставляются к цели с помощью ракет — беспилотных летательных аппаратов, оснащённых реактивным двигателем.](*<- lang_ru;;*);;
+	        -> [A missile weapon is a long-range weapon in which means of destruction are delivered to the target using missiles - unmanned aerial vehicles equipped with a jet engine.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Ракетное орудие)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Missile cannon)](*<- lang_en;;*);;
+*);;
+
+concept_missile_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Ракетное орудие)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/missile_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_missile_cannon;;
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ракетное оружие обладает чрезвычайно большим диапазоном функционального использования и, как следствие, широкими конструктивными особенностями (от носимого ракетного вооружения до сложных ракетных комплексов и систем всех видов и назначений). Основные характеристики — дальность пуска (минимальная и максимальная), размер и тип боевой части (фугасные, осколочные, зажигательные, объёмно-детонирующие, химические, бактериологические, ядерные), точность попадания в цель, тип системы управления, тип двигателя, скорость полета, масса, габаритные размеры, класс. ](*<- lang_ru;;*);;
+
+            -> [Missile weapons have an extremely wide range of functional use and, as a result, wide design features (from man-portable missile weapons to complex missile systems and systems of all types and purposes). Main characteristics - launch range (minimum and maximum), size and type of warhead (high-explosive, fragmentation, incendiary, volumetric detonating, chemical, bacteriological, nuclear), target hit accuracy, type of control system, engine type, flight speed, mass , overall dimensions, class.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Ракетное орудие)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Missile cannon)](*<- lang_en;;*);;
+*);;
+
+

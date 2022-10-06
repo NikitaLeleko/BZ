@@ -1,0 +1,41 @@
+concept_fighter<-sc_node_not_relation;;
+concept_fighter => nrel_main_idtf: [Истребитель](*<- lang_ru;;*);;
+concept_fighter=> nrel_main_idtf: [Fighter](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_fighter;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Истребитель — военный самолёт, предназначенный в первую очередь для уничтожения воздушных целей противника. ](*<- lang_ru;;*);;
+
+	        -> [A fighter aircraft is a military aircraft designed primarily to destroy enemy air targets.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Истребитель)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Fighter)](*<- lang_en;;*);;
+*);;
+
+concept_fighter<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Истребитель)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_termins/fighter.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_fighter;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Применяется для получения господства в воздухе над противником, а также для сопровождения бомбардировщиков, транспортных самолётов, самолётов гражданской авиации, защиты наземных объектов от авиации противника. Реже истребители используются для атаки наземных и морских целей. Несмотря на агрессивное название, истребитель относится к оборонительным типам вооружений, отдельного наступательного значения истребительная авиация не имеет. Однако в настоящее время, с увеличением тяговооружённости этих машин (и, соответственно, бо́льшей грузоподъёмности, то есть ракетно-бомбовой нагрузки), они получили возможности эффективной атаки наземных объектов, и, в условиях современных локальных конфликтов, истребители могут применяться для поражения наземных (надводных) целей. ](*<- lang_ru;;*);;
+
+            -> [It is used to gain air superiority over the enemy, as well as to escort bombers, transport aircraft, civil aviation aircraft, and to protect ground facilities from enemy aircraft. Less commonly, fighters are used to attack land and sea targets. Despite the aggressive name, the fighter belongs to the defensive types of weapons; fighter aviation does not have a separate offensive value. However, at present, with an increase in the thrust-to-weight ratio of these machines (and, accordingly, a greater carrying capacity, that is, a missile and bomb load), they have gained the ability to effectively attack ground targets, and, in the conditions of modern local conflicts, fighters can be used to destroy ground (surface) ) goals.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Истребитель)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Fighter)](*<- lang_en;;*);;
+*);;
+

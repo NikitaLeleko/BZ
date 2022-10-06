@@ -1,0 +1,34 @@
+concept_Northampton_cruiser_engine <-sc_node_not_relation;;
+concept_Northampton_cruiser_engine => nrel_main_idtf: [Двигатель крейсера «Нортхэмптон»](*<- lang_ru;;*);;
+concept_Northampton_cruiser_engine=> nrel_main_idtf: [«Northampton» cruiser engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В состав силовой установки входили восемь водотрубных котлов конструкции Уайт-Форстер, изготовленных фирмой Babcock & Wilcox Co. Схема размещения установки — эшелонная.](*<- lang_ru;;*);;
+	        -> [The power plant consisted of eight White Forster water tube boilers manufactured by Babcock & Wilcox Co. Installation layout - echelon.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Northampton» cruiser engine)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Northampton_cruiser_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Котлы производили пар под рабочим давлением 21,1 кГ/см². Пар из котлов питал четыре низкооборотные турбины типа Parsons с одноступенчатыми редукторами, общей мощностью 107 000 л. с., которые должны были обеспечивать ход 32,5 узла. Масса силовой установки составила 1945 дл. тонны. Нормальный запас топлива составил 1417 дл. тонн, полный — 2125 дл. тонн мазута. Проектная дальность составляла 10 000 морских миль 15-узловым ходом. «Луисвилл» в 1945 году на ходу 15 узлов мог пройти 7280 миль, а при скорости 20 узлов — 5250 миль. Крейсера имели два турбогенератора мощностью по 250 кВт и два по 200 кВт.  ](*<- lang_ru;;*);;
+            -> [The boilers produced steam at an operating pressure of 21.1 kg/cm². The steam from the boilers fed four low-speed Parsons-type turbines with single-stage gearboxes, with a total capacity of 107,000 hp. with., which were supposed to provide a course of 32.5 knots. The mass of the power plant was 1945 dl. tons. The normal fuel supply was 1417 dl. tons, full - 2125 dl. tons of fuel oil. The design range was 10,000 nautical miles at 15 knots. The Louisville in 1945 could travel 7,280 miles at 15 knots and 5,250 miles at 20 knots. The cruisers had two turbo generators with a capacity of 250 kW each and two 200 kW each.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель крейсера «Нортхэмптон»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Northampton» cruiser engine)](*<- lang_en;;*);;
+*);;
+
+concept_Northampton_cruiser_engine=>nrel_parameters:
+[Два турбогенератора мощностью по 250 кВт];
+[Два турбогенератора мощностью по 200 кВт];
+[Полный запас топлива равен 2125 дл. тонн мазута];
+[Максимальная мощность 107000 л. с.];;

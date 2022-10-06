@@ -1,0 +1,78 @@
+concept_Ranger_aircraft_carrier<-sc_node_not_relation;;
+concept_Ranger_aircraft_carrier=> nrel_main_idtf: [Авианосец «Рейнджер»](*<- lang_ru;;*);;
+concept_Ranger_aircraft_carrier=> nrel_main_idtf: [Aircraft carrier "Ranger"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [«Рейнджер» (англ. USS Ranger (CV-4)) — авианосец ВМС США. Спущен на воду в 1933 году. Первый американский авианосец, не переделанный из кораблей других классов, а с самого начала проектировавшийся как авианесущий. ](*<- lang_ru;;*);;
+
+	        -> ["Ranger" (eng. USS Ranger (CV-4)) is an aircraft carrier of the US Navy. Launched in 1933. The first American aircraft carrier, not converted from ships of other classes, but designed from the very beginning as an aircraft carrier.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Авианосец «Рейнджер»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Aircraft carrier "Ranger")](*<- lang_en;;*);;
+*);;
+
+concept_Ranger_aircraft_carrier<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Авианосец «Рейнджер»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_aircraft_carriers/ranger.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Полётная палуба и ангары на «Рейнджере» были сделаны в виде надстройки, возвышавшейся над корпусом. Надстройку сдвинули к правому борту, а дымоходы шли к шести коротким трубам — по три на каждом борту, В зависимости от направления ветра дымовые газы направлялись налево или направо. Для подъёма самолётов на полётную палубу и ускорения их запусков в воздух на «Рейнджер» были предусмотрены один подъёмник и одна катапульта. «Рейнджер» послужил прототипом для следующей серии американских авианосцев типа «Йорктаун».   ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The flight deck and hangars on the Ranger were made in the form of a superstructure that towered above the hull. The superstructure was moved to the starboard side, and the chimneys went to six short pipes - three on each side. Depending on the direction of the wind, the flue gases were directed to the left or to the right. To raise aircraft to the flight deck and accelerate their launches into the air, the Ranger was provided with one lift and one catapult. The Ranger served as the prototype for the next series of American aircraft carriers of the Yorktown class.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Авианосец «Рейнджер»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Aircraft carrier "Ranger")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Ranger_aircraft_carrier;;
+    =>nrel_using_constants:{
+    	concept_Ranger_aircraft_carrier_armor;
+        concept_Ranger_aircraft_carrier_cannon;
+        concept_Ranger_aircraft_carrier_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_armor">(Броня авианосца «Рейнджер»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_cannon">(Вооружение авианосца «Рейнджер»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_engine">(Энергетическая установка авианосца «Рейнджер»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_armor">(Ranger aircraft carrier armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_cannon">(Ranger weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Ranger_aircraft_carrier_engine">(Ranger power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Авианосец «Рейнджер»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Aircraft carrier "Ranger")](*<- lang_en;;*);;
+*);;
+
+
+concept_Ranger_aircraft_carrier=>nrel_elements:
+concept_Ranger_aircraft_carrier_armor;
+        concept_Ranger_aircraft_carrier_cannon;
+        concept_Ranger_aircraft_carrier_engine;;
+
+concept_Ranger_aircraft_carrier=>nrel_parameters:
+displacement_17577;
+length_234_7;
+width_33_4;
+precipitation_6_8;
+[Экипаж составлял 2148 человека];
+speed_29;;

@@ -1,0 +1,42 @@
+concept_cannon<-sc_node_not_relation;;
+concept_cannon => nrel_main_idtf: [Орудие](*<- lang_ru;;*);;
+concept_cannon => nrel_main_idtf: [Cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением корабля обычно являются артиллерийские установки, размещающающиеся на <b><sc_element sys_idtf="concept_deck">палубах</b> и <b><sc_element sys_idtf="concept_sponson">спонсонах</b>, с целью обеспечить ему круговой сектор обстрела, что является одной из определяющих особенностей корабля.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of a ship are usually artillery mounts placed on <b><sc_element sys_idtf="concept_deck">decks</b> and <b><sc_element sys_idtf="concept_sponson">sponsons</b> to provide him a circular sector of fire, which is one of the defining features of the ship.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Орудие)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Cannon)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [На вооружении современных кораблей состоят почти все образцы оружия, от ударно-ракетного оружия до противолодочных торпед и мелкокалиберных артиллерийских автоматов. Корабли несут на вооружении <b><sc_element sys_idtf="concept_missile_cannon">ракетное</b>, <b><sc_element sys_idtf="concept_artillery_cannon">артиллерийское</b>, <b><sc_element sys_idtf="concept_torpedo_cannon">торпедное</b>, минное и противолодочное оружие. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            -> [Almost all types of weapons are in service with modern ships, from strike missile weapons to anti-submarine torpedoes and small-caliber artillery guns. The ships are armed with <b><sc_element sys_idtf="concept_missile_cannon">rocket</b>, <b><sc_element sys_idtf="concept_artillery_cannon">artillery</b>, <b><sc_element sys_idtf="concept_torpedo_cannon">torpedo</b>, mine and anti-submarine weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Орудие)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Cannon)](*<- lang_en;;*);;
+*);;
+
+concept_cannon=>nrel_inclusion: 
+concept_missile_cannon;
+concept_artillery_cannon;
+concept_torpedo_cannon;
+concept_Algerie_cruiser_cannon;
+concept_Bismarck_battleship_cannon;
+concept_Hermes_aircraft_carrier_cannon;
+concept_Minsk_destroyer_cannon;
+concept_Swift_destroyer_cannon;
+concept_Ranger_aircraft_carrier_cannon;
+concept_Bayern_battleship_cannon;
+concept_Northampton_cruiser_cannon;;
+

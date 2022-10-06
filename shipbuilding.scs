@@ -1,0 +1,35 @@
+concept_shipbuilding<-sc_node_not_relation;;
+concept_shipbuilding => nrel_main_idtf: [Кораблестроение](*<- lang_ru;;*);;
+concept_shipbuilding => nrel_main_idtf: [Shipbuilding](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_shipbuilding;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кораблестроение - процесс создания кораблей.](*<- lang_ru;;*);;
+	        -> [Shipbuilding - the process of creating ships.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Кораблестроение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Shipbuilding)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_shipbuilding;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Кораблестроение содержит информацию о разных типах кораблей, их строении и вооружении.](*<- lang_ru;;*);;
+            -> [Shipbuilding contains information about different types of ships, their structure and armament.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Кораблестроение)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Shipbuilding)](*<- lang_en;;*);;
+*);;
+
+concept_shipbuilding=>nrel_inclusion:
+concept_ship;
+concept_ship_design;;
+

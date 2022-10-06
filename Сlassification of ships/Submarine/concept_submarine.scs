@@ -1,0 +1,53 @@
+concept_submarine<-sc_node_not_relation;;
+concept_submarine => nrel_main_idtf: [Подводная лодка](*<- lang_ru;;*);;
+concept_submarine=> nrel_main_idtf: [Submarine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_submarine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Подводная лодка(подлодка, субмарина) — класс кораблей, способных погружаться и длительное время действовать в подводном положении.](*<- lang_ru;;*);;
+	        -> [A submarine is a class of ships capable of diving and operating underwater for a long time.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Подводная лодка)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Submarine)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_submarine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В отличие от надводного судна, подлодка обладает способностью преднамеренно изменять свою осадку вплоть до полного погружения в воду и ухода на глубину за счёт заполнения забортной водой цистерн главного балласта. Погружение и всплытие подлодки осуществляется за счёт погашения и восстановления запаса плавучести. До 1944 года все подлодки большую часть времени проводили в надводном положении и по сути были погружающимися лодками — надводными кораблями, способными погружаться под воду для атаки в светлое время суток или для скрытия от вражеских кораблей. Подлодки составляют основу подводных сил военно-морского флота вооружённых сил многих государств мира. Важнейшее тактическое свойство и преимущество военных подводных лодок — скрытность.](*<- lang_ru;;*);;
+            -> [Unlike a surface vessel, a submarine has the ability to deliberately change its landing until it is completely submerged in water and goes to depth by filling the main ballast tanks with seawater. Diving and surfacing of the submarine is carried out due to repayment and restoration of the buoyancy reserve. Until 1944, all submarines spent most of their time on the surface and were essentially submerged boats — surface ships capable of diving underwater to attack during daylight hours or to hide from enemy ships. Submarines form the basis of the submarine forces of the navy of the armed forces of many countries of the world. The most important tactical property and advantage of military submarines is stealth.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Подводная лодка)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Submarine)](*<- lang_en;;*);;
+*);;
+
+
+//concept_submarine=>nrel_inclusion:...;;
+
+concept_submarine=>nrel_functions:
+[Поражение важных военно-промышленных и административных центров, военно-морских баз, портов и других наземных объектов];
+[Уничтожение подводных и надводных кораблей и судов противника];
+[Скрытная постановка минных заграждений];
+[Ведение разведки, как непосредственной, так и в системе дальнего радиолокационного обнаружения];
+[Использование в качестве корабля связи, осуществления ретрансляции сообщений, что теоретически позволяет поддерживать связь штаба с кораблями, находящимися в любой точке мирового океана];
+[Высадка диверсионно-разведывательных групп и выполнение других боевых и специальных вспомогательных задач];;
+
+
+
+
+
+
+
+
+
+
+
+

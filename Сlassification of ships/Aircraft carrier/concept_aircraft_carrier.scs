@@ -1,0 +1,51 @@
+concept_aircraft_carrier<-sc_node_not_relation;;
+concept_aircraft_carrier => nrel_main_idtf: [Авианосец](*<- lang_ru;;*);;
+concept_aircraft_carrier=> nrel_main_idtf: [Aircraft carrier](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Авианосец — класс боевых кораблей, предназначенные для базирования на борту и боевого применения авиационных групп в морских акваториях, в том числе удаленных от места базирования авианосца.](*<- lang_ru;;*);;
+	        -> [An aircraft carrier is a class of warships designed for on—board deployment and combat use of aviation groups in marine areas, including those remote from the aircraft carrier's home base.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Авианосец)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Aircraft carrier)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_aircraft_carrier;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [На авианосцах нет орудий главного калибра. Их вооружение - <b><sc_element sys_idtf="concept_fighter">истребители</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+            -> [There are no main-caliber guns on aircraft carriers. Their weapons are <b><sc_element sys_idtf="concept_fighter">fighters</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Авианосец)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Aircraft carrier)](*<- lang_en;;*);;
+*);;
+
+
+concept_aircraft_carrier=>nrel_inclusion:
+concept_Hermes_aircraft_carrier;
+concept_Ranger_aircraft_carrier;;
+
+concept_aircraft_carrier=>nrel_functions:
+[Авиационные удары по силам противника и разведка.];
+[Оказание поддержки, а также борьба с вражеской авиацией.];;
+
+
+
+
+
+
+
+
+
+
+
+

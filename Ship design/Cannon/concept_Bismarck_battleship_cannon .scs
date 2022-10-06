@@ -1,0 +1,48 @@
+concept_Bismarck_battleship_cannon<-sc_node_not_relation;;
+concept_Bismarck_battleship_cannon => nrel_main_idtf: [Вооружение линкора «Бисмарк»](*<- lang_ru;;*);;
+concept_Bismarck_battleship_cannon => nrel_main_idtf: [«Bismarck» battleship cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  линкора «Бисмарк» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b> и <b><sc_element sys_idtf="concept_sponson">спонсонах</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Bismarck» battleship are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b> and <b><sc_element sys_idtf="concept_sponson">sponsons</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение линкора «Бисмарк»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Bismarck» battleship cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Bismarck_battleship_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение линкора «Бисмарк»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/bismarck_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bismarck_battleship_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главная артиллерия линкора Bismarck калибра 380 мм была выбрана по аналогии с орудиями SK.C/13 линкоров типа Bayern, также калибра 380 мм. Новые орудия для линкора Bismarck были изготовлены оружейными заводами Mau­ser и прошли испытания уже во время строительства корабля, после чего они были приняты на вооружение под кодом 38-см SK.C/34 — скорострельные орудия произ­водства 1934 года (нем. SK — Schnelladekanone, С — Konstruktionsjahr). Корабль имел 8 орудий установленных в 4 башнях (модели Drh LC/34) в носу и корме. Башни были обозначены по сигнальному коду ВМС, начиная с носа: Anton, Bruno, Cesar и Dora. ](*<- lang_ru;;*);;
+            -> [The main artillery of the battleship Bismarck, caliber 380 mm, was chosen by analogy with the SK.C/13 guns of the battleships Bayern, also caliber 380 mm. New guns for the battleship Bismarck were manufactured by the Mauser arms factories and were tested already during the construction of the ship, after which they were put into service under the code 38-cm SK.C / 34 - rapid-fire guns manufactured in 1934 (German SK - Schnelladekanone, C — Konstruktionsjahr). The ship had 8 guns mounted in 4 turrets (Drh LC/34 models) fore and aft. The turrets were designated by the Navy signal code, starting with the nose: Anton, Bruno, Cesar and Dora.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение линкора «Бисмарк»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Bismarck» battleship cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Bismarck_battleship_cannon=>nrel_inclusion: 
+concept_artillery_cannon;;
+
+concept_Bismarck_battleship_cannon=>nrel_parameters:
+rate_fire_2_3;
+shell_weight_800;
+flight_speed_820;
+fireng_range_35500;;
+

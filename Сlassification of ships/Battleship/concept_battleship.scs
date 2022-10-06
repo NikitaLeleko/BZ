@@ -1,0 +1,51 @@
+concept_battleship<-sc_node_not_relation;;
+concept_battleship => nrel_main_idtf: [Линкор](*<- lang_ru;;*);;
+concept_battleship=> nrel_main_idtf: [Battleship](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Линейный корабль (сокр. линкор) — русское название класса самых мощных артиллерийских бронированных кораблей в XX столетии.](*<- lang_ru;;*);;
+	        -> [Battleship (abbreviated battleship) is the Russian name of the class of the most powerful armored artillery ships in the XX century.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Линкор)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Battleship)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Линейные корабли предназначались для нанесения мощных артиллерийских ударов по кораблям противника (в первую очередь по себе подобным линейным кораблям), в целях обеспечения боевой устойчивости соединений и для разрушения стратегических береговых объектов противника.](*<- lang_ru;;*);;
+            -> [The battleships were intended to deliver powerful artillery strikes against enemy ships (primarily similar battleships themselves), in order to ensure the combat stability of formations and to destroy strategic enemy coastal facilities.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Линкор)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Battleship)](*<- lang_en;;*);;
+*);;
+
+
+concept_battleship=>nrel_inclusion:
+concept_Bismarck_battleship;
+concept_Bayern_battleship;;
+
+concept_battleship=>nrel_functions:
+[Нанесение мощных артиллерийских ударов по береговым объектам противника.];
+[Нанесение мощных артиллерийских ударов по кораблям противника.];;
+
+
+
+
+
+
+
+
+
+
+
+

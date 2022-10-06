@@ -1,0 +1,49 @@
+concept_Bayern_battleship_armor<-sc_node_not_relation;;
+concept_Bayern_battleship_armor=> nrel_main_idtf: [Броня линкора «Байерн»](*<- lang_ru;;*);;
+concept_Bayern_battleship_armor => nrel_main_idtf: [Armor of the battleship «Bayern»](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броня линкора «Байерн» - защитный слой, обладающий достаточно большой прочностью и предназначенный для защиты частей корабля от воздействия средств поражения противника. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+            
+	        -> [The armor of the battleship "Bayern" is a protective layer that has a sufficiently high strength and is designed to protect parts of the ship from the effects of enemy weapons.](* <- lang_en;; => nrel_format: format_html;; *);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(Броня линкора «Байерн»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Armor of the battleship "Bayern")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bayern_battleship_armor<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Схема бронирования линкора «Байерн»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_armor/battleship_bayern_armor.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship_armor;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главный броневой пояс, состоявший из цементированных броневых плит толщиной 350 мм, простирался по длине между носовой и кормовой траверзными переборками, защищая 58 % длины корабля. Бортовая броня, продолжавшаяся в нос за первой башней, имела толщину 200 мм (до 131 шпангоута), затем 150 мм (до 137 шп) у верхней кромки, отстоявшей на 330 мм выше уровня средней палубы, и утончалась до 130 мм на отметке 1,67 м ниже ватерлинии.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The main armor belt, consisting of 350 mm thick cemented armor plates, extended along the length between the forward and aft traverse bulkheads, protecting 58% of the ship's length. The side armor, which continued forward behind the first turret, had a thickness of 200 mm (up to 131 frames), then 150 mm (up to 137 sp) at the upper edge, which was 330 mm above the level of the middle deck, and thinned to 130 mm at level 1, 67 m below the waterline.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Броня линкора «Байерн»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Armor of the battleship "Bayern")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bayern_battleship_armor=>nrel_parameters:
+external_vertical_armor_belt_250;
+internal_vertical_armor_belt_170;
+deck_100;;

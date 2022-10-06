@@ -1,0 +1,47 @@
+concept_Algerie_cruiser_cannon<-sc_node_not_relation;;
+concept_Algerie_cruiser_cannon => nrel_main_idtf: [Вооружение крейсера «Алжир»](*<- lang_ru;;*);;
+concept_Algerie_cruiser_cannon => nrel_main_idtf: [«Algerie» cruiser cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  крейсера «Алжир» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b> и <b><sc_element sys_idtf="concept_sponson">спонсонах</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the Algeri cruiser are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b> and <b><sc_element sys_idtf="concept_sponson">sponsons</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение крейсера «Алжир»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Algerie» cruiser cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Algerie_cruiser_cannon<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Вооружение крейсера «Алжир»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_cannon/algerie_cannon.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Algerie_cruiser_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главный калибр крейсера был представлен 203-мм орудиями М1931 незначительно отличавшимися от модели 1924 года, установленной на предшествующих тяжёлых крейсерах Франции. Орудие длиной 50 калибров имело максимальную дальность стрельбы 123,1-кг бронебойным снарядом 31 400 метров. Живучесть ствола достигала 600 выстрелов боевым зарядом. В 1936 году на вооружение был принят сверхтяжёлый бронебойный снаряд весом 134 кг, дальность стрельбы снизилась до 30 километров. Следует отметить, что в годы Второй мировой войны крейсера никогда не стреляли на столь большие дистанции. Кроме того, имелся и фугасный снаряд весом 123,8 кг. ](*<- lang_ru;;*);;
+            -> [The main caliber of the cruiser was represented by 203-mm M1931 guns, which differed slightly from the 1924 model of the year, installed on previous French heavy cruisers. The 50-caliber gun had a maximum firing range of 123.1 kg with an armor-piercing projectile of 31,400 meters. The survivability of the barrel reached 600 shots with a combat charge. In 1936, a super-heavy armor-piercing projectile weighing 134 kg was adopted, the firing range was reduced to 30 kilometers. It should be noted that during the Second World War, cruisers never fired at such great distances. In addition, there was also a high-explosive projectile weighing 123.8 kg.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение крейсера «Алжир»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Algerie» cruiser cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Algerie_cruiser_cannon=>nrel_inclusion: 
+concept_artillery_cannon;;
+
+concept_Algerie_cruiser_cannon=>nrel_parameters:
+barrel_length_50;
+barrel_survivability_600;
+fireng_range_31400;;
+

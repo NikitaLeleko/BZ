@@ -1,0 +1,35 @@
+concept_Hermes_aircraft_carrier_cannon<-sc_node_not_relation;;
+concept_Hermes_aircraft_carrier_cannon => nrel_main_idtf: [Вооружение авианосца «Гермес»](*<- lang_ru;;*);;
+concept_Hermes_aircraft_carrier_cannon => nrel_main_idtf: [«Hermes» aircraft carrier cannon](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Hermes_aircraft_carrier_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Основным вооружением  авианосца «Гермес» являются артиллерийские установки, размещающающиеся <b><sc_element sys_idtf="concept_deck">палубах</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+	        -> [The main weapons of the «Hermes» aircraft carrier are artillery mounts located on <b><sc_element sys_idtf="concept_deck">decks</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(Вооружение авианосца «Гермес»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Hermes» aircraft carrier cannon)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Hermes_aircraft_carrier_cannon;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [«Гермес» планировалось вооружить 152-мм орудиями, но уже в ходе постройки их заменили на 140-мм. А в 1927 году сняли одну из трёх 102-мм пушек.  ](*<- lang_ru;;*);;
+            -> ["Hermes" was planned to be armed with 152-mm guns, but already during the construction they were replaced by 140-mm ones. And in 1927, one of the three 102-mm guns was removed.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Вооружение авианосца «Гермес»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Hermes» aircraft carrier cannon)](*<- lang_en;;*);;
+*);;
+
+concept_Hermes_aircraft_carrier_cannon=>nrel_inclusion: 
+concept_artillery_cannon;;
+
+concept_Hermes_aircraft_carrier_cannon=>nrel_parameters:
+[Авиационная группа составляла 20 самолётов];;
+

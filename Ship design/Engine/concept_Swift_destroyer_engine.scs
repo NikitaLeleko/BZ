@@ -1,0 +1,45 @@
+concept_Swift_destroyer_engine <-sc_node_not_relation;;
+concept_Swift_destroyer_engine=> nrel_main_idtf: [Двигатель эсминца «Свифт»](*<- lang_ru;;*);;
+concept_Swift_destroyer_engine=> nrel_main_idtf: ["Swift" destroyer engine](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель эсминца «Свифт» - это его энергетическая установка.](*<- lang_ru;;*);;
+	        -> [The engine of the destroyer Swift is its power plant.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Двигатель эсминца «Свифт»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(«Swift» destroyer engine)](*<- lang_en;;*);;
+*);;
+
+
+concept_Swift_destroyer_engine<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Энергетическая установка эсминеца «Свифт»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_engines/destroyer_swift_engine.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Swift_destroyer_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пар для турбин подавался 12 котлами Laird представлявшими собой модификацию «треугольных» котлов типа «Норман» — одной из лучших конструкций своего времени. Они обеспечивали давление пара 15,5 кг/см3. Качество котло-турбинной установки Swift можно узнать из отчета кэптена Думереска: «Если все котлы топятся, он за семь или восемь минут мог развить ход от 10-12 до 25 уз., через 12 минут — до 30 узлов, через 20 минут — до 34 узлов… Котлы давали пар через 10-15 минут после начала отопления». При этом на испытаниях выявилась уникально низкая температура в помещениях: 15,50С — в турбинных и 28,30С — в котельных. При скорости 33,25 узла диаметр циркуляции на правый борт составлял 622 м, на левый — 503 м. Руль мог быть положен на борт за 7 секунд на полном переднем ходу и за 30 секунд на полном заднем. Штурвал поворачивали 8 человек.   ](*<- lang_ru;;*);;
+            -> [Steam for the turbines was supplied by 12 Laird boilers, which were a modification of the "triangular" Norman type boilers - one of the best designs of its time. They provided a steam pressure of 15.5 kg/cm3. The quality of the Swift boiler-turbine plant can be found in the report of Captain Dumeresk: “If all the boilers are heated, in seven or eight minutes he could develop a stroke from 10-12 to 25 knots, after 12 minutes - up to 30 knots, after 20 minutes - up to 34 knots… The boilers gave steam 10-15 minutes after the start of heating.” At the same time, the tests revealed a uniquely low temperature in the rooms: 15.50C in the turbine rooms and 28.30C in the boiler rooms. At a speed of 33.25 knots, the circulation diameter on the starboard side was 622 m, on the left side - 503 m. The rudder could be put on board in 7 seconds at full forward speed and in 30 seconds at full reverse. The steering wheel was turned by 8 people.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Двигатель эсминца «Свифт»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(«Swift» destroyer engine)](*<- lang_en;;*);;
+*);;
+
+concept_Swift_destroyer_engine=>nrel_parameters:
+[Максимальная скорость порядка 35 узлов];
+[Запас топлива около 290 тонн.];
+[Максимальная дальность плавания 2350 метров при скорости в 15 узлов];;

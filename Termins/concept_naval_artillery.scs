@@ -1,0 +1,43 @@
+concept_naval_artillery <-sc_node_not_relation;;
+concept_naval_artillery => nrel_main_idtf: [Корабельная артиллерия](*<- lang_ru;;*);;
+concept_naval_artillery => nrel_main_idtf: [Naval artillery](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_naval_artillery;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Корабельная артиллерия — совокупность артиллерийского вооружения, установленного на боевых кораблях и предназначенного для применения по береговым (наземным), морским (надводным) и воздушным целям.](*<- lang_ru;;*);;
+
+	        -> [Naval artillery is a set of artillery weapons installed on warships and intended for use against coastal (ground), sea (surface) and air targets.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Корабельная артиллерия)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Naval artillery](*<- lang_en;;*);;
+*);;
+
+concept_naval_artillery<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Корабельная артиллерия)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_termins/naval_artillery.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_naval_artillery;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Использование корабельной артиллерии происходит с движущейся и качающейся платформы, стрельба обычно идёт по движущимся целям. Эти особенности корабельной артиллерии потребовали создания сложных приборов управления стрельбой и механизмов наведения орудий. Средние дистанции стрельбы корабельной артиллерии превышают дистанции артиллерии сухопутных войск, поэтому применяются орудия с длиной ствола свыше 30 калибров.](*<- lang_ru;;*);;
+
+            -> [The use of naval artillery takes place from a moving and oscillating platform, firing usually takes place at moving targets. These features of naval artillery required the creation of complex fire control devices and gun guidance mechanisms. The average firing distances of naval artillery exceed the distances of artillery of the ground forces, therefore, guns with a barrel length of more than 30 calibers are used.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(Корабельная артиллерия)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Naval artillery)](*<- lang_en;;*);;
+*);;
+
+concept_naval_artillery=>nrel_inclusion:
+concept_artillery_cannon;;

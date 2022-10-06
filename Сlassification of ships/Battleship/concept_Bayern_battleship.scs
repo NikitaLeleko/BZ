@@ -1,0 +1,78 @@
+concept_Bayern_battleship<-sc_node_not_relation;;
+concept_Bayern_battleship=> nrel_main_idtf: [Линкор «Байерн»](*<- lang_ru;;*);;
+concept_Bayern_battleship=> nrel_main_idtf: [Battleship "Bayern"](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Бисмарк — линкор немецкого военного флота, один из самых известных кораблей Второй мировой войны. Назван в честь первого канцлера Германской империи Отто фон Бисмарка.](*<- lang_ru;;*);;
+
+	        -> [Bismarck is a battleship of the German navy, one of the most famous ships of World War II. Named after the first chancellor of the German Empire, Otto von Bismarck.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(Линкор «Байерн»)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(Battleship "Bayern")](*<- lang_en;;*);;
+*);;
+
+concept_Bayern_battleship<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(Линкор «Байерн»)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images_of_battleships/battleship_bayern.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Отличительной особенностью корабля стали мощные 380-мм орудия главного калибра с очень хорошей баллистикой и достаточно высокой для подобных систем скорострельностью.  ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [A distinctive feature of the ship was powerful 380-mm main battery guns with very good ballistics and a rate of fire high enough for such systems.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Линкор «Байерн»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Battleship "Bayern")](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_Bayern_battleship;;
+    =>nrel_using_constants:{
+    	concept_Bayern_battleship_armor;
+        concept_Bayern_battleship_cannon;
+        concept_Bayern_battleship_engine
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция корабля была такова: 
+                бронирование: <b><sc_element sys_idtf="concept_Bayern_battleship_armor">(Броня линкора «Байерн»)</b>,
+                вооружение: <b><sc_element sys_idtf="concept_Bayern_battleship_cannon">(Вооружение линкора «Байерн»)</b>,
+                двигатель: <b><sc_element sys_idtf="concept_Bayern_battleship_engine">(Энергетическая установка линкора «Байерн»)</b>.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the ship was as follows:
+                 armor: <b><sc_element sys_idtf="concept_Bayern_battleship_armor">(Bayern battleship armor)</b>,
+                 weaponry: <b><sc_element sys_idtf="concept_Bayern_battleship_cannon">(Bayern weaponry)</b>,
+                 engine: <b><sc_element sys_idtf="concept_Bayern_battleship_engine">(Bayern power plant)</b>.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(Линкор «Байерн»)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(Battleship "Bayern")](*<- lang_en;;*);;
+*);;
+
+
+concept_Bayern_battleship=>nrel_elements:
+concept_Bayern_battleship_armor;
+        concept_Bayern_battleship_cannon;
+        concept_Bayern_battleship_engine;;
+
+concept_Bayern_battleship=>nrel_parameters:
+displacement_31690;
+length_180_3;
+width_30_8;
+precipitation_9_4;
+[Экипаж составлял 1276 человек];
+speed_22;;
