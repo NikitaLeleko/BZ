@@ -1,0 +1,184 @@
+concept_chassis_T26<-sc_node_not_relation;;
+concept_chassis_T26 => nrel_main_idtf: [ходовая часть Т-26](*<- lang_ru;;*);;
+concept_chassis_T26 => nrel_main_idtf: [chassis T-26](*<- lang_en;;*);;
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T26;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ходовая часть Т-26 применительно к одному борту состояла из восьми сдвоенных обрезиненных <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> диаметром 300 мм, четырёх сдвоенных обрезиненных <b><sc_element sys_idtf="concept_supporting_rink">поддерживающих катка</b> диаметром 254 мм, <b><sc_element sys_idtf="concept_sloth">ленивца</b> и ведущего колеса переднего расположения.](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+
+
+
+
+
+
+
+
+            -> [The chassis of the T-26 in relation to one side consisted of eight double rubber <b><sc_element sys_idtf="concept_support_roller"> road wheels</b> with a diameter of 300 mm, four double rubber <b><sc_element sys_idtf="concept_supporting_rink"> supporting roller</b> with a diameter of 254 mm, <b><sc_element sys_idtf="concept_sloth">sloth</b> and a front drive wheel.](*<- lang_en;; => nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ходовая часть Т-26)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(chassis T-26)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T26;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ Подвеска <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> — сблокированная во взаимозаменяемых тележках по четыре, на листовых рессорах. Каждая тележка состояла из двух коромысел с двумя катками, одно из которых шарнирно соединялось с литым балансиром, в свою очередь шарнирно закреплённом на корпусе танка, а другое крепилось на двух параллельных четвертьэллиптических рессорах, жёстко соединённых с балансиром. Единственным изменением подвески за время серийного производства танка было её усиление в 1939 году за счёт замены трёхлистовых рессор пятилистовыми, в связи с возросшей массой танка. Гусеницы Т-26 — шириной 260 мм, с открытым металлическим шарниром, одногребневые, цевочного зацепления, изготавливавшиеся литьём из хромоникелевой или марганцовистой стали.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+            -> [Suspension <b><sc_element sys_idtf="concept_support_roller">track rollers</b> - interlocked in interchangeable bogies of four, on leaf springs. Each bogie consisted of two rocker arms with two rollers, one of which was pivotally connected to a cast balancer, which, in turn, was hinged to the tank body, and the other was mounted on two parallel quarter-elliptical springs rigidly connected to the balancer. The only change in the suspension during the serial production of the tank was its strengthening in 1939 by replacing three-leaf springs with five-leaf ones, due to the increased weight of the tank. Caterpillars T-26 - 260 mm wide, with an open metal hinge, single-ridge, lantern gearing, made by casting from chromium-nickel or manganese steel.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(ходовая часть Т-26)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(chassis T-26)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+concept_chassis_T26=>nrel_parameters:
+width_shoe_260;
+[Количество траков составляло 64 штуки];
+[Гусеницы изготавливавшиеся литьём из <b><sc_element sys_idtf="chromium_nickel_steel">хромоникелевой</b> или <b><sc_element sys_idtf="marganec_steel">марганцовистой</b> стали 16](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

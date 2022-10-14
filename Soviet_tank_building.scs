@@ -1,0 +1,36 @@
+concept_soviet_tank_building<-sc_node_not_relation;;
+concept_soviet_tank_building => nrel_main_idtf: [Советское танкостроение](*<- lang_ru;;*);;
+concept_soviet_tank_building => nrel_main_idtf: [Soviet tank building](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_soviet_tank_building;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Советское танкостроение - подробные материалы о развитии бронетанковых войск в СССР.](*<- lang_ru;;*);;
+	        -> [Soviet Tank Building - contains detailed materials on the development of armored troops in USSR.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(советское танкостроение)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(soviet tank building](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_soviet_tank_building;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Танкостроение содержит информацию о разных типах техники, их строении и вооружении.](*<- lang_ru;;*);;
+            -> [Tank building contains information about different types of equipment, their structure and armament.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(советское танкостроение)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(soviet tank building)](*<- lang_en;;*);;
+*);;
+
+concept_soviet_tank_building=>nrel_inclusion:
+concept_tank;
+concept_tank_design;
+concept_classification_of_tanks;
+concept_history_of_soviet_tank_building;;

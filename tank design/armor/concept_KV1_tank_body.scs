@@ -1,0 +1,46 @@
+concept_KV1_tank_body<-sc_node_not_relation;;
+concept_KV1_tank_body => nrel_main_idtf: [корпус танка KV1](*<- lang_ru;;*);;
+concept_KV1_tank_body => nrel_main_idtf: [KV1 tank body](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV1_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус танка сваривался из катаных броневых плит средней твёрдости толщиной 80, 40, 30 и 20 мм. Броневая защита равнопрочная (бронеплиты с толщиной отличной от 75 мм использовались только для горизонтального бронирования машины), противоснарядная. Броневые плиты лобовой части машины устанавливались под рациональными углами наклона.](*<- lang_ru;;*);;
+            
+            -> [The armored hull of the tank was welded from rolled armor plates of medium hardness with a thickness of 80, 40, 30 and 20 mm. Equal-strength armor protection (armor plates with a thickness other than 75 mm were used only for horizontal armor of the vehicle), anti-ballistic. The armor plates of the frontal part of the machine were installed at rational angles of inclination.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка KV1)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV1 tank body)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV1_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Во второй половине 1941 года бортовые бронеплиты некоторых танков были дополнительно усилены — на них на болтах закрепили 25-мм броневые экраны, причём между основной бронёй и экраном оставался воздушный промежуток, то есть, этот вариант КВ-1 получил разнесённое бронирование. Это было сделано для усиления защиты от немецких 88-мм зенитных орудий. Тяжёлые танки немцы начали разрабатывать только в 1941 году (тяжелый танк в немецкой теории блицкрига не находил применения), поэтому для 1941 года даже штатное бронирование КВ-1, в принципе, являлось избыточным (броня КВ не поражалась штатными 37-мм и 50-мм ПТО Вермахта, однако могла быть пробита 75-мм, 88-мм, 105-мм и 150-мм орудиями).](*<- lang_ru;;*);;
+
+
+            -> [In the second half of 1941, the side armor plates of some tanks were additionally strengthened - 25-mm armor screens were bolted to them, and there was an air gap between the main armor and the screen, that is, this version of the KV-1 received spaced armor. This was done to increase protection against German 88 mm anti-aircraft guns. The Germans began to develop heavy tanks only in 1941 (a heavy tank was not used in the German theory of blitzkrieg), so for 1941 even the standard KV-1 armor was, in principle, redundant (KV armor was not affected by regular 37-mm and 50-mm VET of the Wehrmacht, however, could be pierced by 75 mm, 88 mm, 105 mm and 150 mm guns)](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка KV1)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV1 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_KV1_tank_body=>nrel_parameters:
+rolled_steel;
+the_forehead_of_the_body_75;
+roof_40;
+hull_side_75;
+hull_feed_70;;
+

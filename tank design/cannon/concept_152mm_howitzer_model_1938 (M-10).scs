@@ -1,0 +1,62 @@
+concept_152mm_howitzer_model_1938_M10<-sc_node_not_relation;;
+concept_152mm_howitzer_model_1938_M10 => nrel_main_idtf: [152-мм гаубица образца 1938 года (М-10)](*<- lang_ru;;*);;
+concept_152mm_howitzer_model_1938_M10 => nrel_main_idtf: [152-mm howitzer model 1938 (M-10)](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_152mm_howitzer_model_1938_M10;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [152-мм гаубица образца 1938 года (М-10, индекс ГАУ — 52-Г-536) — советская гаубица периода Второй мировой войны. Это орудие серийно выпускалось с 1939 по 1941 год включительно, использовалось в течение всей Великой Отечественной войны и состояло на вооружении Рабоче-крестьянской Красной армии (позже Советской армии) до конца 1950-х годов. Трофейные гаубицы М-10 были приняты на вооружение немецкого вермахта и армии Финляндии.](*<- lang_ru;;*);;
+            -> [152-mm howitzer of the 1938 model (M-10, GAU index - 52-G-536) is a Soviet howitzer during the Second World War. This gun was mass-produced from 1939 to 1941 inclusive, was used throughout the Great Patriotic War and was in service with the Workers 'and Peasants' Red Army (later the Soviet Army) until the end of the 1950s. Captured M-10 howitzers were adopted by the German Wehrmacht and the Finnish army.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(152-мм гаубица образца 1938 года (М-10))](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(152-mm howitzer model 1938 (M-10))](*<- lang_en;;*);;
+*);;
+
+
+concept_152mm_howitzer_model_1938_M10<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(152-мм гаубица образца 1938 года (М-10))](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images_cannons/M10.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_152mm_howitzer_model_1938_M10;;
+
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Помимо стандартного буксируемого варианта, в 1940—1941 годах под названием 152-мм танковая гаубица обр. 1938/40 гг. (М-10Т, индекс ГАУ — 52-ПТ-536) выпускалась модификация орудия, предназначенная для установки в башню тяжёлого танка КВ-2. От базовой конструкции ствольной группы М-10 это орудие отличалось меньшей длиной ствола, более слабой баллистикой с целью уменьшения отдачи и длины отката, а также рядом других изменений. По своим характеристикам орудие М-10Т фактически уже не было гаубицей, поскольку его угол возвышения не превышал 12°. Первоначально танк КВ-2 предполагалось вооружить устаревшей короткоствольной гаубицей обр.1909/30, но впоследствии для самой современной на тот момент машины решили использовать самую современную и мощную 152-мм гаубичную артсистему, которой и была М-10.](*<- lang_ru;;*);;
+
+
+            -> [In addition to the standard towed version, in 1940-1941, under the name 152-mm tank howitzer mod. 1938/40 (M-10T, GAU index - 52-PT-536) a modification of the gun was produced, designed for installation in the turret of a heavy KV-2 tank. This gun differed from the basic design of the M-10 barrel group by a shorter barrel length, weaker ballistics in order to reduce recoil and recoil length, as well as a number of other changes. According to its characteristics, the M-10T gun was no longer actually a howitzer, since its elevation angle did not exceed 12 °. Initially, the KV-2 tank was supposed to be armed with an obsolete short-barreled howitzer model 1909/30, but later, for the most modern vehicle at that time, it was decided to use the most modern and powerful 152-mm howitzer artillery system, which was the M-10.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(76-мм танковая пушка образца 1938/39 годов (Л-11))](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(76-mm tank gun model 1938/39 (L-11))](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_152mm_howitzer_model_1938_M10=>nrel_parameters:
+barrel_length_3700;
+gun_caliber_152;
+fireng_range_6400;
+[<b><sc_element sys_idtf="concept_shells">Снаряды</b>: <b><sc_element sys_idtf="concept_shells">осколочно-фугасные</b>,
+<b><sc_element sys_idtf="concept_shells">бронебойные</b>](* <- lang_ru;; => nrel_format: format_html;; *);
+flight_speed_508;;
+
+
+
+
+

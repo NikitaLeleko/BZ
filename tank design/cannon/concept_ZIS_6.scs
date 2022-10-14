@@ -1,0 +1,139 @@
+concept_ZIS_6<-sc_node_not_relation;;
+concept_ZIS_6 => nrel_main_idtf: [ЗИС-6](*<- lang_ru;;*);;
+concept_ZIS_6 => nrel_main_idtf: [ZIS-6](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_ZIS_6;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ЗИС-6 — танковое орудие повышенной мощности, создававшееся советскими конструкторами под руководством Василия Гавриловича Грабина для проектируемых танков КВ-3, КВ-4 и КВ-5, которые так и не пошли в серию.](*<- lang_ru;;*);;
+            -> [The ZIS-6 is an increased power tank gun created by Soviet designers under the leadership of Vasily Gavrilovich Grabin for the KV-3, KV-4 and KV-5 tanks being designed, which never went into production.](*<- lang_en;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(ЗИС-6](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(ZIS-6](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_ZIS_6<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(ЗИС-6](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images_cannons/ZIS-6.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_ZIS_6;;
+
+
+
+
+
+
+
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ЗИС-6 широко использовала имеющиеся наработки. Как и уже производящаяся 107-мм дивизионная пушка M-60, ЗИС-6 имела раздельно-гильзовое заряжание, но мощность метательного заряда была повышена. В боекомплект входят два типа снарядов: бронебойный остроголовый БР-420 и осколочно-фугасный ОФ-420. Бронебойный снаряд имел дульную скорость 830 м/с, массу 16,55 кг и бронепробиваемость в районе 190-230 мм по советской методике измерения.Она поражала любой танк своего времени с 1000 м и более. ЗИС-6 являлась модификацией 107-миллиметровой танковой пушки Ф-42[2], адаптированной под танк. От неё были взяты многие части конструкции. Опытные образцы для испытаний устанавливались на доработанный танк КВ-2. Работа шла опережающими темпами, поэтому производство было налажено ещё до испытаний в ГАУ. Но требуемый танк, по неясным Грабину причинам, создан не был и опытные пушки пошли, как лом, в переплавку, что было особенно неприятно из-за тяжелого положения с оружием на фронте. Как результат, польза от работ над ЗИС-6 ограничилась приобретённым опытом быстрой разработки и постановки в производство, впрочем, оказавшимся ценным впоследствии, при спешных работах по другим орудиям в военное время. ](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+
+
+
+
+
+
+
+            -> [ZIS-6 made extensive use of existing developments. Like the already produced 107-mm M-60 divisional gun, the ZIS-6 had a separate-sleeve loading, but the power of the propellant charge was increased. The ammunition load includes two types of shells: armor-piercing sharp-headed BR-420 and high-explosive fragmentation OF-420. The armor-piercing projectile had a muzzle velocity of 830 m/s, a mass of 16.55 kg and armor penetration in the region of 190-230 mm according to the Soviet measurement technique. It hit any tank of its time from 1000 m or more. The ZIS-6 was a modification of the 107 mm F-42 [2] tank gun adapted to the tank. Many parts of the structure were taken from it. Prototypes for testing were installed on a modified KV-2 tank. The work proceeded at a faster pace, so production was established even before testing at the State Agrarian University. But the required tank, for reasons unclear to Grabin, was not created, and the experimental guns went, like scrap, to be melted down, which was especially unpleasant because of the difficult situation with weapons at the front. As a result, the benefits of working on the ZIS-6 were limited to the experience gained in rapid development and production, which, however, turned out to be valuable later, when hastily working on other guns in wartime.](*<- lang_en;; => nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(ЗИС-6](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(ZIS-6](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+concept_ZIS_6=>nrel_parameters:
+gun_caliber_107;
+fireng_range_5200;
+[<b><sc_element sys_idtf="concept_shells">Снаряды</b>: <b><sc_element sys_idtf="concept_shells">осколочно-фугасные</b>,
+<b><sc_element sys_idtf="concept_shells">бронебойные</b>.](* <- lang_ru;; => nrel_format: format_html;; *);
+flight_speed_702;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+concept_history_of_soviet_tank_building<-sc_node_not_relation;;
+concept_history_of_soviet_tank_building => nrel_main_idtf: [история советского танкостроения](*<- lang_ru;;*);;
+concept_history_of_soviet_tank_building => nrel_main_idtf: [history of soviet tank building](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_history_of_soviet_tank_building;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [До появления танков в армии уже использовали бронированную технику, например бронеавтомобили и бронепоезда. Однако эти машины были довольно ограниченными в применении. Первым не хватало проходимости даже в том случае, если они имели комбинированную колёсно-гусеничную ходовую часть, а вторые были намертво привязаны к железным дорогам. Необходимость создания бронированной самоходной боевой машины повышенной проходимости понимали военные каждой из ведущих держав Европы.](*<- lang_ru;;*);;
+            -> [Before the advent of tanks, the army already used armored vehicles, such as armored cars and armored trains. However, these machines were rather limited in use. The first lacked cross-country ability even if they had a combined wheeled-caterpillar undercarriage, while the latter were tightly tied to the railways. The need to create an armored self-propelled combat vehicle of all terrain was understood by the military of each of the leading powers of Europe.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(история советского танкостроения)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(history of soviet tank building](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_history_of_soviet_tank_building;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В начале ХХ века в Российской Империи тоже изобретали танки. Даже тем, кто достаточно поверхностно интересуется историей бронетехники, хорошо известны такие проекты, как «Вездеход» Пороховщикова, «Царь-танк» Лебеденко или сверхтяжёлый танк Владимира Менделеева. А были ещё и другие разработки: танк Гюнтера Бурштыня, «Наземный броненосец» Демьяненко, «Броненосный трактор» Казанского. В общем, идей хватало — и вполне вменяемых, и откровенно ошибочных. Другое дело, что для их реализации уже не было времени. В 1917 году в России случилось две революции, после чего стране, прямо скажем, стало не до танков.](*<- lang_ru;;*);;
+
+
+            -> [At the beginning of the 20th century, tanks were also being invented in the Russian Empire. Even those who are rather superficially interested in the history of armored vehicles are well aware of such projects as Porohovshchikov's All-Terrain Vehicle, Lebedenko's Tsar Tank, or Vladimir Mendeleev's super-heavy tank. And there were other developments: Gunther Burshtyn's tank, Demyanenko's Land Battleship, and Kazansky's Armored Tractor. In general, there were enough ideas - both quite sane and frankly erroneous. Another thing is that there was no time for their implementation. In 1917, two revolutions happened in Russia, after which the country, frankly, was not up to tanks.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(история советского танкостроения)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(history of soviet tank building)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_history_of_soviet_tank_building;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Но ненадолго. В августе 1919 года Совнарком и Совет военной промышленности РСФСР приняли решение организовать на заводе «Красное Сормово» в Нижнем Новгороде выпуск танков Renault FT. С этого времени начинается история танкостроительной отрасли Советского Союза.](*<- lang_ru;;*);;
+
+            -> [But not for long. In August 1919, the Council of People's Commissars and the Council of the Military Industry of the RSFSR decided to organize the production of Renault FT tanks at the Krasnoye Sormovo plant in Nizhny Novgorod. Since that time, the history of the tank-building industry of the Soviet Union begins.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(история советского танкостроения)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(history of soviet tank building)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_history_of_soviet_tank_building;;
+    =>nrel_using_constants:{
+        concept_the_pre_war_period;
+        concept_tank_building_in_World_War_2
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В история советского танкостроения можно расмотреть:
+            <b><sc_element sys_idtf="concept_the_pre_war_period">предвоенный период(1927-1936)</b>,
+            <b><sc_element sys_idtf="concept_tank_building_in_World_War_2">танкостроение во Второй мировой войне</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [In the history of Soviet tank construction, one can consider:
+            <b><sc_element sys_idtf="concept_the_pre_war_period">pre-war period(1927-1936)</b>,
+            <b><sc_element sys_idtf="concept_tank_building_in_World_War_2">tank construction in the Second World War</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(история советского танкостроения)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(history of soviet tank building)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_history_of_soviet_tank_building=>nrel_inclusion:
+concept_the_pre_war_period;
+concept_tank_building_in_World_War_2;;
+
+
+
+
+
+
+

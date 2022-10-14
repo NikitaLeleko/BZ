@@ -1,0 +1,90 @@
+concept_85_mm_tank_gun_model_1944<-sc_node_not_relation;;
+concept_85_mm_tank_gun_model_1944 => nrel_main_idtf: [85-мм танковая пушка образца 1944 года(ЗИС-С-53)](*<- lang_ru;;*);;
+concept_85_mm_tank_gun_model_1944 => nrel_main_idtf: [85-mm tank gun model 1944 (ZIS-S-53)](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_85_mm_tank_gun_model_1944;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Пушка ЗИС-С-53, явилась усовершенствованным вариантом пушки С-53, которая, в свою очередь, стала развитием зенитной пушки 52-К 1939 года. Согласно советским наставлениям пушка ЗИС-С53 имеет тот же ствол, что и 85-мм зенитная пушка обр. 1939 г., но без дульного тормоза. Баллистика этих пушек одинакова.](*<- lang_ru;;*);;
+            -> [The ZIS-S-53 gun was an improved version of the S-53 gun, which, in turn, became the development of the 52-K 1939 anti-aircraft gun. According to Soviet instructions, the ZIS-S53 gun has the same barrel as the 85-mm anti-aircraft gun mod. 1939, but without muzzle brake. The ballistics of these guns is the same.](*<- lang_en;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(85-мм танковая пушка образца 1944 года(ЗИС-С-53)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(85-mm tank gun model 1944 (ZIS-S-53)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_85_mm_tank_gun_model_1944<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(85-мм танковая пушка образца 1944 года(ЗИС-С-53)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images_cannons/ZIS-S-53.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_85_mm_tank_gun_model_1944;;
+
+
+
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Танк Т-34-85, с пушкой С-53, был принят на вооружение Красной Армии постановлением ГКО № 5020сс от 23 января 1944 года. Однако продолжавшиеся параллельно с производством полигонные испытания пушки С-53 выявили существенные дефекты её противооткатных устройств. Заводу № 92 в Горьком было поручено своими силами провести её доработку.
+В ноябре—декабре 1944 года началось производство этого орудия под индексом ЗИС-С-53 («ЗИС» — аббревиатура от названия артиллерийского завода № 92 имени Сталина, «С» — индекс ЦАКБ). Всего в 1944—1945 годах было изготовлено 11 518 пушек С-53 и 14 265 пушек ЗИС-С-53. Последние устанавливались как на танки Т-34-85, так и в последующем на танки <b><sc_element sys_idtf="concept_T44_tank">Т-44</b>.](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+
+
+
+            -> [The T-34-85 tank, with the S-53 cannon, was adopted by the Red Army by GKO Decree No. 5020ss of January 23, 1944. However, field testing of the S-53 cannon, which continued in parallel with production, revealed significant defects in its recoil devices. Plant No. 92 in Gorky was instructed to carry out its revision on its own.
+In November-December 1944, the production of this gun began under the index ZIS-S-53 (“ZIS” is an abbreviation for the name of the Stalin Artillery Plant No. 92, “C” is the TsAKB index). In total, 11,518 S-53 guns and 14,265 ZIS-S-53 guns were manufactured in 1944-1945. The latter were installed both on the T-34-85 tanks, and subsequently on the <b><sc_element sys_idtf="concept_T44_tank">T-44</b> tanks.](*<- lang_en;; => nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(85-мм танковая пушка образца 1944 года(ЗИС-С-53)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(85-mm tank gun model 1944 (ZIS-S-53)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_85_mm_tank_gun_model_1944=>nrel_parameters:
+barrel_length_4645;
+gun_caliber_85;
+fireng_range_5200;
+[<b><sc_element sys_idtf="concept_shells">Снаряды</b>: <b><sc_element sys_idtf="concept_shells">осколочно-фугасные</b>,
+<b><sc_element sys_idtf="concept_shells">бронебойные</b>.](* <- lang_ru;; => nrel_format: format_html;; *);
+flight_speed_702;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,80 @@
+concept_chassis_T34<-sc_node_not_relation;;
+concept_chassis_T34 => nrel_main_idtf: [ходовая часть Т-34](*<- lang_ru;;*);;
+concept_chassis_T34 => nrel_main_idtf: [chassis T-34](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T34;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В ходовой части Т-34 использовалась свечная подвеска или как её ещё именуют подвеска Кристи, унаследованная им от серии танков БТ, но в случае Т-34 подвеска была модернизирована и пружина была размещена под небольшим углом.](*<- lang_ru;;*);;
+
+
+
+
+            -> [The chassis of the T-34 used a candle suspension, or as it is also called the Christie suspension, inherited from the BT series of tanks, but in the case of the T-34, the suspension was modernized and the spring was placed at a slight angle.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ходовая часть Т-34)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(chassis T-34)](*<- lang_en;;*);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T34;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [С каждого борта ходовая часть состояла из пяти больших сдвоенных <b><sc_element sys_idtf="concept_support_roller">опорных катков</b>  диаметром 830 мм, направляющего колёса (<b><sc_element sys_idtf="concept_sloth">ленивца</b>) спереди и расположенного сзади ведущего колёса. Конструкция <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> могла существенно отличаться в зависимости от завода-производителя и года выпуска: использовались штампованные или литые катки, обрезиненные или с внутренней амортизацией, а выпущенные СТЗ летом 1942 года — и вовсе без амортизации. <b><sc_element sys_idtf="concept_support_roller">Опорных катки</b> крепились на балансирах, соединённых с пружинами подвески, находившимися внутри корпуса танка, в прикреплённых к бортам коробах. Цельнолитое ведущее колесо имеет ступицу, отлитую вместе с дисками и ободами, между которыми расположено шесть роликов. Рабочая поверхность ролика, с которой соприкасаются гребни <b><sc_element sys_idtf="concept_shoe">башмаков</b>, выполнена в виде желобка — для лучшего зацепления с гребнем <b><sc_element sys_idtf="concept_shoe">башмака</b> и уменьшения его износа.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+            -> [On each side, the undercarriage consisted of five large dual <b><sc_element sys_idtf="concept_support_roller">track rollers</b> with a diameter of 830 mm, a steering wheel (<b><sc_element sys_idtf="concept_sloth">sloth</b> ) in front and the drive wheel located behind. The design of the <b><sc_element sys_idtf="concept_support_roller">track rollers</b> could differ significantly depending on the manufacturer and the year of manufacture: stamped or cast rollers, rubber-coated or with internal shock absorption, were used, and those produced by STZ in the summer of 1942 - and no depreciation at all. The <b><sc_element sys_idtf="concept_support_roller">The track rollers</b> were mounted on balancers connected to the suspension springs located inside the tank hull, in boxes attached to the sides. The one-piece cast drive wheel has a hub cast together with discs and rims, between which there are six rollers. The working surface of the roller, with which the ridges of the <b><sc_element sys_idtf="concept_shoe">shoes</b> are in contact, is made in the form of a groove - for better engagement with the ridge of the <b><sc_element sys_idtf="concept_shoe">shoe</b> > and reduce wear and tear.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(ходовая часть Т-34)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(chassis T-34)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_chassis_T34=>nrel_parameters:
+width_shoe_500;
+[Количество траков составляло 74 штуки];
+[Количество <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> 10](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,62 @@
+concept_76_mm_tank_gun_model_1938_39_L11<-sc_node_not_relation;;
+concept_76_mm_tank_gun_model_1938_39_L11 => nrel_main_idtf: [76-мм танковая пушка образца 1938/39 годов (Л-11)](*<- lang_ru;;*);;
+concept_76_mm_tank_gun_model_1938_39_L11 => nrel_main_idtf: [76-mm tank gun model 1938/39 (L-11)](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_76_mm_tank_gun_model_1938_39_L11;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В 1937 году с учётом опыта зарубежного танкостроения и войны в Испании руководство РККА приняло решение о создании 76-мм танковых пушек с баллистикой 76-мм зенитной пушки Лендера. Пушка ЛКЗ, получившая индекс Л-11, прибыла на НИАП в апреле 1939 года, в то время как горьковская Ф-32 вышла на полигонные испытания уже в марте. В ходе испытаний лучшей была признана Ф-32, но ввиду того, что Л-11 было гораздо проще запустить в серию, поскольку она являлась прямой наследницей уже выпускавшейся Л-10, то пушка была принята на вооружение в качестве временной меры, пока не будет начат выпуск Ф-32 (официально принята на вооружение 26 января 1940 года). ](*<- lang_ru;;*);;
+            -> [In 1937, taking into account the experience of foreign tank building and the war in Spain, the leadership of the Red Army decided to create 76-mm tank guns with the ballistics of the 76-mm Lender anti-aircraft gun. The LKZ cannon, which received the L-11 index, arrived at the NIAP in April 1939, while the Gorky F-32 entered field tests in March. During the tests, the F-32 was recognized as the best, but due to the fact that the L-11 was much easier to put into production, since it was the direct successor to the already produced L-10, the gun was put into service as a temporary measure until production of the F-32 began (officially adopted on January 26, 1940).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(76-мм танковая пушка образца 1938/39 годов (Л-11))](*<- lang_ru;;=> nrel_format: format_html;; *);;
+    => nrel_main_idtf: [Def.(76-mm tank gun model 1938/39 (L-11))](*<- lang_en;; => nrel_format: format_html;;*);;
+*);;
+
+
+concept_76_mm_tank_gun_model_1938_39_L11<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(76-мм танковая пушка образца 1938/39 годов (Л-11))](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images_cannons/L11.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_76_mm_tank_gun_model_1938_39_L11;;
+
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [За основу взята танковая пушка Л-10 с удлинением нарезной части до 30 калибров и упрочнёнными механизмами противооткатных устройств (тормоз отката гидропневматический с пружинным клапаном). Вертикальный клиновой полуавтоматический затвор с устройством для отключения полуавтоматики. Характерные для пушек Маханова противооткатные устройства, в которых жидкость компрессора непосредственно контактировала с воздухом накатника. Данная схема имеет неустранимый недостаток — после стрельбы с максимальным углом возвышения быстрый перевод орудия на минимальное склонение и выстрел приводят к выходу противооткатного устройства из строя (Грабин В. Г. «Оружие победы»). ](*<- lang_ru;;*);;
+
+
+            -> [The tank gun L-10 was taken as a basis with the lengthening of the rifled part up to 30 calibers and hardened mechanisms of recoil devices (hydropneumatic recoil brake with a spring valve). Vertical wedge semi-automatic shutter with a device for disabling semi-automatic. The recoil devices characteristic of Makhanov guns, in which the compressor fluid was in direct contact with the air of the knurler. This scheme has an unrecoverable drawback - after firing at a maximum elevation angle, a quick transfer of the gun to a minimum declination and a shot lead to the failure of the recoil device (Grabin V. G. “Weapons of Victory”).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(76-мм танковая пушка образца 1938/39 годов (Л-11))](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(76-mm tank gun model 1938/39 (L-11))](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_76_mm_tank_gun_model_1938_39_L11=>nrel_parameters:
+barrel_length_300;
+gun_caliber_76_2;
+fireng_range_3000;
+[<b><sc_element sys_idtf="concept_shells">Снаряды</b>: <b><sc_element sys_idtf="concept_shells">осколочно-фугасные</b>,
+<b><sc_element sys_idtf="concept_shells">бронебойные</b>,<b><sc_element sys_idtf="concept_shells">картечные</b>](* <- lang_ru;; => nrel_format: format_html;; *);
+flight_speed_487;;
+
+
+
+
+

@@ -1,0 +1,104 @@
+concept_T34_tank<-sc_node_not_relation;;
+concept_T34_tank => nrel_main_idtf: [танк Т-34](*<- lang_ru;;*);;
+concept_T34_tank=> nrel_main_idtf: [T-34 tank](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T34_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [T-34 — советский средний танк периода Великой Отечественной войны, выпускался серийно с 1940 года. В течение 1942—1947 годов — основной танк РККА и ВС СССР. Являлся основным танком РККА до первой половины 1944 года, до поступления в войска его модификации Т-34-85. ](*<- lang_ru;;*);;
+
+
+            -> [T-34 - Soviet medium tank of the Great Patriotic War period, mass-produced since 1940. During 1942-1947 - the main tank of the Red Army and the USSR Armed Forces. It was the main tank of the Red Army until the first half of 1944, before its modification T-34-85 entered the troops.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк Т-34)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-34 tank](*<- lang_en;;*);;
+*);;
+
+
+concept_T34_tank<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(танк Т-34)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/t-34.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T34_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Разработан конструкторским бюро танкового отдела Харьковского завода № 183 под руководством Михаила Ильича Кошкина. Успешность проекта была предопределена применением новейшего высокоэкономичного дизель-мотора В-2, благодаря которому средний толстобронированный Т-34 унаследовал от лёгкого тонкобронированного БТ необычайно высокую удельную мощность (отношение мощности двигателя к боевой массе), обеспечившую в течение всей Великой Отечественной войны абсолютное превосходство танка Т-34 в проходимости, манёвренности, подвижности. Впервые в практике мирового танкостроения на среднем танке Т-34 была установлена длинноствольная (30,5 калибра) 76-мм пушка Л-11 (образца 1939 года), значительно превосходящая по начальной скорости бронебойного снаряда (635 м/с) все существовавшие в те годы зарубежные танковые артиллерийские системы.Танк Т-34 оказал огромное влияние на исход войны и на дальнейшее развитие мирового танкостроения. Немецкие войска не ожидали такой мощной техники у СССР. Благодаря совокупности своих боевых качеств Т-34 был признан многими специалистами и военными экспертами лучшим танком Второй мировой войны. При его создании советским конструкторам удалось найти оптимальное соотношение между основными боевыми, тактическими, защитными, эксплуатационными, ходовыми и технологическими характеристиками.
+Танк Т-34 является самым известным советским танком и одним из самых узнаваемых символов Второй мировой войны. До настоящего времени сохранилось большое количество этих танков различных модификаций в виде памятников и музейных экспонатов.](*<- lang_ru;;*);;
+
+
+            -> [Developed by the design bureau of the tank department of the Kharkov Plant No. 183 under the leadership of Mikhail Ilyich Koshkin. The success of the project was predetermined by the use of the latest highly economical V-2 diesel engine, thanks to which the medium thickly armored T-34 inherited an unusually high specific power (the ratio of engine power to combat weight) from the light thinly armored BT, which ensured the absolute superiority of the T tank throughout the Great Patriotic War -34 in patency, maneuverability, mobility. For the first time in the practice of world tank building, a long-barreled (30.5 caliber) 76-mm L-11 gun (model of 1939) was installed on a medium tank T-34, significantly exceeding the muzzle velocity of an armor-piercing projectile (635 m / s) that existed in those years, foreign tank artillery systems. The T-34 tank had a huge impact on the outcome of the war and on the further development of world tank building. German troops did not expect such powerful equipment from the USSR. Due to the combination of its combat qualities, the T-34 was recognized by many specialists and military experts as the best tank of the Second World War. During its creation, Soviet designers managed to find the optimal ratio between the main combat, tactical, protective, operational, running and technological characteristics.
+The T-34 tank is the most famous Soviet tank and one of the most recognizable symbols of World War II. To date, a large number of these tanks of various modifications have been preserved in the form of monuments and museum exhibits.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-34)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-34 tank)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T34_tank;;
+    =>nrel_using_constants:{
+        concept_T34_tank_body;
+        concept_76_mm_tank_gun_model_1938_39_L11;
+        concept_V2_engine;
+        concept_chassis_T34
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова:
+                бронирование <b><sc_element sys_idtf="concept_T34_tank_body">(корпус Т-34)</b>,
+                вооружение<b><sc_element sys_idtf="concept_76_mm_tank_gun_model_1938_39_L11">(76-мм танковая пушка образца 1938/39 годов (Л-11))</b>,
+                двигатель<b><sc_element sys_idtf="concept_V2_engine">(В2)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_T34">(ходовая часть Т-34)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [The design of the tank was as follows:
+                armoring<b><sc_element sys_idtf="concept_T34_tank_body">(building T-34)</b>,
+                armament<b><sc_element sys_idtf="concept_76_mm_tank_gun_model_1938_39_L11">(76-mm tank gun model 1938/39 (L-11))</b>,
+                engine<b><sc_element sys_idtf="concept_V2_engine">(V2)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_T34">(chassis T34)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-34)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-34 tank)](*<- lang_en;;*);;
+*);;
+
+
+concept_T34_tank=>nrel_elements:
+concept_T34_tank_body;
+concept_76_mm_tank_gun_model_1938_39_L11;
+concept_V2_engine;
+concept_chassis_T34;;
+
+
+concept_T34_tank=>nrel_parameters:
+tower_roof_15;
+side_of_the_tower_40_30;
+gun_mask_40;
+tower_feed_45_30;
+the_forehead_of_the_tower_45;
+rate_fire_10;
+weight_30_t;
+length_5_9;
+width_3;
+height_2_4;
+vertical_guidance_5_25;
+[Экипаж  составлял 5 человек];
+speed_36_country;
+[Запас хода 230 км];;
+
+
+

@@ -1,0 +1,100 @@
+concept_T44_tank_body<-sc_node_not_relation;;
+concept_T44_tank_body => nrel_main_idtf: [корпус танка Т-44](*<- lang_ru;;*);;
+concept_T44_tank_body => nrel_main_idtf: [T-44 tank body](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T44_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус Т-44 — сварной, собиравшийся из катаных плит гомогенной стальной брони марки 8С высокой твёрдости.](*<- lang_ru;;*);;
+            
+            -> [The armored body of the T-44 is welded, assembled from rolled plates of homogeneous steel armor of grade 8C of high hardness.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка Т-44)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-44 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T44_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Замена относительно тяжёлой и громоздкой пружинной подвески Кристи, применявшейся на Т-34, на торсионную подвеску освободила достаточно много места, что позволило полностью пересмотреть компоновку танка. Исчезли надгусеничные ниши и боковые стенки корпуса стали вертикальными. Освободившееся место позволило расположить новый двигатель В-44 не вдоль, а поперёк корпуса танка. В двигателе изменили расположение водяного и масляного насосов, что позволило сократить длину и на 300 мм высоту корпуса, сэкономить вес, а эту экономию использовать для усиления бронезащиты. Было увеличено боевое отделение за счёт моторного, и улучшены условия работы экипажа. Благодаря новой компоновке удалось сместить к задней части танка башню, так что башня стала расположена ближе к центру тяжести танка, что повышало точность стрельбы на ходу, снизило вероятность зачерпывания грунта длинноствольной пушкой при движении на пересечённой местности и позволило более равномерно распределить нагрузку на катки. Нагрузка на передние катки снизилась за счёт нового расположения башни, и, как следствие, позволило увеличить лобовую броню корпуса до 90 мм, а лобовую броню башни до 120 мм. Угол наклона лобового листа оставили в 60°, как и у Т-34, но сам лист стал монолитным.](*<- lang_ru;;*);;
+
+
+
+
+
+
+
+
+            -> [Replacing the relatively heavy and bulky Christie spring suspension used on the T-34 with a torsion bar suspension freed up a lot of space, which made it possible to completely revise the layout of the tank. The fender niches disappeared and the side walls of the hull became vertical. The vacated space made it possible to place the new V-44 engine not along, but across the tank hull. In the engine, the location of the water and oil pumps was changed, which made it possible to reduce the length and height of the hull by 300 mm, save weight, and use this savings to enhance armor protection. The fighting compartment was enlarged due to the engine compartment, and the working conditions of the crew were improved. Thanks to the new layout, it was possible to move the turret to the rear of the tank, so that the turret was located closer to the center of gravity of the tank, which increased the accuracy of shooting on the move, reduced the likelihood of scooping up the soil with a long-barreled gun when moving on rough terrain, and made it possible to more evenly distribute the load on the rollers. The load on the front rollers was reduced due to the new location of the turret, and, as a result, it made it possible to increase the frontal armor of the hull to 90 mm, and the frontal armor of the turret to 120 mm. The angle of inclination of the frontal sheet was left at 60 °, as in the T-34, but the sheet itself became monolithic.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка Т-44)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-44 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+concept_T44_tank_body=>nrel_parameters:
+rolled_steel;
+the_forehead_of_the_body_90_60;
+hull_side_75;
+hull_feed_45;
+roof_20;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

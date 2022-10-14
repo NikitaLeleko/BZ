@@ -1,0 +1,130 @@
+concept_T44_tank<-sc_node_not_relation;;
+concept_T44_tank => nrel_main_idtf: [танк Т-44](*<- lang_ru;;*);;
+concept_T44_tank=> nrel_main_idtf: [T-44 tank](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T44_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Т-44 (Объект 136) — советский средний танк, разработанный в 1943-1944 годах конструкторским бюро Уралвагонзавода под руководством А. А. Морозова, предназначался для замены Т-34 в роли основного и среднего танка РККА ВС Союза ССР. ](*<- lang_ru;;*);;
+
+
+
+
+            -> [T-44 (Object 136) - Soviet medium tank, developed in 1943-1944 by the design bureau of Uralvagonzavod under the leadership of A. A. Morozov, was intended to replace the T-34 in the role of the main and medium tank of the Red Army Armed Forces of the USSR.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк Т-44)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-44 tank](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_T44_tank<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(танк Т-44)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/t-44.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T44_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Концепция танка Т-44 окончательно сформировалась осенью 1943 года на основании предоставлявшейся информации о боевых контактах танков Т-34-76 с новейшими германскими тяжёлыми танками. Выяснилось, что во встречном бою с «Тигром» или «Пантерой» «тридцатьчетвёрка» даже новой модификации не имела никаких шансов. В сложившейся неблагоприятной ситуации для перспективного среднего танка оптимальным комплексным решением явилось максимальное увеличение толщины лобовой брони в сочетании с более мощной (сравнимой с германскими тяжёлыми танками) пушкой. Фактически, концепция танка Т-44 обеспечивала выравнивание боевых возможностей среднего танка относительно тяжёлого при условии сохранения превосходства среднего танка в скорости и манёвре. Имея значительное внешнее сходство с Т-34-85, Т-44 кардинально отличался от него габаритами, компоновкой и устройством. Выпуск Т-44 продолжался по август 1947 года и составил 1823 единицы. Сразу же после войны была предпринята попытка модернизировать танк, установив 100-мм пушку ЛБ-1 и стальные противокумулятивные экраны, но новая машина получилась перетяжелённой и на вооружение принята не была.](*<- lang_ru;;*);;
+
+
+
+
+            -> [The concept of the T-44 tank was finally formed in the autumn of 1943 on the basis of the information provided about the combat contacts of the T-34-76 tanks with the latest German heavy tanks. It turned out that in the oncoming battle with the "Tiger" or "Panther" "thirty-four" even a new modification had no chance. In the current unfavorable situation for a promising medium tank, the optimal complex solution was the maximum increase in the thickness of the frontal armor in combination with a more powerful (comparable to German heavy tanks) gun. In fact, the concept of the T-44 ensured the leveling of the combat capabilities of a medium tank relative to a heavy one, while maintaining the superiority of a medium tank in speed and maneuver. Having a significant external resemblance to the T-34-85, the T-44 was radically different from it in size, layout and design. The release of the T-44 continued until August 1947 and amounted to 1823 units. Immediately after the war, an attempt was made to modernize the tank by installing a 100-mm LB-1 gun and steel anti-cumulative screens, but the new vehicle turned out to be overweight and was not accepted into service.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-44)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-44 tank)](*<- lang_en;;*);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T44_tank;;
+    =>nrel_using_constants:{
+        concept_T44_tank_body;
+        concept_85_mm_tank_gun_model_1944;
+        concept_V2_engine;
+        concept_chassis_T44
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова:
+                бронирование <b><sc_element sys_idtf="concept_T44_tank_body">(корпус Т-44)</b>,
+                вооружение<b><sc_element sys_idtf="concept_85_mm_tank_gun_model_1944">(85-мм танковая пушка образца 1944 года)(ЗИС-С-53,)</b>,
+                двигатель<b><sc_element sys_idtf="concept_V2_engine">(В2 мод.44)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_T44">(ходовая часть Т-44)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+            -> [The design of the tank was as follows:
+                armoring<b><sc_element sys_idtf="concept_T44_tank_body">(building T-34)</b>,
+                armament<b><sc_element sys_idtf="concept_85_mm_tank_gun_model_1944">(85-mm tank gun model 1944 (ZIS-S-53))</b>,
+                engine<b><sc_element sys_idtf="concept_V2_engine">(V2 mod.44)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_T44">(chassis T44)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-44)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-44 tank)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_T44_tank=>nrel_elements:
+concept_T44_tank_body;
+concept_85_mm_tank_gun_model_1944;
+concept_V2_engine;
+concept_chassis_T44;;
+
+
+
+
+concept_T44_tank=>nrel_parameters:
+tower_roof_15;
+side_of_the_tower_90_20;
+gun_mask_40;
+tower_feed_75_12;
+the_forehead_of_the_tower_120;
+rate_fire_4;
+weight_31_t;
+length_6;
+width_3_1;
+height_2_4;
+vertical_guidance_5_25;
+[Экипаж  составлял 4 человек];
+speed_30_country;
+[Запас хода 200 км];;
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,53 @@
+concept_chassis_KV1<-sc_node_not_relation;;
+concept_chassis_KV1 => nrel_main_idtf: [ходовая часть КВ-1](*<- lang_ru;;*);;
+concept_chassis_KV1 => nrel_main_idtf: [chassis KV-1](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_KV1;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Подвеска машины — индивидуальная торсионная с внутренней амортизацией для каждого из 6 штампованных двускатных опорных катков малого диаметра по каждому борту. Напротив каждого опорного катка к бронекорпусу приваривались ограничители хода балансиров подвески.](*<- lang_ru;;*);;
+
+
+            -> [Suspension of the machine - individual torsion bar with internal shock absorption for each of the 6 stamped dual-slope road wheels of small diameter on each side. Opposite each track roller, suspension balancers were welded to the armored hull.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(ходовая часть КВ-1)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(chassis KV-1)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_KV1;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ведущие колёса со съёмными зубчатыми венцами цевочного зацепления располагались сзади, а <b><sc_element sys_idtf="concept_sloth">ленивцы</b> — спереди. Верхняя ветвь гусеницы поддерживалась тремя малыми обрезиненными штампованными <b><sc_element sys_idtf="concept_supporting_rink">поддерживающими катками</b> по каждому борту. В 1941 году технологию изготовления <b><sc_element sys_idtf="concept_support_roller">опорных</b> и поддерживающих катков перевели на литьё, последние лишились резиновых бандажей из-за общей, в тот период, нехватки резины. Механизм натяжения гусеницы — винтовой; каждая гусеница состояла из 86—90 одногребневых траков шириной 700 мм и шагом 160 мм. ](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [Drive wheels with removable lantern gears were located at the rear, and <b><sc_element sys_idtf="concept_sloth">sloths</b> were located at the front. The upper branch of the caterpillar was supported by three small rubber stamped <b><sc_element sys_idtf="concept_supporting_rink">support rollers</b> on each side. In 1941, the manufacturing technology of <b><sc_element sys_idtf="concept_shoe">support</b> and supporting rollers was transferred to casting, the latter lost their rubber tires due to the general shortage of rubber at that time. Caterpillar tension mechanism - screw; each caterpillar consisted of 86-90 single-ridge tracks 700 mm wide and 160 mm apart.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(ходовая часть КВ-1)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(chassis KV-1)](*<- lang_en;;*);;
+*);;
+
+
+concept_chassis_KV1=>nrel_parameters:
+width_shoe_700;
+[Шаг — 160 мм];
+[Количество траков составляло 90 штук];
+[Количество <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> 24](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+
+
+
+
+
+

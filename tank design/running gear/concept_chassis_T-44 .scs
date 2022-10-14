@@ -1,0 +1,136 @@
+concept_chassis_T44<-sc_node_not_relation;;
+concept_chassis_T44 => nrel_main_idtf: [ходовая часть Т-44](*<- lang_ru;;*);;
+concept_chassis_T44 => nrel_main_idtf: [chassis T-44](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T44;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Ходовая часть Т-44 состояла из ведущих колёс, по конструкции аналогичных Т-34, за исключением того, что для улучшения условий зацепления роликов колеса с гребнями траков при износе шарниров траков его диаметр был увеличен до 650 мм (против 635 мм у <b><sc_element sys_idtf="concept_T34_tank">Т-34</b>). ](*<- lang_ru;; => nrel_format: format_html;;*);;
+
+
+
+
+
+
+
+
+            -> [The running gear of the T-44 consisted of drive wheels, similar in design to the T-34, except that in order to improve the conditions for the engagement of the wheel rollers with the track ridges when the track joints were worn, its diameter was increased to 650 mm (against 635 mm for the <b><sc_element sys_idtf="concept_T34_tank">T-34</b> ).](*<- lang_en;;=> nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(ходовая часть Т-44)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(chassis T-44)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_chassis_T44;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [<b><sc_element sys_idtf="concept_support_roller">Опорные катки</b> Т-44 были сдвоенными с наружными резиновыми бандажами и отличались от катков Т-34 уменьшенным диаметром — 780×660×150. Танк имел индивидуальную торсионную подвеску, в корне отличающуюся от подвески Т-34 — подвески типа «Кристи». Отказ от пружинных «свечей» позволил увеличить внутреннее заброневое пространство, уменьшить габариты машины и улучшить условия обитаемости экипажа, улучшить технологичность изготовления и упростить обслуживание. Таким образом именно Т-44 поставил точку в истории колёсно-гусеничных танков в СССР, одной из наиболее ярких особенностей которых и была подвеска «Кристи». Гусеничные цепи Т-34 и Т-44 первых серий выпуска были унифицированы. Впоследствии для Т-44 была разработана оригинальная гусеничная цепь, устанавливалась на Т-44М, катки поздних Т-44 имели конструкцию, схожую с катками Т-55.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+
+
+
+            -> [<b><sc_element sys_idtf="concept_support_roller">Road rollers</b> T-44s were double with external rubber tires and differed from T-34 rollers in a reduced diameter - 780x660x150. The tank had an individual torsion bar suspension, which was fundamentally different from the T-34 suspension - the Christie-type suspension. The rejection of spring "candles" made it possible to increase the internal armored space, reduce the dimensions of the vehicle and improve the living conditions of the crew, improve manufacturability and simplify maintenance. Thus, it was the T-44 that put an end to the history of wheeled-tracked tanks in the USSR, one of the most striking features of which was the Christie suspension. Track chains T-34 and T-44 of the first production series were unified. Subsequently, an original caterpillar chain was developed for the T-44, which was installed on the T-44M, the rollers of the later T-44s had a design similar to the T-55 rollers.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(ходовая часть Т-44)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(chassis T-44)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_chassis_T44=>nrel_parameters:
+width_shoe_500;
+[Количество траков составляло 74 штуки];
+[Количество <b><sc_element sys_idtf="concept_support_roller">опорных катков</b> 10](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

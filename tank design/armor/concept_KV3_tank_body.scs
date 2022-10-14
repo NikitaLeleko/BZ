@@ -1,0 +1,178 @@
+concept_KV3_tank_body<-sc_node_not_relation;;
+concept_KV3_tank_body => nrel_main_idtf: [корпус танка КВ-3](*<- lang_ru;;*);;
+concept_KV3_tank_body => nrel_main_idtf: [KV-3 tank body](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV3_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус КВ-3 — корпус танка сваривался из катаных броневых плит. Броневые плиты лобовой части машины устанавливались под рациональными углами наклона. ](*<- lang_ru;;*);;
+            
+            -> [Armored hull KV-3 - the hull of the tank was welded from rolled armor plates. The armor plates of the frontal part of the machine were installed at rational angles of inclination.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка КВ-3)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV-3 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV3_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [За основу данного корпуса был взят корпус из КВ-220.](*<- lang_ru;;*);;
+
+
+
+
+
+
+
+
+            -> [За основу данного корпуса был взят корпус из КВ-220.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка КВ-3)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-3 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+concept_KV3_tank_body=>nrel_parameters:
+rolled_steel;
+the_forehead_of_the_body_110;
+hull_side_90;
+hull_feed_90;
+roof_40;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

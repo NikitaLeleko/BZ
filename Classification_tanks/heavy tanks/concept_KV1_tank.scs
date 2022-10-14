@@ -1,0 +1,97 @@
+concept_KV1_tank<-sc_node_not_relation;;
+concept_KV1_tank => nrel_main_idtf: [танк КВ-1](*<- lang_ru;;*);;
+concept_KV1_tank=> nrel_main_idtf: [KV-1 tank](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV1_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [КВ-1 (названный в честь Климента Ворошилова, как и остальные танки серии КВ) — советский тяжёлый танк времён Великой Отечественной войны. Обычно называется просто «КВ»: танк создавался под этим именем, и лишь позже, после появления танка КВ-2, КВ первого образца ретроспективно получил цифровой индекс. Выпускался с августа 1938 года по август 1942 года.](*<- lang_ru;;*);;
+
+	        -> [
+            The KV-1 (named after Kliment Voroshilov, like the rest of the KV series tanks) was a Soviet heavy tank of the Great Patriotic War. Usually called simply "KV": the tank was created under this name, and only later, after the appearance of the KV-2 tank, the KV of the first sample retrospectively received a digital index. Produced from August 1938 to August 1942.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк КВ-1)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV-1 tank](*<- lang_en;;*);;
+*);;
+
+concept_KV1_tank<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(танк КВ-1)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/kv-1.jpeg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV1_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Танк был спроектирован по наиболее часто используемой в тот период компоновочной схеме с продольной симметрией.
+                Танк создавался на базе трактора Holt, первый прототип был выпущен в апреле 1917 года, 
+                а деревянная модель в натуральную величину — в мае того же года. Первый опытный образец был выпущен в сентябре,
+                а первая серийная машина — в октябре 1917 года.](*<- lang_ru;;*);;
+
+            -> [The tank was designed according to the most commonly used layout scheme with longitudinal symmetry at that 
+                time.The tank was created on the basis of the Holt tractor, the first prototype was released in April 1917, and 
+                a life-size wooden model in May of the same year. The first prototype was released in September, and the first 
+                production car - in October 1917.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-1)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-1 tank)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV1_tank;;
+    =>nrel_using_constants:{
+    	concept_KV1_tank_body;
+        concept_76_mm_tank_gun_model_1938_39_L11;
+        concept_M17_engine;
+        concept_chassis_KV1
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова: 
+                бронирование <b><sc_element sys_idtf="concept_KV1_tank_body">(корпус КВ-1)</b>,
+                вооружение<b><sc_element sys_idtf="concept_76_mm_tank_gun_model_1938_39_L11">(76-мм танковая пушка образца 1938/39 годов (Л-11))</b>,
+                двигатель<b><sc_element sys_idtf="concept_M17_engine">(М17)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_KV1">(ходовая часть КВ-1)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the tank was as follows: 
+                armoring<b><sc_element sys_idtf="concept_KV1_tank_body">(building KV-1)</b>,
+                armament<b><sc_element sys_idtf="concept_76_mm_tank_gun_model_1938_39_L11">(76-mm tank gun model 1938/39 (L-11))</b>,
+                engine<b><sc_element sys_idtf="concept_M17_engine">(M17)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_KV1">(chassis KV1)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-1)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-1 tank)](*<- lang_en;;*);;
+*);;
+
+concept_KV1_tank=>nrel_elements:
+concept_KV1_tank_body;
+concept_76_mm_tank_gun_model_1938_39_L11;
+concept_M17_engine;
+concept_chassis_KV1;;
+
+concept_KV1_tank=>nrel_parameters:
+tower_roof_40;
+side_of_the_tower_110;
+tower_roof_40;
+tower_feed_110;
+the_forehead_of_the_tower_110;
+gun_mask_110;
+rate_fire_8;
+vertical_guidance_7_25;
+weight_47_t;
+length_6_6;
+width_3_3;
+height_2_7;
+speed_34_country;
+[Запас хода 180 км];
+[Экипаж  составлял 6 человек];;

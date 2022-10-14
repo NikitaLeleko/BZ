@@ -1,0 +1,64 @@
+concept_T34_tank_body<-sc_node_not_relation;;
+concept_T34_tank_body => nrel_main_idtf: [корпус танка Т-34](*<- lang_ru;;*);;
+concept_T34_tank_body => nrel_main_idtf: [T34 tank body](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T34_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус Т-34 — сварной, собиравшийся из катаных плит гомогенной стальной брони марки 8С высокой твёрдости, толщинами 13, 16, 40 и 45 мм. Броневая защита танка противоснарядная, равнопрочная, выполненная с рациональными углами наклона.](*<- lang_ru;;*);;
+            
+            -> [The armored body of the T-34 is welded, assembled from rolled plates of homogeneous steel armor of grade 8C of high hardness, with a thickness of 13, 16, 40 and 45 mm. The armor protection of the tank is projectile-proof, of equal strength, made with rational angles of inclination.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка Т-34)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-34 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T34_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Лобовая часть состояла из сходящихся клином броневых плит толщиной 45 мм: верхней, расположенной под углом в 60° к вертикали и нижней, расположенной под углом в 53°. Между собой верхняя и нижняя лобовые бронеплиты соединялись при помощи балки. Борта корпуса в нижней своей части располагались вертикально и имели толщину в 45 мм. Верхняя часть бортов, в районе надгусеничных полок, состояла из 40-мм броневых плит, расположенных под углом в 40°. Кормовая часть собиралась из двух сходившихся клином 40-мм броневых плит: верхней, расположенной под углом в 47° и нижней, расположенной под углом в 45°. Крыша танка в районе моторно-трансмиссионного отделения собиралась из 16-мм броневых листов, а в районе подбашенной коробки имела толщину в 20 мм. Днище танка имело толщину 13 мм под моторно-трансмиссионным отделением и 16 мм в лобовой части, также небольшой участок кормовой оконечности днища состоял из 40-мм бронеплиты](*<- lang_ru;;*);;
+
+
+
+
+            -> [The frontal part consisted of wedge-shaped armor plates 45 mm thick: the upper one, located at an angle of 60 ° to the vertical, and the lower one, located at an angle of 53 °. Between themselves, the upper and lower frontal armor plates were connected using a beam. The sides of the hull in its lower part were located vertically and had a thickness of 45 mm. The upper part of the sides, in the area of ​​the fenders, consisted of 40-mm armor plates located at an angle of 40 °. The stern part was assembled from two 40-mm armor plates converging in a wedge: the upper one, located at an angle of 47 ° and the lower one, located at an angle of 45 °. The roof of the tank in the area of ​​​​the engine compartment was assembled from 16-mm armor plates, and in the area of ​​\u200b\u200bthe turret box it had a thickness of 20 mm. The bottom of the tank had a thickness of 13 mm under the engine compartment and 16 mm in the frontal part, also a small section of the aft end of the bottom consisted of a 40 mm armor plate](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка Т-34)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-34 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_T34_tank_body=>nrel_parameters:
+rolled_steel;
+the_forehead_of_the_body_45_60;
+hull_side_45_40;
+hull_feed_40_47;
+roof_20;;
+
+
+
+
+
+
+

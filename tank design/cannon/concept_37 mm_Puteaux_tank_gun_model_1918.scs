@@ -1,0 +1,98 @@
+concept_37_mm_Puteaux_tank_gun_model_1918<-sc_node_not_relation;;
+concept_37_mm_Puteaux_tank_gun_model_1918 => nrel_main_idtf: [37-мм танковая пушка Пюто образца 1918 года](*<- lang_ru;;*);;
+concept_37_mm_Puteaux_tank_gun_model_1918 => nrel_main_idtf: [37 mm Puteaux tank gun model 1918](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_37_mm_Puteaux_tank_gun_model_1918;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Puteaux SA 18 — полуавтоматическая 37-мм нарезная пушка фирмы «Пюто» (фр. Atelier de construction de l'Artillerie de Puteaux) времён Первой мировой войны, созданная на основе пехотной пушки образца 1916 года (TRP)[1]. Пушка имела длину ствола 21 калибр (777 мм), вертикальный клиновой затвор и пружинные противооткатные устройства. Аналогичное орудие, переделанное из морской 37-мм пушки фирмы «Гочкис», или её модифицированный советский вариант «Гочкис-ПС» (также известный как ПС-1) устанавливалось на советских танках Т-18 и <b><sc_element sys_idtf="concept_T26_tank">Т-26</b> (двухбашенный пушечный вариант). ](*<- lang_ru;; => nrel_format: format_html;;*);;
+            -> [The Puteaux SA 18 is a World War I semi-automatic 37 mm rifled gun by Puteaux (French Atelier de construction de l'Artillerie de Puteaux), based on the 1916 Model Infantry Gun (TRP)[1]. The gun had a barrel length of 21 calibers (777 mm), a vertical wedge gate and spring recoil devices. A similar gun, converted from the Hotchkiss 37 mm naval gun, or its modified Soviet variant Hotchkiss-PS (also known as PS-1) was installed on Soviet T-18 and <b><sc_element sys_idtf="concept_T26_tank">T-26</b> tanks (double-turret gun variant).](*<- lang_en;;=> nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(37-мм танковая пушка Пюто образца 1918 года)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(37 mm Puteaux tank gun model 1918)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_37_mm_Puteaux_tank_gun_model_1918<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(37-мм танковая пушка Пюто образца 1918 года)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images_cannons/SA-18.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_37_mm_Puteaux_tank_gun_model_1918;;
+
+
+
+
+    <= nrel_sc_text_translation:...
+        (*
+            -> [37-мм французская танковая пушка Гочкиса — несколько изменённый вариант морской пушки, принятой на вооружение ещё в начале 80х годов XIX-го века. Четвертьавтоматический затвор (открывание вручную). Компрессор гидравлический, накатник пружинный. Пушка имела плохую баллистику. Действие снаряда неэффективно и по броне и по пехоте.
+Аналогичное орудие, переделанное из морской однофунтовой пушки фирмы «Гочкис», или её советский модифицированный вариант «Гочкис-ПС».
+За неимением лучшего, в июне 1928 года заводу № 8 (деревня Подлипки) заказаны 206 пушек Гочкиса, которым на заводе присвоили свой индекс 7-К. В 1931—1932 годах завод сдал 1080 пушек Гочкиса.
+В 1932 году их производство прекратили. 37-мм пушками Гочкиса вооружены танки «Рено-Русский», Т-18 (МС-1), двухбашенные танки Т-26 и бронеавтомобили БА-27, БА-27М и БАИ. На 1 ноября 1936 года в РККА 1327 боевых и 60 учебных 37-мм пушек Гочкиса.
+На советских танках «Рено-Русский» сормовского производства, на немногих Т-18 и некоторых Т-26 (двухбашенный пушечный вариант) — переделанные из морской пушки фирмы «Гочкис», на некоторых Т-18 (МС-1) и двухбашенных пушечных Т-26 — «Гочкис-ПС».
+На бронеавтомобилях БА-27, БА-27М и БАИ (БА-И) — «Гочкис-ПС». ](*<- lang_ru;;*);;
+
+
+
+
+            -> [The French 37 mm Hotchkiss tank gun is a slightly modified version of the naval gun, which was put into service in the early 1980s. Quarter-automatic shutter (opening manually). Hydraulic compressor, spring knurler. The gun had poor ballistics. The action of the projectile is ineffective both in armor and in infantry.
+A similar gun, converted from a Hotchkiss one-pounder naval gun, or its Soviet modified version of the Hotchkiss-PS.
+For lack of a better one, in June 1928, 206 Hotchkiss guns were ordered from Plant No. 8 (Podlipki village), which were assigned their index 7-K at the plant. In 1931-1932, the plant delivered 1080 Hotchkiss guns.
+In 1932, their production was stopped. The Renault-Russian, T-18 (MS-1) tanks, the T-26 double-turreted tanks and the BA-27, BA-27M and BAI armored vehicles are armed with 37-mm Hotchkiss cannons. On November 1, 1936, the Red Army had 1,327 combat and 60 training 37-mm Hotchkiss guns.
+On Soviet Renault-Russian tanks of Sormovo production, on a few T-18s and some T-26s (two-turret cannon version) - converted from a Hotchkiss naval gun, on some T-18s (MS-1) and two-turret cannon T -26 - "Hotchkiss-PS".
+On armored vehicles BA-27, BA-27M and BAI (BA-I) - "Hotchkiss-PS".](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(37-мм танковая пушка Пюто образца 1918 года)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(37 mm Puteaux tank gun model 1918)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_37_mm_Puteaux_tank_gun_model_1918=>nrel_parameters:
+barrel_length_777;
+gun_caliber_37;
+fireng_range_3000;
+[<b><sc_element sys_idtf="concept_shells">Снаряды</b>: <b><sc_element sys_idtf="concept_shells">осколочно-фугасные</b>,
+<b><sc_element sys_idtf="concept_shells">бронебойные</b>,<b><sc_element sys_idtf="concept_shells">картечные</b>](* <- lang_ru;; => nrel_format: format_html;; *);
+flight_speed_600;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

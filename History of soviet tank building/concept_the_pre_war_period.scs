@@ -1,0 +1,48 @@
+concept_the_pre_war_period<-sc_node_not_relation;;
+concept_the_pre_war_period => nrel_main_idtf: 
+[танкостроение в предвоенный период(1930-1936)](*<- lang_ru;;*);
+[танкостроение(1927-1936)](*<- lang_ru;;*);;
+
+concept_the_pre_war_period => nrel_main_idtf: 
+[tank construction in the pre-war period(1930-1936)](*<- lang_en;;*);
+[tank construction (1927-1936)](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_the_pre_war_period;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [К 30-м годам ХХ века отношения СССР и Европы более или менее нормализовались. Молодое социалистическое государство, разумеется, по-прежнему воспринимали с прохладцей, однако в краткосрочной перспективе агрессивных планов против него пока никто не строил. Но в 1933 году прозвенел тревожный звонок: пост рейхсканцлера Германии занял глава НСДАП Адольф Гитлер, отличавшийся весьма радикальными взглядами на государственную политику. И когда в 1934 году умер германский президент Гинденбург, а Гитлер был избран главой страны, всем мало-мальски здравомыслящим людям стало понятно, что новая война в Европе неизбежна.](*<- lang_ru;;*);;
+
+	        -> [By the 1930s, relations between the USSR and Europe had more or less normalized. The young socialist state, of course, was still perceived with coolness, but in the short term, no one built aggressive plans against it. But in 1933, an alarm bell rang: the post of Reich Chancellor of Germany was taken by the head of the NSDAP, Adolf Hitler, who was distinguished by very radical views on public policy. And when German President Hindenburg died in 1934, and Hitler was elected head of the country, it became clear to all more or less sane people that a new war in Europe was inevitable.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танкостроение в предвоенный период)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(tank construction in the pre-war period](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+	-> rrel_key_sc_element: concept_the_pre_war_period;;
+    	<= nrel_sc_text_translation:...
+        (*
+            -> [На противоположном краю Союза обстановка также обострилась. Япония, принявшая в 1927 году «Политическую программу в отношении Китая», прямым текстом декларировала, что Монголия и Маньчжурия входят в её сферу интересов. Для того чтобы в полной мере осуществить замыслы милитаристской правящей верхушки, Стране восходящего солнца требовалось нанести военное поражение СССР.
+В 1932 году Маньчжурия была захвачена японцами, которые создали на её территории марионеточное государство Маньчжоу-го, которое должно было стать «стартовой площадкой» для начала военных действий против Советского Союза.
+В сложившейся ситуации вопрос технического переоснащения Красной армии нужно было решать как можно быстрее. Для этого требовалось ударными темпами развивать промышленную базу страны и, разумеется, работать над созданием новых образцов вооружения, в том числе танков.
+В конце 1929 года коллегия Главного управления военной промышленности пришла к выводу, что для полноценного решения вопроса обеспечения РККА военной техникой, соответствующей требованиям времени, необходимо воспользоваться зарубежным опытом в этой сфере. Была создана специальная закупочная комиссия под руководством начальника Управления механизации и моторизации РККА И. Халепского и начальника инженерно-конструкторского бюро по танкам С. Гинзбурга.
+В США комиссия вначале обратила внимание на разработки компании Cunningham, но оказалось, что эти машины не соответствуют требованиям РККА. И тогда советские делегаты заинтересовались колёсно-гусеничными танками выдающегося американского инженера Уолтера Дж. Кристи. С колёсно-гусеничной схемой в 30-е годы работали конструкторы многих стран, потому что чисто гусеничная ходовая часть, как правило, ещё не обеспечивала надлежащего уровня надёжности. Это был типичный вариант «за неимением лучшего», от которого отказались, как только появилась возможность.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [On the opposite edge of the Union, the situation also escalated. Japan, which in 1927 adopted the "Political Program for China", explicitly declared that Mongolia and Manchuria were within its sphere of interests. In order to fully implement the plans of the militaristic ruling elite, the Land of the Rising Sun needed to inflict a military defeat on the USSR.
+In 1932, Manchuria was captured by the Japanese, who created on its territory the puppet state of Manchukuo, which was to become a "launching pad" for the start of hostilities against the Soviet Union.
+In the current situation, the issue of technical re-equipment of the Red Army had to be resolved as quickly as possible. This required an accelerated development of the country's industrial base and, of course, work on the creation of new types of weapons, including tanks.
+At the end of 1929, the board of the Main Directorate of the Military Industry came to the conclusion that in order to fully resolve the issue of providing the Red Army with military equipment that meets the requirements of the time, it is necessary to use foreign experience in this area. A special procurement commission was created under the leadership of the head of the Department of Mechanization and Motorization of the Red Army I. Khalepsky and the head of the engineering design bureau for tanks S. Ginzburg.
+In the USA, the commission first drew attention to the developments of Cunningham, but it turned out that these machines did not meet the requirements of the Red Army. And then the Soviet delegates became interested in the wheeled-tracked tanks of the outstanding American engineer Walter J. Christie. Designers from many countries worked with the wheel-tracked scheme in the 30s, because a purely tracked undercarriage, as a rule, did not yet provide an adequate level of reliability. It was a typical “for lack of a better” option, which was abandoned as soon as the opportunity arose.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+   => nrel_main_idtf: [Утв.(танкостроение в предвоенный период)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(tank construction in the pre-war period)](*<- lang_en;;*);;
+*);;
+
+concept_the_pre_war_period=>nrel_period:concept_tank_building_in_World_War_2;;
+
+

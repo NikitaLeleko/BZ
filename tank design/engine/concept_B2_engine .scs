@@ -1,0 +1,45 @@
+concept_V2_engine<-sc_node_not_relation;;
+concept_V2_engine => nrel_main_idtf: [двигатель В-2](*<- lang_ru;;*);;
+concept_V2_engine => nrel_main_idtf: [engine B-2](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_V2_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [В-2 — советский V-образный 12-цилиндровый четырёхтактный быстроходный дизельный танковый двигатель водяного охлаждения с непосредственным впрыском (12Ч15/18).  ](*<- lang_ru;;*);;
+	        -> [V-2 - Soviet V-shaped 12-cylinder, four-stroke, high-speed, water-cooled, direct-injection diesel tank engine (12Ch15/18).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(двигатель В-2)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(engine V-2)](*<- lang_en;;*);;
+*);;
+
+concept_V2_engine<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(В-2)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://image_engine/V2K.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_V2_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Разработан в 1931—1939 годах конструкторским коллективом дизельного отдела Харьковского паровозостроительного завода сначала под руководством К. Ф. Челпана (репрессирован в 1938 году), а затем, с 1938 года — под руководством Т. П. Чупахина, его заместителя по проектной работе — Я. Е. Вихмана, заместителя по опытно-производственной работе — И. Я. Трашутина. В конце XX века большой вклад в создание современных модификаций танкового дизеля В-2 внёс главный конструктор (с 1981 года) головного КБ по двигателям ЧТЗ — В. И. Бутов. Одновременно с В-2 в 1930-х годах создавался авиадизель АН-1 конструктора А. Чаромского рабочим объёмом 61 литр (12Ч 18/20). Оба дизеля были близки по характеру протекания рабочего процесса, по общей компоновке и ряду конструктивных элементов. Серийное производство В-2 началось 1 сентября 1939 года. Приняты на вооружение РККА в том же году в четырех модификациях: В-2 (500 л.с., сухой вес 870 кг), В-2К (600 л.с.) для тяжелых танков КВ и В-2В (375 л.с.), В-2-34 (после модернизации в 1941 году для Т-34). ](*<- lang_ru;;*);;
+            -> [Developed in 1931-1939 by the design team of the diesel department of the Kharkov Locomotive Plant, first under the leadership of K. F. Chelpan (repressed in 1938), and then, from 1938, under the leadership of T. P. Chupakhin, his deputy for design work - I E. Vikhman, Deputy for experimental work - I. Ya. Trashutin. At the end of the 20th century, V. I. Butov, the chief designer (since 1981) of the head design bureau for ChTZ engines, made a great contribution to the creation of modern modifications of the V-2 tank diesel engine. Simultaneously with the V-2 in the 1930s, the AN-1 aircraft diesel engine designed by A. Charomsky with a working volume of 61 liters (12Ch 18/20) was created. Both diesel engines were similar in terms of the nature of the working process, in terms of the general layout and a number of structural elements. Serial production of the B-2 began on 1 September 1939. Adopted by the Red Army in the same year in four modifications: V-2 (500 hp, dry weight 870 kg), V-2K (600 hp) for heavy tanks KV and V-2V (375 hp), V-2-34 (after modernization in 1941 for the T-34).](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(двигатель В-2)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(engine V-2)](*<- lang_en;;*);;
+*);;
+
+concept_V2_engine=>nrel_parameters:
+[12-цилиндровые];
+[Жидкостного охлаждения];
+[Рабочим объемом цилиндров 38.8 л];
+[Диаметром цилиндров 150 мм и рабочим ходом поршня 186 мм];
+[Рекомендуемое топливо Дизель];;

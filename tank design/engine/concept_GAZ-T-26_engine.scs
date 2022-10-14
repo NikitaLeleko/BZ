@@ -1,0 +1,52 @@
+concept_GAZ_T_26_engine<-sc_node_not_relation;;
+concept_GAZ_T_26_engine => nrel_main_idtf: [двигатель  ГАЗ-Т-26](*<- lang_ru;;*);;
+concept_GAZ_T_26_engine => nrel_main_idtf: [engine GAZ-T-26](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_GAZ_T_26_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [ГАЗ-Т-26 — рядный 4-цилиндровый четырёхтактный карбюраторный двигатель воздушного охлаждения, представлявший собой копию британского «Армстронг-Сидли Пума» ](*<- lang_ru;;*);;
+            -> [GAZ-T-26 — in-line 4-cylinder four-stroke air-cooled carburetor engine, which was a copy of the British "Armstrong-Sidley Puma"](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(двигатель  ГАЗ-Т-26)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(engine GAZ-T-26)](*<- lang_en;;*);;
+*);;
+
+
+concept_GAZ_T_26_engine<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(М-17)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://image_engine/Gaz-T26.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_GAZ_T_26_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель имел рабочий объём 6600 см³ и развивал максимальную мощность в 91 л. с. / 66,9 кВт при 2100 об/мин и максимальный крутящий момент в 35 кг·м / 343 Н·м при 1700 об/мин. В 1937—1938 годах устанавливался форсированный вариант двигателя. По одним данным, его мощность составляла 95 л. с. , по другим же — могла колебаться от 93 до 96 л. с. даже по паспортным данным. Топливом для форсированного двигателя служил бензин 1-го сорта, так называемый «грозненский». Удельный расход топлива составлял 285 г/л. с. ч.  Двигатель располагался в моторном отделении вдоль продольной оси танка, особенностью его конфигурации являлось горизонтальное расположение цилиндров. Справа от двигателя в моторном отделении размещался топливный бак ёмкостью 182 литра, а система охлаждения, включавшая один центробежный вентилятор, размещалась в кожухе над двигателем. С середины 1932 года вместо одного топливного бака стали устанавливаться два, ёмкостью 110 и 180 литров. ](*<- lang_ru;;*);;
+            -> [The engine had a working volume of 6600 cm³ and developed a maximum power of 91 hp. with. / 66.9 kW at 2100 rpm and a maximum torque of 35 kg m / 343 N m at 1700 rpm. In 1937-1938, a forced version of the engine was installed. According to some data, its power was 95 liters. with. , according to others - could range from 93 to 96 liters. with. even according to passport data. The fuel for the forced engine was gasoline of the 1st grade, the so-called "Grozny". The specific fuel consumption was 285 g/l. with. h. The engine was located in the engine compartment along the longitudinal axis of the tank, a feature of its configuration was the horizontal arrangement of the cylinders. To the right of the engine in the engine compartment was a fuel tank with a capacity of 182 liters, and the cooling system, which included one centrifugal fan, was located in a casing above the engine. From the middle of 1932, instead of one fuel tank, two were installed, with a capacity of 110 and 180 liters.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(двигатель  ГАЗ-Т-26)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(engine GAZ-T-26)](*<- lang_en;;*);;
+*);;
+
+
+concept_GAZ_T_26_engine=>nrel_parameters:
+[4-цилиндровый];
+[Воздушного охлаждения];
+[Рабочим объемом цилиндров 1.6 л];
+[Рекомендуемый бензин 1-го сорта];;
+
+
+

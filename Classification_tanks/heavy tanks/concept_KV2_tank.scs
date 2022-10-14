@@ -1,0 +1,90 @@
+concept_KV2_tank<-sc_node_not_relation;;
+concept_KV2_tank => nrel_main_idtf: [танк КВ-2](*<- lang_ru;;*);;
+concept_KV2_tank=> nrel_main_idtf: [KV-2 tank](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV2_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [КВ-2 — советский тяжёлый штурмовой танк начального периода Великой Отечественной войны. Аббревиатура КВ означает «Клим Ворошилов» — официальное название серийных советских тяжёлых танков выпуска 1939—1943 гг., названных в честь героя Гражданской войны в России, военного и политического деятеля Ворошилова Климента Ефремовича. Первоначально именовался «КВ с большой башней».](*<- lang_ru;;*);;
+
+	        -> [
+            KV-2 - Soviet heavy assault tank of the initial period of the Great Patriotic War. The abbreviation KV means "Klim Voroshilov" - the official name of serial Soviet heavy tanks produced in 1939-1943, named after the hero of the Civil War in Russia, military and political figure Voroshilov Kliment Efremovich. Originally called "KV with a large tower".](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк КВ-2)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV-2 tank](*<- lang_en;;*);;
+*);;
+
+concept_KV2_tank<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(танк КВ-2)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://images/kv-2.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV2_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Эта машина была разработана конструкторским бюро Ленинградского Кировского завода (ЛКЗ) в январе 1940 года в связи с острой необходимостью Рабоче-крестьянской Красной армии (РККА) в хорошо защищённом танке с мощным вооружением для борьбы с фортификациями линии Маннергейма во время советско-финской войны 1939—1940 гг. К 22 июня 1941 года в войсках находилось 128 КВ-2 и 4 танка были в ВУЗ. 30 готовых машин стояли на заводе в ожидании отправки в войска. Еще одна машина была передана заводу № 92 для испытаний 107-мм пушки ЗИС-6 (Ф-42). 3 танка находились на модернизации на ЛКЗ. В пути в 29-ю танковую дивизию находился эшелон с 20 танками, судьба которых до сих пор полностью не определена. Эшелон был оставлен в районе Лиды. Так, 8 танков использовались 24-й стрелковой дивизией, не менее 4 машин были разгружены ночью 22 июня частями 29-й ТД, но до места расквартирования дивизии не добрались. Платформы с двумя танками, поврежденными в ходе авианалета, были отцеплены от эшелона, при этом один танк был полностью уничтожен. Не менее 6 танков были захвачены немцами. Из 40 КВ-2, сданных в июне, на третью декаду пришлось 18. ](*<- lang_ru;;*);;
+
+            -> [This machine was developed by the design bureau of the Leningrad Kirov Plant (LKZ) in January 1940 in connection with the urgent need of the Workers 'and Peasants' Red Army (RKKA) in a well-protected tank with powerful weapons to fight the fortifications of the Mannerheim Line during the Soviet-Finnish war of 1939— 1940s By June 22, 1941, there were 128 KV-2s in the troops and 4 tanks were in the university. 30 finished vehicles were at the factory waiting to be sent to the troops. Another machine was handed over to plant number 92 for testing the 107-mm gun ZIS-6 (F-42). 3 tanks were being upgraded at the LKZ. On the way to the 29th Panzer Division there was a train with 20 tanks, the fate of which has not yet been fully determined. The echelon was left in the Lida area. So, 8 tanks were used by the 24th rifle division, at least 4 vehicles were unloaded on the night of June 22 by units of the 29th TD, but they did not reach the quarters of the division. Platforms with two tanks damaged during the air raid were uncoupled from the echelon, while one tank was completely destroyed. At least 6 tanks were captured by the Germans. Of the 40 KV-2s handed over in June, 18 were in the third decade.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-2)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-2 tank)](*<- lang_en;;*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV2_tank;;
+    =>nrel_using_constants:{
+    	concept_KV2_tank_body;
+        concept_152mm_howitzer_model_1938_M10;
+        concept_V2_engine;
+        concept_chassis_KV2
+	};;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова: 
+                бронирование <b><sc_element sys_idtf="concept_KV2_tank_body">(корпус КВ-2)</b>,
+                вооружение<b><sc_element sys_idtf="concept_152mm_howitzer_model_1938_M10">(152-мм гаубица образца 1938 года (М-10))</b>,
+                двигатель<b><sc_element sys_idtf="concept_V2_engine">(В-2)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_KV2">(ходовая часть КВ-2)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+            -> [The design of the tank was as follows: 
+                armoring<b><sc_element sys_idtf="concept_KV2_tank_body">(building KV-2)</b>,
+                armament<b><sc_element sys_idtf="concept_152mm_howitzer_model_1938_M10">(152-mm howitzer model 1938 (M-10))</b>,
+                engine<b><sc_element sys_idtf="concept_V2_engine">(B-2)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_KV2">(chassis KV2)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-2)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-2 tank)](*<- lang_en;;*);;
+*);;
+
+concept_KV2_tank=>nrel_elements:
+concept_KV2_tank_body;
+concept_152mm_howitzer_model_1938_M10;
+concept_V2_engine;
+concept_chassis_KV2;;
+
+concept_KV2_tank=>nrel_parameters:
+vertical_guidance_5_18;
+the_forehead_of_the_tower_75;
+side_of_the_tower_75;
+tower_roof_40;
+tower_feed_75;
+gun_mask_110;
+rate_fire_3;
+weight_52_t;
+length_6_9;
+width_3_3;
+height_3_2;
+[Экипаж  составлял 6 человек];
+speed_16_country;
+[Запас хода 150 км];;

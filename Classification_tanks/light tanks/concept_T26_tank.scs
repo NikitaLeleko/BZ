@@ -1,0 +1,129 @@
+concept_T26_tank<-sc_node_not_relation;;
+concept_T26_tank => nrel_main_idtf: [танк Т-26](*<- lang_ru;;*);;
+concept_T26_tank=> nrel_main_idtf: [T-26 tank](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T26_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Т-26 — советский лёгкий танк. Cамый многочисленный танк Красной и финской Армий к началу Великой Отечественной войны и Армии испанской Республики гражданской войны в Испании, второй по количеству выпущенных после Т-34 советский танк 1930-х — 1940-х годов. Создан на основе британского танка Vickers Mk E (также известного как «Виккерс 6-тонный»), закупленного в 1930 году. Принят на вооружение в СССР в 1931 году.](*<- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+            -> [T-26 is a Soviet light tank. The most numerous tank of the Red and Finnish Armies by the beginning of the Great Patriotic War and the Army of the Spanish Republic of the Civil War in Spain, the second largest Soviet tank of the 1930s-1940s after the T-34. Created on the basis of the British Vickers Mk E tank (also known as the "Vickers 6-ton"), purchased in 1930. Adopted by the USSR in 1931.](*<- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк Т-26)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-26 tank](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_T26_tank<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(танк Т-26)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/T-26.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T26_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Для производства Т-26 за отсутствием альтернатив был выбран ленинградский завод «Большевик», до этого занимавшийся выпуском Т-18. Позднее предполагалось подключить к производству и достраивавшийся Сталинградский тракторный завод. Рассматривался и Челябинский тракторный завод, тоже находившийся в процессе строительства. Проектными работами по подготовке производства, а впоследствии и модернизации танка, руководил С. Гинзбург. Первоначально заводу «Большевик» был выдан план на производство 500 Т-26 в 1931 году, позднее это число было сокращено до 300 с выпуском первого танка не позднее 1 мая, но и этой цифры достичь не удалось. Хотя завод ранее выпускал подобными темпами Т-18, новый танк оказался значительно сложнее в производстве. Весной 1931 года отдел завода, который состоял лишь из 5 человек, подготовил к производству и изготовил два эталонных экземпляра танка. К 1 мая были закончены рабочие чертежи, а 16 июня одобрен технологический процесс и начато изготовление оборудования для массового производства.	В июле 1931 года началось изготовление по временной технологии установочной (предсерийной) партии из 10 танков с корпусами из неброневой стали, с широким использованием импортных комплектующих. Конструкция машин в точности повторяла британский оригинал, отличаясь лишь вооружением, состоявшим из 37-мм пушки ПС-1 в правой башне и 7,62-мм пулемёта ДТ-29 в левой. В ходе производства сразу выявился ряд серьёзных проблем, при этом, хотя конструкторское бюро с самого начала работ неоднократно предлагало ввести в конструкцию доработки, направленные на упрощение технологии изготовления, все эти попытки пресекались высшим руководством. Больше всего проблем приносил двигатель танка, который, несмотря на кажущуюся простоту, требовал более высокой культуры производства, чем мог обеспечить советский завод — первое время считалось нормальным, если брак по двигателям составлял до 65 %. Кроме этого, Ижорскому заводу, поставлявшему корпуса танков, поначалу не удавалось из-за высокого процента брака наладить производство 13-мм бронелистов, в результате чего на значительной части корпусов вместо них применялись 10-мм. Но и 10-мм листы на поставляемых корпусах имели многочисленные сквозные трещины и на испытаниях пробивались 7,62-мм бронебойной пулей с дистанции 150—200 м. До ноября корпуса танков выпускались со сборкой полностью на болтах и винтах, чтобы обеспечить замену бронелистов кондиционными. В итоге на танках установочной партии двигатели фактически не работали, и передвигаться танки могли лишь при перестановке на них импортного двигателя с эталонного В-26. ](*<- lang_ru;;*);;
+
+
+
+
+            -> [For the production of the T-26, due to the lack of alternatives, the Leningrad plant "Bolshevik" was chosen, which had previously been engaged in the production of the T-18. Later, it was supposed to connect the Stalingrad Tractor Plant, which was being completed, to production. The Chelyabinsk Tractor Plant, which was also under construction, was also considered. Design work on the preparation of production, and subsequently the modernization of the tank, was led by S. Ginzburg. Initially, the Bolshevik plant was issued a plan for the production of 500 T-26s in 1931, later this number was reduced to 300 with the release of the first tank no later than May 1, but this figure could not be reached either. Although the plant had previously produced the T-18 at a similar pace, the new tank proved to be much more difficult to manufacture. In the spring of 1931, the factory department, which consisted of only 5 people, prepared for production and produced two reference copies of the tank. By May 1, working drawings were completed, and on June 16, the technological process was approved and the manufacture of equipment for mass production began. In July 1931, the production of an installation (pre-production) batch of 10 tanks with non-armored steel hulls using a temporary technology began, with extensive use of imported components. The design of the vehicles exactly repeated the British original, differing only in armament, which consisted of a 37 mm PS-1 cannon in the right turret and a 7.62 mm DT-29 machine gun in the left. In the course of production, a number of serious problems immediately emerged, and although the design bureau from the very beginning of work repeatedly proposed to introduce improvements into the design aimed at simplifying the manufacturing technology, all these attempts were suppressed by top management. The tank engine brought the most problems, which, despite its apparent simplicity, required a higher production culture than the Soviet plant could provide - at first it was considered normal if the marriage of engines was up to 65%. In addition, the Izhora plant, which supplied tank hulls, was initially unable to establish the production of 13-mm armor plates due to a high percentage of defects, as a result of which 10-mm armor plates were used instead of them on a significant part of the hulls. But even the 10-mm sheets on the supplied hulls had numerous through cracks and were pierced by a 7.62-mm armor-piercing bullet from a distance of 150-200 m during tests. Until November, tank hulls were produced with assembly completely on bolts and screws to ensure that the armor plates were replaced with conditioned ones. As a result, the engines did not actually work on the tanks of the pilot batch, and the tanks could move only when they were replaced with an imported engine from the reference B-26.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-26)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-26 tank)](*<- lang_en;;*);;
+*);;
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T26_tank;;
+    =>nrel_using_constants:{
+        concept_T26_tank_body;
+        concept_37_mm_Puteaux_tank_gun_model_1918;
+        concept_GAZ_T_26_engine;
+        concept_chassis_T26
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова:
+                бронирование <b><sc_element sys_idtf="concept_T26_tank_body">(корпус Т-26)</b>,
+                вооружение<b><sc_element sys_idtf="concept_37_mm_Puteaux_tank_gun_model_1918">(37-мм танковая пушка Пюто образца 1918 года)</b>,
+                двигатель<b><sc_element sys_idtf="concept_GAZ_T_26_engine">(ГАЗ-Т-26)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_T26">(ходовая часть Т-26)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+            -> [The design of the tank was as follows:
+                armoring<b><sc_element sys_idtf="concept_T26_tank_body">(building T-26)</b>,
+                armament<b><sc_element sys_idtf="concept_37_mm_Puteaux_tank_gun_model_1918">(37 mm Puteaux tank gun model 1918)</b>,
+                engine<b><sc_element sys_idtf="concept_GAZ_T_26_engine">(V2)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_T26">(chassis T-26)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк Т-26)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-26 tank)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_T26_tank=>nrel_elements:
+concept_T26_tank_body;
+concept_37_mm_Puteaux_tank_gun_model_1918;
+concept_GAZ_T_26_engine;
+concept_chassis_T26;;
+
+
+
+concept_T26_tank=>nrel_parameters:
+tower_roof_6;
+side_of_the_tower_15;
+gun_mask_15;
+tower_feed_15;
+the_forehead_of_the_tower_15;
+rate_fire_12;
+weight_10_t;
+length_4_6;
+width_2_4;
+height_2_4;
+concept_telescopic_sight;
+[Экипаж  составлял 3 человека];
+speed_30_country;
+[Запас хода 225 км];;
+
+
+
+
+
+
+
+
+
+
+

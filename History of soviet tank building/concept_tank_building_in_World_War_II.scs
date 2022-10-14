@@ -1,0 +1,84 @@
+concept_tank_building_in_World_War_2<-sc_node_not_relation;;
+concept_tank_building_in_World_War_2 => nrel_main_idtf:
+[танкостроение во Вторую мировую войну(1939-1945)](*<- lang_ru;;*);
+[танкостроение(1939-1945)](*<- lang_ru;;*);;
+
+
+concept_tank_building_in_World_War_2 => nrel_main_idtf:
+[tank construction in the Second World War(1939-1945)](*<- lang_en;;*);
+[tank construction(1939-1945)](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_tank_building_in_World_War_2;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [До начала Великой Отечественной войны было создано три танка, каждый из которых, отнюдь не являясь чудо-оружием, стал серьёзным качественным прорывом в своей «весовой категории». Самым невезучим в этой «троице» оказался лёгкий танк Т-50, разработанный в 1940 году на заводах имени Кирова и имени Ворошилова. Предполагалось, что он заменит <b><sc_element sys_idtf="concept_T26_tank">Т-26</b> в качестве боевой машины поддержки пехоты.роня Т-50 была не только более толстой, чем у «двадцать шестого» — она изготавливалась из цементированных плит высокой твёрдости, располагалась под рациональными углами наклона и обеспечивала защиту танка от попадания остроголовых снарядов калибра до 47 мм. Вооружение машины состояло из 45-мм пушки и двух 7,62-мм пулемётов ДТ. Танк оснащался торсионной подвеской, дизельным двигателем В-4 и имел отличные динамические характеристики, развивая по пересечённой местности скорость до 40 км/ч, а по шоссе — до 60 км/ч. Удачной и хорошо продуманной была система охлаждения моторного отделения. Не обошлось и без недостатков. Башня Т-50 позволяла более или менее комфортно работать трём членам экипажа, однако командирская башенка не имела люка, так что в случае гибели наводчика или заряжающего командиру было очень трудно покинуть машину. Люк механика-водителя ослаблял лобовой бронелист. Кроме того, уже на стадии проектирования штатное 45-мм орудие считалось недостаточно мощным и планировалась его замена на 57-мм пушку. В  совокупности Т-50 всё-таки был весьма удачным танком, и остаётся только сожалеть, что война помешала наладить его массовый выпуск.](*<- lang_ru;;=> nrel_format: format_html;;*);;
+
+
+            -> [Before the start of the Great Patriotic War, three tanks were created, each of which, far from being a miracle weapon, became a serious qualitative breakthrough in its “weight category”. The most unlucky in this "trinity" was the T-50 light tank, developed in 1940 at the Kirov and Voroshilov factories. It was assumed that he would replace the <b><sc_element sys_idtf="concept_T26_tank">T-26</b> as an infantry support combat vehicle. The T-50's armor was not only thicker than that of the "twenty-sixth" - it was made of high-hardness cemented slabs, located at rational angles of inclination and provided protection for the tank from hit by sharp-headed shells of caliber up to 47 mm. The armament of the vehicle consisted of a 45 mm cannon and two 7.62 mm DT machine guns. The tank was equipped with a torsion bar suspension, V-4 diesel engine and had excellent dynamic characteristics, reaching speeds of up to 40 km/h on rough terrain and up to 60 km/h on highways. The engine compartment cooling system was successful and well thought out. It was not without its shortcomings. The T-50 turret allowed three crew members to work more or less comfortably, but the commander's cupola did not have a hatch, so that in the event of the death of the gunner or loader, it was very difficult for the commander to leave the car. The driver's hatch weakened the frontal armor plate. In addition, already at the design stage, the standard 45-mm gun was considered insufficiently powerful and it was planned to replace it with a 57-mm gun. Overall, the T-50 was still a very successful tank, and one can only regret that the war prevented its mass production.](*<- lang_en;;=> nrel_format: format_html;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танкостроение во Вторую мировую войну)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(tank construction in the Second World War](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_tank_building_in_World_War_2;;
+    =>nrel_using_constants:{
+        concept_KV1_tank;
+        concept_KV2_tank;
+        concept_T34_tank
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Второй «знаковой» машиной стал танк КВ, разработанный в 1939 году. Образно говоря, именно под его гусеницами погибла концепция многобашенных танков. Оказалось, что одной башни и одного орудия вполне достаточно для эффективного выполнения боевых задач, особенно если калибр этого орудия не 45, а 76 мм. На момент принятия КВ на вооружение не было ни одного танка, способного выдержать попадание из его орудия. А сам «Климент Ворошилов» был хорошо защищен от огня танковых и противотанковых орудий среднего калибра. Проблема первого этапа войны заключалась в том, что зачастую бронебойных снарядов просто не хватало. Кроме <b><sc_element sys_idtf="concept_KV1_tank">КВ-1</b> с 76-мм орудием было построено 334 экземпляра танка <b><sc_element sys_idtf="concept_KV2_tank">КВ-2</b> с большой башней и <b><sc_element sys_idtf="concept_152mm_howitzer_model_1938_M10">152-мм гаубицей</b>. Эта модификация предназначалась для разрушения бетонных укреплений и огневых точек. КВ был медленным, неповоротливым и весил около 50 тонн. Его выдерживал далеко не каждый мост, а дорога, по которой он прошёл, становилась после этого непроходимой. Немцы, хоть и прозвали КВ «призраком» за иллюзию неуязвимости, довольно быстро научились с ним бороться. <b><sc_element sys_idtf="concept_KV2_tank">КВ-2</b> мог стрелять только стоя, желательно на ровном месте, и ни в коем случае не перпендикулярно направлению корпуса. Строго говоря, КВ и не рассматривался как машина, которой долго суждено быть на вооружении РККА. Война внесла свои коррективы, вынудив строить в 1941–1942 годах именно эти танки, потому что, несмотря на отсутствие альтернативы, имелась отлаженная технология.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [The second "iconic" vehicle was the KV tank, developed in 1939. Figuratively speaking, it was under its tracks that the concept of multi-turret tanks died. It turned out that one turret and one gun is quite enough for the effective performance of combat missions, especially if the caliber of this gun is not 45, but 76 mm. At the time the KV was adopted, there was not a single tank capable of withstanding a hit from its gun. And the "Kliment Voroshilov" itself was well protected from the fire of medium-caliber tank and anti-tank guns. The problem with the first stage of the war was that armor-piercing shells were often simply not enough. In addition to the <b><sc_element sys_idtf="concept_KV1_tank">KV-1</b> with a 76 mm gun, 334 <b><sc_element sys_idtf="concept_KV2_tank">KV-2</b> tanks with a large turret were built and <b><sc_element sys_idtf="concept_152mm_howitzer_model_1938_M10">152mm howitzer</b>. This modification was intended for the destruction of concrete fortifications and firing points. KV was slow, clumsy and weighed about 50 tons. Not every bridge could withstand it, and the road along which he passed became impassable after that. The Germans, although they called the KV a “ghost” for the illusion of invulnerability, quickly learned how to deal with it. The <b><sc_element sys_idtf="concept_KV2_tank">KV-2</b> could only fire while standing, preferably on level ground, and in no case perpendicular to the direction of the hull. Strictly speaking, the KV was not considered as a machine that was destined to be in service with the Red Army for a long time. The war made its own adjustments, forcing the construction of these tanks in 1941-1942, because, despite the absence of an alternative, there was a well-established technology.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танкостроение во Вторую мировую войну)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(tank construction in the Second World War)](*<- lang_en;;*);;
+*);;
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_tank_building_in_World_War_2;;
+    =>nrel_using_constants:{
+        concept_KV1_tank;
+        concept_KV2_tank;
+        concept_T34_tank
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Главным успехом советских конструкторов довоенного периода был <b><sc_element sys_idtf="concept_medium_tank">средний танк</b> <b><sc_element sys_idtf="concept_T34_tank">Т-34</b>. Более динамичная по сравнению с КВ, достаточно хорошо защищённая машина, вооружённая 76-мм пушкой, после устранения «детских болезней» стала одной из лучших в мире. Танк подходил для массового производства и обладал неплохой ремонтопригодностью. Он был значительно легче и подвижнее КВ, не уступая ему при этом в огневой мощи. «Тридцатьчетвёрка» заслуженно считается легендарной. Идеализировать <b><sc_element sys_idtf="concept_T34_tank">Т-34</b> не стоит: танк имел большое количество недостатков, с которыми приходилось бороться на всём протяжении его существования. Однако именно он вынес на себе основную тяжесть боёв Великой Отечественной войны. Первый этап войны стал катастрофическим для Красной армии. И то, что Германия напала на Советский Союз внезапно, не было главной тому причиной. Как ни горько это признавать, но в 1941–1942 году немцы имели подавляющее превосходство в тактике и организации взаимодействия войск. Советские бойцы отчаянно сопротивлялись, но были вынуждены отступать на всех фронтах, неся большие потери. В это время большая часть танков терялась безвозвратно, так как чаще всего поле боя оставалось за немцами и эвакуировать повреждённую технику не было возможности. Удручающе высоким был процент небоевых потерь. Танки взрывали, а то и просто бросали, когда заканчивалось горючее или случалась поломка, лишавшая боевую машину подвижности. Танковая мощь Советского Союза таяла, и восполнять её было очень трудно, особенно с учётом эвакуации предприятий на восток, начавшейся со второго полугодия 1941 года. Это грандиозное мероприятие заслуженно считается одним из важнейших стратегических ходов советского правительства, позволившим сохранить производственные мощности и в кратчайшие сроки наладить выпуск военной техники в объёмах, удовлетворяющих запросы фронта. Рамки данной статьи не позволяют подробно рассказать об эвакуации, её успехах и трудностях, с ней связанных. Ограничимся констатацией факта: танковая промышленность СССР в начале войны находилась в тяжелейшем положении. Обеспечить войска большим количеством танков Т-34 не было возможности, и, чтобы хоть как-то компенсировать потери, был налажен выпуск лёгких машин. Немцы, столкнувшиеся с новыми советскими танками КВ и <b><sc_element sys_idtf="concept_T34_tank">Т-34</b>, ускорили работы по созданию собственного тяжёлого танка. Уже в 1942 году первые «Тигры» прибыли на Восточный фронт. Их лобовую броню не могли пробить 76-мм пушки. Наступало время других танков.](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [The main success of the Soviet designers of the pre-war period was the <b><sc_element sys_idtf="concept_medium_tank">medium tank</b> <b><sc_element sys_idtf="concept_T34_tank">T-34</b>. More dynamic compared to the KV, a fairly well-protected vehicle armed with a 76-mm cannon, after the elimination of "childhood diseases" became one of the best in the world. The tank was suitable for mass production and had good maintainability. It was much lighter and more mobile than the KV, while not inferior to it in terms of firepower. "Thirty-four" is deservedly considered legendary. <b><sc_element sys_idtf="concept_T34_tank">T-34</b> should not be idealized: the tank had a large number of shortcomings that had to be dealt with throughout its existence. However, it was he who bore the brunt of the battles of the Great Patriotic War. The first stage of the war became disastrous for the Red Army. And the fact that Germany attacked the Soviet Union suddenly was not the main reason for this. No matter how bitter it is to admit, but in 1941-1942 the Germans had an overwhelming superiority in tactics and organization of the interaction of troops. The Soviet soldiers resisted desperately, but were forced to retreat on all fronts, suffering heavy losses. At this time, most of the tanks were lost forever, since most often the battlefield remained with the Germans and it was not possible to evacuate the damaged equipment. The percentage of non-combat losses was depressingly high. Tanks were blown up, or even simply abandoned, when fuel ran out or a breakdown occurred that deprived the combat vehicle of mobility. The tank power of the Soviet Union was dwindling, and it was very difficult to replenish it, especially given the evacuation of enterprises to the east, which began in the second half of 1941. This grandiose event is deservedly considered one of the most important strategic moves of the Soviet government, which made it possible to maintain production capacities and quickly launch the production of military equipment in volumes that meet the demands of the front. The scope of this article does not allow us to talk in detail about the evacuation, its successes and the difficulties associated with it. We confine ourselves to stating a fact: the tank industry of the USSR at the beginning of the war was in a difficult situation. It was not possible to provide the troops with a large number of T-34 tanks, and in order to somehow compensate for the losses, the production of light vehicles was launched. The Germans, faced with the new Soviet KV tanks and the <b><sc_element sys_idtf="concept_T34_tank">T-34</b>, sped up work on building their own heavy tank. Already in 1942, the first "Tigers" arrived on the Eastern Front. Their frontal armor could not be penetrated by 76 mm guns. It was time for other tanks.](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танкостроение во Вторую мировую войну)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(tank construction in the Second World War)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+concept_tank_building_in_World_War_2=>nrel_the_technique_used:
+concept_KV1_tank;
+concept_KV2_tank;
+concept_T34_tank;;
+
+
+
+
+
+

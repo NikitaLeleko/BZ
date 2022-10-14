@@ -1,0 +1,46 @@
+concept_KV2_tank_body<-sc_node_not_relation;;
+concept_KV2_tank_body => nrel_main_idtf: [корпус танка КВ-2](*<- lang_ru;;*);;
+concept_KV2_tank_body => nrel_main_idtf: [KV-2 tank body](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV2_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус танка сваривался из катаных броневых плит толщиной 75, 40, 30 и 20 мм. Броневая защита равнопрочная (бронеплиты с толщиной, отличной от 75 мм, использовались только для горизонтального бронирования машины), противоснарядная. Броневые плиты лобовой части машины устанавливались под рациональными углами наклона.](*<- lang_ru;;*);;
+            
+            -> [TThe armored hull of the tank was welded from rolled armor plates 75, 40, 30 and 20 mm thick. Equal-strength armor protection (armor plates with a thickness other than 75 mm were used only for horizontal armoring of the vehicle), anti-ballistic. The armor plates of the frontal part of the machine were installed at rational angles of inclination.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка КВ-2)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV-2 tank body)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV2_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Первые 24 танка КВ-2 отличались от остальных машин формой башни и конфигурацией маски орудия. Более поздняя «пониженная» башня имела меньшую массу, что позволило хоть немного облегчить и без того перегруженное шасси. Внешне эти два типа башен легко различимы по их лобовой оконечности: установка МТ-1 имеет наклонные скуловые бронеплиты, а «пониженный» вариант — вертикальные. Оба варианта башен сваривались из катаных бронеплит, их толщина брони равнялась 75 мм. «Пониженная» модификация башни рядом со своей кормовой дверцей имела шаровую установку пулемёта ДТ. Башня устанавливалась на погон диаметром 1535 мм в броневой крыше боевого отделения и фиксировалась захватами во избежание сваливания при сильном крене или опрокидывании танка. Угломерный круг башни размечался в тысячных для стрельбы с закрытых позиций.](*<- lang_ru;;*);;
+
+
+            -> [The first 24 KV-2 tanks differed from other vehicles in the shape of the turret and the configuration of the gun mantlet. The later "lowered" turret had a lower mass, which made it possible to slightly lighten the already overloaded chassis. Outwardly, these two types of turrets are easily distinguishable by their frontal ends: the MT-1 mount has inclined zygomatic armor plates, while the “lowered” variant has vertical ones. Both versions of the towers were welded from rolled armor plates, their armor thickness was 75 mm. The "reduced" modification of the tower next to its aft door had a ball mount for a DT machine gun. The tower was mounted on a shoulder strap with a diameter of 1535 mm in the armored roof of the fighting compartment and was fixed with grips to avoid stalling in case of a strong roll or overturning of the tank. The goniometric circle of the tower was marked in thousandths for firing from closed positions.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка КВ-2)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-2 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+concept_KV2_tank_body=>nrel_parameters:
+rolled_steel;
+roof_40;
+the_forehead_of_the_body_75;
+hull_side_75;
+hull_feed_75;;
+

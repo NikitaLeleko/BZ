@@ -1,0 +1,103 @@
+concept_T26_tank_body<-sc_node_not_relation;;
+concept_T26_tank_body => nrel_main_idtf: [корпус танка Т-26](*<- lang_ru;;*);;
+concept_T26_tank_body => nrel_main_idtf: [T-26 tank body](*<- lang_en;;*);;
+
+
+
+
+
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_T26_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Броневой корпус Т-26 — сварной, собиравшийся из катаных плит стальной брони.](*<- lang_ru;;*);;
+            
+            -> [The T-26 armored hull is welded, assembled from rolled steel armor plates.](*<- lang_en;;*);;
+            
+        *);;
+    => nrel_main_idtf: [Опр.(корпус танка Т-26)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(T-26 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_T26_tank_body;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [С сентября 1932 года была усилена бронезащита танка заменой 13-мм бронелистов на 15-мм.](*<- lang_ru;;*);;
+
+
+
+
+            -> [From September 1932, the armor protection of the tank was strengthened by replacing 13-mm armor plates with 15-mm ones.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(корпус танка Т-26)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(T-26 tank body)](*<- lang_en;;*);;
+*);;
+
+
+
+
+
+
+
+
+concept_T26_tank_body=>nrel_parameters:
+rolled_steel;
+the_forehead_of_the_body_15;
+hull_side_15;
+hull_feed_15;
+roof_10;;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

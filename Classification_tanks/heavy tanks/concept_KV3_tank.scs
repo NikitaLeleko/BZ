@@ -1,0 +1,98 @@
+concept_KV3_tank<-sc_node_not_relation;;
+concept_KV3_tank => nrel_main_idtf: [танк КВ-3](*<- lang_ru;;*);;
+concept_KV3_tank=> nrel_main_idtf: [KV-3 tank](*<- lang_en;;*);;
+
+
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_KV3_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [КВ-3 (известный также как Объект 223) — советский опытный тяжёлый танк семейства «КВ». Аббревиатура "КВ" пошла от политического деятеля Климента Ворошилова.](*<- lang_ru;;*);;
+
+
+            -> [The KV-3 (also known as the Object 223) is a Soviet experimental heavy tank of the KV family. The abbreviation "KV" came from the politician Kliment Voroshilov.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(танк КВ-3)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(KV-3 tank](*<- lang_en;;*);;
+*);;
+
+
+concept_KV3_tank<-rrel_key_sc_element:...(*
+    <-illustration;;
+    =>nrel_main_idtf:[Изобр.(танк КВ-3)](*<-lang_ru;;*);;
+    <=nrel_sc_text_translation:...
+    (*
+        ->rrel_example:
+        "file://images/kv-3.jpg"(*=>nrel_format:format_png;;*);;
+    *);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV3_tank;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Летом 1940 года по итогам Зимней войны и сравнительных испытаний было решено закрыть работы по темам тяжёлых танков СМК и Т-100, и сконцентрироваться на развитии и модернизации танка КВ-1, запущенного в серийное производство. 17 июня 1940 года СНК СССР и ЦК ВКП(б) приняли постановление № 1288-495сс, в котором Кировскому заводу указывалось создать на базе танка КВ два танка с бронёй 90-мм (один с 76-мм пушкой Ф-32, другой с 85-мм пушкой), два танка с бронёй 100-мм (один с 76-мм пушкой Ф-32, другой с 85-мм пушкой) и одну самоходную установку с 152-мм пушкой БР-2. Разрабатываемый танк с броней 90-мм на Кировским заводе обозначался как «Т-150» (КВ-150 или Объект 150), а танк с броней 100-мм как "Т-220" (КВ-220 или Объект 220). В ноябре и декабре танки были сданы, а с января начали проходить испытания. В марте 1941 года руководство Красной Армии получило от разведки информацию о том, что в Германии разработаны танки с мощным бронированием, уже поступающие на вооружение Вермахта. Было решено принять ответные меры. 15 марта 1941 года СНК СССР и ЦК ВКП(б) приказал Кировскому заводу начать выпуск танка Т-150 с серийным названием КВ-3, и несколько изменёнными характеристиками (76-мм пушка Ф-34, двигатель В-5 мощностью 700 л.с.). Тем не менее, уже 7 апреля 1941 года СНК СССР и ЦК ВКП(б) приняло постановление №827-345сс. В нём определялись новые параметры для танка КВ-3 ](*<- lang_ru;;*);;
+
+
+            -> [In the summer of 1940, following the results of the Winter War and comparative tests, it was decided to close work on heavy tanks SMK and T-100, and concentrate on the development and modernization of the KV-1 tank, launched into mass production. On June 17, 1940, the Council of People's Commissars of the USSR and the Central Committee of the All-Union Communist Party of Bolsheviks adopted Decree No. 1288-495ss, in which the Kirov Plant was instructed to create two tanks with 90-mm armor on the basis of the KV tank (one with a 76-mm F-32 gun, the other with 85 -mm cannon), two tanks with 100 mm armor (one with a 76 mm F-32 cannon, the other with an 85 mm cannon) and one self-propelled gun with a 152 mm BR-2 cannon. The developed tank with 90 mm armor was designated at the Kirov Plant as "T-150" (KV-150 or Object 150), and the tank with 100 mm armor as "T-220" (KV-220 or Object 220). In November and December, the tanks were handed over, and from January they began to be tested. In March 1941, the leadership of the Red Army received information from intelligence that Germany had developed tanks with powerful armor, which were already entering service with the Wehrmacht. It was decided to take retaliatory measures. On March 15, 1941, the Council of People's Commissars of the USSR and the Central Committee of the All-Union Communist Party of Bolsheviks ordered the Kirov Plant to begin production of the T-150 tank with the serial name KV-3, and slightly modified characteristics (76-mm F-34 gun, V-5 engine with a power of 700 hp .). Nevertheless, already on April 7, 1941, the Council of People's Commissars of the USSR and the Central Committee of the All-Union Communist Party of Bolsheviks adopted a resolution No. 827-345ss. It defined new parameters for the KV-3 tank](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-3)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-3 tank)](*<- lang_en;;*);;
+*);;
+
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_KV3_tank;;
+    =>nrel_using_constants:{
+        concept_KV3_tank_body;
+        concept_ZIS_6;
+        concept_V2_engine;
+        concept_chassis_KV3
+    };;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Конструкция танка была такова:
+                бронирование <b><sc_element sys_idtf="concept_KV3_tank_body">(корпус КВ-3)</b>,
+                вооружение<b><sc_element sys_idtf="concept_ZIS_6">(ЗИС-6)</b>,
+                двигатель<b><sc_element sys_idtf="concept_V2_engine">(В-2)</b>,
+                ходовая<b><sc_element sys_idtf="concept_chassis_KV3">(ходовая часть КВ-3)</b>](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+            -> [The design of the tank was as follows:
+                armoring<b><sc_element sys_idtf="concept_KV3_tank_body">(building KV-3)</b>,
+                armament<b><sc_element sys_idtf="concept_ZIS_6">(ZIS-6)</b>,
+                engine<b><sc_element sys_idtf="concept_V2_engine">(V-2)</b>,
+                running gear<b><sc_element sys_idtf="concept_chassis_KV3">(chassis KV3)</b>](* <- lang_en;; => nrel_format: format_html;; *);;
+        *);;
+    => nrel_main_idtf: [Утв.(танк КВ-3)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(KV-3 tank)](*<- lang_en;;*);;
+*);;
+
+
+concept_KV3_tank=>nrel_elements:
+concept_KV3_tank_body;
+concept_ZIS_6;
+concept_V2_engine;
+concept_chassis_KV3;;
+
+
+concept_KV3_tank=>nrel_parameters:
+vertical_guidance_7_25;
+side_of_the_tower_115;
+tower_roof_50;
+gun_mask_135;
+rate_fire_3;
+weight_68_t;
+length_7_8;
+width_3_4;
+height_2_9;
+[Экипаж  составлял 6 человек];;
+
+
+

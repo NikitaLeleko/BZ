@@ -1,0 +1,45 @@
+concept_M17_engine<-sc_node_not_relation;;
+concept_M17_engine => nrel_main_idtf: [двигатель М-17](*<- lang_ru;;*);;
+concept_M17_engine => nrel_main_idtf: [engine M-17](*<- lang_en;;*);;
+
+
+definition -> ...
+(*
+    -> rrel_key_sc_element: concept_M17_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [M-17 — поршневой V-образный 12-цилиндровый авиационный двигатель с водяным охлаждением, — советская лицензионная копия (клон) немецкого BMW VI, доработанный Александром Микулиным. ](*<- lang_ru;;*);;
+	        -> [M-17 is a piston V-shaped 12-cylinder water-cooled aircraft engine, a Soviet licensed copy (clone) of the German BMW VI, modified by Alexander Mikulin.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Опр.(двигатель М-17)](*<- lang_ru;;*);;
+    => nrel_main_idtf: [Def.(engine M-17)](*<- lang_en;;*);;
+*);;
+
+concept_M17_engine<-rrel_key_sc_element:...(*
+	<-illustration;;
+	=>nrel_main_idtf:[Изобр.(М-17)](*<-lang_ru;;*);;
+	<=nrel_sc_text_translation:...
+	(*
+    	->rrel_example:
+		"file://image_engine/M-17.jpg"(*=>nrel_format:format_png;;*);;
+	*);;
+*);;
+
+statement -> ...
+(*
+    -> rrel_key_sc_element: concept_M17_engine;;
+    <= nrel_sc_text_translation:...
+        (*
+            -> [Двигатель использовался на первых модификациях тяжёлого бомбардировщика ТБ-3. Танковый вариант М-17Т устанавливался на БТ-7, Т-28, Т-35 и вынуждено (в связи с нехваткой дизельных В-2 в первый год войны) на Т-34 и КВ-1. Также устанавливался на Моторный броневой вагон Кировского завода. Моторы выпускались на рыбинском заводе ГАЗ № 6 (с 1928 года — завод № 26) и на московском заводе № 24 в 1931—1934 годах, массово эксплуатировались в авиации до 1943 г. Всего было выпущено более 27 000 единиц, из них около 19 000 устанавливались на самолёты, остальные на танки. ](*<- lang_ru;;*);;
+            -> [The engine was used on the first modifications of the TB-3 heavy bomber. The tank version of the M-17T was installed on the BT-7, T-28, T-35 and forced (due to the lack of diesel V-2s in the first year of the war) on the T-34 and KV-1. It was also installed on the Motor Armored Car of the Kirov Plant. The motors were produced at the Rybinsk plant GAZ No. 6 (from 1928 - plant No. 26) and at the Moscow plant No. 24 in 1931-1934, they were massively used in aviation until 1943. In total, more than 27,000 units were produced, of which about 19,000 installed on aircraft, the rest on tanks.](*<- lang_en;;*);;
+        *);;
+    => nrel_main_idtf: [Утв.(двигатель М-17)](*<- lang_ru;;*);;
+ => nrel_main_idtf: [St.(engine M-17)](*<- lang_en;;*);;
+*);;
+
+concept_M17_engine=>nrel_parameters:
+[12-цилиндровые];
+[Жидкостного охлаждения];
+[Рабочим объемом цилиндров 46.5 л];
+[Диаметром цилиндров 160 мм и рабочим ходом поршня 199 мм];
+[Рекомендуемый бензин Б-70];;

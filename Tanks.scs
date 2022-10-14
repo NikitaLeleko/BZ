@@ -1,0 +1,68 @@
+section_subject_domain_of_military_machines
+	=> nrel_main_idtf: [Раздел. Предметная область военная техника ] (* <- lang_ru;; *);
+	=> nrel_main_idtf: [Section. Subject domain of military machines] (* <- lang_en;; *);
+	=> nrel_system_idtf: [section_subject_domain_of_military_machines] (* <- lang_en;; *);
+	<= nrel_section_decomposition:
+	{
+		section_subject_domain_of_Light_Tanks;
+		section_subject_domain_of_Medium_Tanks;
+		section_subject_domain_of_Heavy_Tanks;
+		section_subject_domain_of_Tank_Destroyers;
+		section_subject_domain_of_SPGs
+
+	};
+
+	-> rrel_key_sc_element:
+		concept_tank;
+	        concept_gun;
+		concept_machine_gun;
+		concept_engine;
+		concept_ammo;
+		concept_tank_armor;
+		concept_turrent;
+		concept_suspencion;
+			nrel_weight;
+			nrel_speed;
+			nrel_fuel_consumption;
+			nrel_engine_volume;
+			nrel_weapon_caliber;
+			nrel_fuel_tank_volume;
+	<- non_atomic_section;;
+
+
+section_subject_domain_of_military_machines =
+[*
+	subject_domain_of_tanks
+		=> nrel_main_idtf: [Предметная область танков] (* <- lang_ru;; *);
+		=> nrel_main_idtf: [Subject domain of tanks] (* <- lang_en;; *);
+		=> nrel_system_idtf: [subject_domain_of_tanks] (* <- lang_en;; *);
+			
+		=> nrel_private_subject_domain:
+		subject_domain_of_Light_Tanks;
+		subject_domain_of_Medium_Tanks;
+		subject_domain_of_Heavy_Tanks;
+		subject_domain_of_Tank_Destroyers;
+		subject_domain_of_SPGs;
+		
+		
+		-> rrel_maximum_studied_object_class: 
+			concept_tank;
+			
+		-> rrel_not_maximum_studied_object_class:
+	        concept_gun;
+		concept_machine_gun;
+		concept_engine;
+		concept_ammo;
+		concept_tank_armor;
+		concept_turrent;
+		concept_suspencion;
+	
+		-> rrel_explored_relation:
+			nrel_weight;
+			nrel_speed;
+			nrel_fuel_consumption;
+			nrel_engine_volume;
+			nrel_weapon_caliber;
+			nrel_fuel_tank_volume;		
+		<- subject_domain;;
+*];;

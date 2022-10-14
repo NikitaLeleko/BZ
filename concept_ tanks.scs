@@ -1,0 +1,856 @@
+nrel_period<-sc_node_norole_relation;
+=> nrel_main_idtf: [cледующий период в танкостроении* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [the next period in tank building* ] (*<- lang_en;;*);;
+
+nrel_the_technique_used<-sc_node_norole_relation;
+=> nrel_main_idtf: [спроектированная техника* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [the technique used* ] (*<- lang_en;;*);;
+
+nrel_view<-sc_node_norole_relation;
+=> nrel_main_idtf: [вид снаряда* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [view  shell* ] (*<- lang_en;;*);;
+
+nrel_elements<-sc_node_norole_relation;
+=> nrel_main_idtf: [компоненты танка* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [tank components* ] (*<- lang_en;;*);;
+
+nrel_components<-sc_node_norole_relation;
+=> nrel_main_idtf: [компоненты* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [components* ] (*<- lang_en;;*);;
+
+nrel_modifications<-sc_node_norole_relation;
+=> nrel_main_idtf: [модификация* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [modification* ] (*<- lang_en;;*);;
+
+nrel_parameters<-sc_node_norole_relation;
+=> nrel_main_idtf: [основные характеристики* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [parameters* ] (*<- lang_en;;*);;
+
+nrel_functions<-sc_node_norole_relation;
+=> nrel_main_idtf: [функции* ] (*<- lang_ru;;*);
+=> nrel_main_idtf: [functions* ] (*<- lang_en;;*);;
+
+
+
+
+
+
+
+weight<-sc_node_not_relation;
+=> nrel_main_idtf: [масса(тонны)] (*<- lang_ru;;*);
+=> nrel_main_idtf: [масса(кг)] (*<- lang_ru;;*);;
+
+
+weight_47_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 47(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  47 т];;
+
+weight_30_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 30(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  30 т];;
+
+weight_10_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 10(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  10 т];;
+
+
+weight_31_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 31(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  31 т];;
+
+weight_52_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 52(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  52 т];;
+
+weight_68_t<-sc_node_not_relation;
+=> nrel_main_idtf: [Масса: 68(т)] (*<- lang_ru;;*);
+<-exact_value;
+<-weight;
+->[Масса -  68 т];;
+
+
+
+
+width<-sc_node_not_relation;
+=> nrel_main_idtf: [ширина(метры)] (*<- lang_ru;;*);
+=> nrel_main_idtf: [ширина(мм)] (*<- lang_ru;;*);;
+
+width_2_4<-sc_node_not_relation;
+=> nrel_main_idtf: [Ширина: 2,4(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-width;
+->[Ширина -  2,4 м ];;
+
+width_3_3<-sc_node_not_relation;
+=> nrel_main_idtf: [Ширина: 3,3(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-width;
+->[Ширина -  3,3 м ];;
+
+width_3_4<-sc_node_not_relation;
+=> nrel_main_idtf: [Ширина: 3,4(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-width;
+->[Ширина -  3,4 м ];;
+
+width_3_1<-sc_node_not_relation;
+=> nrel_main_idtf: [Ширина: 3,1(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-width;
+->[Ширина -  3,1 м ];;
+
+width_3<-sc_node_not_relation;
+=> nrel_main_idtf: [Ширина: 3(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-width;
+->[Ширина -  3 м ];;
+
+
+
+
+
+
+height<-sc_node_not_relation;
+=> nrel_main_idtf: [высота(метры)] (*<- lang_ru;;*);
+=> nrel_main_idtf: [высота(мм)] (*<- lang_ru;;*);;
+
+
+height_2_7<-sc_node_not_relation;
+=> nrel_main_idtf: [Высота: 2,7(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-height;
+->[Высота -  2,7 м ];;
+
+height_2_9<-sc_node_not_relation;
+=> nrel_main_idtf: [Высота: 2,9(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-height;
+->[Высота -  2,9 м ];;
+
+height_2_4<-sc_node_not_relation;
+=> nrel_main_idtf: [Высота: 2,4(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-height;
+->[Высота -  2,4 м ];;
+
+
+height_3_2<-sc_node_not_relation;
+=> nrel_main_idtf: [Высота: 3,2(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-height;
+->[Высота -  3,2 м ];;
+
+
+
+
+length<-sc_node_not_relation;
+=> nrel_main_idtf: [длина(метры)] (*<- lang_ru;;*);
+=> nrel_main_idtf: [длина(мм)] (*<- lang_ru;;*);;
+
+length_6<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 6 (м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 6 м];;
+
+length_4_6<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 4,6(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 4.6 м];;
+
+
+length_6_6<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 6,6(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 6.6 м];;
+
+length_6_9<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 6,9(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 6.9 м];;
+
+length_5_9<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 5,9(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 5.9 м];;
+
+length_7_8<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина: 7,8(м)] (*<- lang_ru;;*);
+<-exact_value;
+<-length;
+->[Длина - 7.8 м];;
+
+
+
+
+
+
+speed<-sc_node_not_relation;
+=> nrel_main_idtf: [скорость(км/ч)] (*<- lang_ru;;*);;
+
+
+
+cross_country_speed<-sc_node_not_relation;
+=> nrel_main_idtf: [cкорость по пересечённой местности] (*<- lang_ru;;*);
+<-speed;;
+
+speed_34_country<-sc_node_not_relation;
+=> nrel_main_idtf: [Скорость: 34(км/ч)] (*<- lang_ru;;*);
+<-exact_value;
+<-cross_country_speed;
+->[Скорость - 34 км/ч ];;
+
+speed_36_country<-sc_node_not_relation;
+=> nrel_main_idtf: [Скорость: 36(км/ч)] (*<- lang_ru;;*);
+<-exact_value;
+<-cross_country_speed;
+->[Скорость - 36 км/ч ];;
+
+speed_30_country<-sc_node_not_relation;
+=> nrel_main_idtf: [Скорость: 30(км/ч)] (*<- lang_ru;;*);
+<-exact_value;
+<-cross_country_speed;
+->[Скорость - 30 км/ч ];;
+
+
+speed_16_country<-sc_node_not_relation;
+=> nrel_main_idtf: [Скорость: 16(км/ч)] (*<- lang_ru;;*);
+<-exact_value;
+<-cross_country_speed;
+->[Скорость - 16 км/ч ];;
+
+
+
+
+
+
+type_of_armor<-sc_node_not_relation;
+=> nrel_main_idtf: [тип брони] (*<- lang_ru;;*);;
+
+rolled_steel<-sc_node_not_relation;
+=> nrel_main_idtf: [Стальная катаная] (*<- lang_ru;;*);
+<-type_of_armor;;
+
+steel<-sc_node_not_relation;
+=> nrel_main_idtf: [Стальная] (*<- lang_ru;;*);
+<-type_of_armor;;
+
+rolled_chrome_nickel<-sc_node_not_relation;
+=> nrel_main_idtf: [катаная хромоникелевая] (*<- lang_ru;;*);
+<-type_of_armor;;
+
+chromium_nickel_steel<-sc_node_not_relation;
+=> nrel_main_idtf: [хромоникелевая сталь] (*<- lang_ru;;*);
+<-type_of_armor;;
+
+marganec_steel<-sc_node_not_relation;
+=> nrel_main_idtf: [маргонцовистая сталь] (*<- lang_ru;;*);
+<-type_of_armor;;
+
+
+
+
+
+indicator_of_armoring<-sc_node_not_relation;
+=> nrel_main_idtf: [показатель бронирования(мм/°)] (*<- lang_ru;;*);
+=> nrel_main_idtf: [показатель бронирования(мм)] (*<- lang_ru;;*);;
+
+
+
+
+the_forehead_of_the_body<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+
+the_forehead_of_the_body_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 75(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 75 мм];;
+
+the_forehead_of_the_body_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 15(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 15 мм];;
+
+the_forehead_of_the_body_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 110(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 110 мм];;
+
+the_forehead_of_the_body_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 110(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 110 мм];;
+
+the_forehead_of_the_body_45_60<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 45(мм)/60°] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 45 мм под углом 60°];;
+
+the_forehead_of_the_body_90_60<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб корпуса: 90(мм)/60°] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_body;
+->[Лоб корпуса - 90 мм под углом 60°];;
+
+
+
+
+
+
+
+
+
+
+
+
+hull_side <-sc_node_not_relation;
+=> nrel_main_idtf: [Борт корпуса(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+hull_side_90<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт корпуса: 90(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_side;
+->[Борт корпуса - 90 мм];;
+
+hull_side_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт корпуса: 75(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_side;
+->[Борт корпуса - 75 мм];;
+
+hull_side_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт корпуса: 15(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_side;
+->[Борт корпуса - 15 мм];;
+
+hull_side_45_40<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт корпуса: 45(мм)/40°] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_side;
+->[Борт корпуса - 45мм под углом 40°];;
+
+
+
+
+
+
+
+hull_feed <-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+
+hull_feed_90<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 90(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 90 мм];; 
+
+hull_feed_70<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 70(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 70 мм];; 
+
+hull_feed_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 75(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 75 мм];;
+
+hull_feed_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 15(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 15 мм];;
+
+hull_feed_40<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 40(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 40 мм];; 
+
+hull_feed_40_47<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма корпуса: 40(мм)/47°] (*<- lang_ru;;*);
+<-exact_value;
+<-hull_feed;
+->[Корма корпуса - 40 мм под углом 47°];; 
+
+
+
+
+
+
+
+
+roof <-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша корпуса(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+roof_40<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша корпуса: 40(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-roof;
+->[Крыша корпуса - 40 мм];;
+ 
+roof_20<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша корпуса: 20(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-roof;
+->[Крыша корпуса - 20 мм];;
+
+roof_10<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша корпуса: 10(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-roof;
+->[Крыша корпуса - 10 мм];;
+
+
+
+
+
+
+
+
+
+
+
+the_forehead_of_the_tower<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+the_forehead_of_the_tower_120<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни: 120(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_tower;
+->[Лоб башни - 120 мм];; 
+
+the_forehead_of_the_tower_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни: 110(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_tower;
+->[Лоб башни - 110 мм];; 
+
+the_forehead_of_the_tower_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни: 75 мм ] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_tower;
+->[Лоб башни - 75 мм];; 
+
+the_forehead_of_the_tower_45<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни: 45 мм ] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_tower;
+->[Лоб башни - 45 мм];; 
+
+the_forehead_of_the_tower_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Лоб башни: 15 мм ] (*<- lang_ru;;*);
+<-exact_value;
+<-the_forehead_of_the_tower;
+->[Лоб башни - 15 мм];; 
+
+
+
+
+
+
+
+
+
+side_of_the_tower<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни(мм/°)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+side_of_the_tower_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни: 110(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 110 мм];;
+
+side_of_the_tower_115<-sc_node_not_relation;
+=> nrel_main_idtf: [Вся башня: 115(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 115 мм];;
+
+side_of_the_tower_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни: 75(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 75 мм];;
+
+side_of_the_tower_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни: 15(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 15 мм];;
+
+side_of_the_tower_40_30<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни: 45(мм)/ 30(°)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 45 мм/30°];;
+
+side_of_the_tower_90_20<-sc_node_not_relation;
+=> nrel_main_idtf: [Борт башни: 90(мм)/ 20(°)] (*<- lang_ru;;*);
+<-exact_value;
+<-side_of_the_tower;
+->[Борт башни - 90 мм/20°];;
+
+
+
+
+
+
+
+tower_feed<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни(мм/°)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+tower_feed_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни: 110(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_feed;
+->[Корма башни - 110 мм];;
+
+tower_feed_75<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни: 75(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_feed;
+->[Корма башни - 75 мм];;
+
+tower_feed_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни: 15(мм)] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_feed;
+->[Корма башни - 15 мм];;
+
+
+tower_feed_75_12<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни: 75(мм)/ 12(°)] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_feed;
+->[Корма башни - 75 мм/ 12(°)];;
+
+tower_feed_45_30<-sc_node_not_relation;
+=> nrel_main_idtf: [Корма башни: 45(мм)/ 30(°))] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_feed;
+->[Корма башни - 45 мм/ 30°];;
+
+
+
+
+
+tower_roof<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша башни(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+tower_roof_40<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша башни: 40 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_roof;
+->[Крыша башни - 40];;
+
+tower_roof_50<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша башни: 50 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_roof;
+->[Крыша башни - 50];;
+
+tower_roof_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша башни: 15 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_roof;
+->[Крыша башни - 15 мм];;
+
+tower_roof_6<-sc_node_not_relation;
+=> nrel_main_idtf: [Крыша башни: 6 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-tower_roof;
+->[Крыша башни - 6 мм];;
+
+
+
+
+
+gun_mask<-sc_node_not_relation;
+=> nrel_main_idtf: [Маска орудия(мм)] (*<- lang_ru;;*);
+<-indicator_of_armoring;;
+
+gun_mask_110<-sc_node_not_relation;
+=> nrel_main_idtf: [Маска орудия: 110 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-gun_mask;
+->[Маска орудия - 110 мм];;
+
+gun_mask_135<-sc_node_not_relation;
+=> nrel_main_idtf: [Маска орудия: 135 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-gun_mask;
+->[Маска орудия - 135 мм];;
+
+gun_mask_40<-sc_node_not_relation;
+=> nrel_main_idtf: [Маска орудия: 40 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-gun_mask;
+->[Маска орудия - 40 мм];;
+
+gun_mask_15<-sc_node_not_relation;
+=> nrel_main_idtf: [Маска орудия: 15 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-gun_mask;
+->[Маска орудия - 15 мм];;
+
+
+
+
+
+
+barrel_length<-sc_node_not_relation;
+=> nrel_main_idtf: [длина ствола(мм)] (*<- lang_ru;;*);;
+
+barrel_length_300<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина ствола: 300 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-barrel_length;
+->[Длина ствола - 300 мм];;
+
+barrel_length_3700<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина ствола: 3700 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-barrel_length;
+->[Длина ствола - 3700 мм];;
+
+barrel_length_4645<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина ствола: 4645 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-barrel_length;
+->[Длина ствола - 4645 мм];;
+
+barrel_length_777<-sc_node_not_relation;
+=> nrel_main_idtf: [Длина ствола: 777 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-barrel_length;
+->[Длина ствола - 777 мм];;
+
+
+
+
+caliber_gun<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр орудия] (*<- lang_ru;;*);;
+
+gun_caliber_76_2<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр: 76,2 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-caliber_gun;
+->[Калибр орудия - 76,2 мм];;
+
+gun_caliber_85<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр: 85 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-caliber_gun;
+->[Калибр орудия - 85 мм];;
+
+gun_caliber_152<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр: 152 мм] (*<- lang_ru;;*);
+<-exact_value; 
+<-caliber_gun;
+->[Калибр орудия - 152 мм];;
+
+gun_caliber_37<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр: 37 мм] (*<- lang_ru;;*);
+<-exact_value; 
+<-caliber_gun;
+->[Калибр орудия - 37 мм];;
+
+gun_caliber_107<-sc_node_not_relation;
+=> nrel_main_idtf: [Калибр: 107 мм] (*<- lang_ru;;*);
+<-exact_value; 
+<-caliber_gun;
+->[Калибр орудия - 107 мм];;
+
+
+
+
+
+rate_fire<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность(выстр/мин.)] (*<- lang_ru;;*);;
+
+rate_fire_8<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность: 8 выстр/мин.] (*<- lang_ru;;*);
+<-exact_value;
+<-rate_fire;
+->[Cкорострельность — 8 выстр/мин.];;
+
+rate_fire_3<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность: 3 выстр/мин.] (*<- lang_ru;;*);
+<-exact_value;
+<-rate_fire;
+->[Cкорострельность — 3 выстр/мин.];;
+
+rate_fire_4<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность: 4 выстр/мин.] (*<- lang_ru;;*);
+<-exact_value;
+<-rate_fire;
+->[Cкорострельность — 4 выстр/мин.];;
+
+rate_fire_10<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность: 10 выстр/мин.] (*<- lang_ru;;*);
+<-exact_value;
+<-rate_fire;
+->[Cкорострельность — 10 выстр/мин.];;
+
+rate_fire_12<-sc_node_not_relation;
+=> nrel_main_idtf: [Cкорострельность: 12 выстр/мин.] (*<- lang_ru;;*);
+<-exact_value;
+<-rate_fire;
+->[Cкорострельность — 12 выстр/мин.];;
+
+
+
+
+
+
+
+fireng_range<-sc_node_not_relation;
+=> nrel_main_idtf: [дальность стрельбы(м)] (*<- lang_ru;;*);;
+
+fireng_range_3000<-sc_node_not_relation;
+=> nrel_main_idtf: [Дальность стрельбы: 3000 м] (*<- lang_ru;;*);
+<-exact_value;
+<-fireng_range;
+->[Дальность стрельбы — 3000 м];;
+
+fireng_range_5200<-sc_node_not_relation;
+=> nrel_main_idtf: [Дальность стрельбы: 5200 м] (*<- lang_ru;;*);
+<-exact_value;
+<-fireng_range;
+->[Дальность стрельбы — 5200 м];;
+
+fireng_range_6400<-sc_node_not_relation;
+=> nrel_main_idtf: [Дальность стрельбы: 6400 м] (*<- lang_ru;;*);
+<-exact_value;
+<-fireng_range;
+->[Дальность стрельбы — 6400 м];;
+
+
+
+
+
+flight_speed<-sc_node_not_relation;
+=> nrel_main_idtf: [скорость полёта(м/с)] (*<- lang_ru;;*);;
+
+flight_speed_508<-sc_node_not_relation;
+=> nrel_main_idtf: [508 м/с ] (*<- lang_ru;;*);
+<-exact_value;
+<-flight_speed;
+->[Начальная скорость — 508 м/с](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+flight_speed_487<-sc_node_not_relation;
+=> nrel_main_idtf: [487 м/с ] (*<- lang_ru;;*);
+<-exact_value;
+<-flight_speed;
+->[Начальная скорость — 487 м/с](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+flight_speed_702<-sc_node_not_relation;
+=> nrel_main_idtf: [702 м/с ] (*<- lang_ru;;*);
+<-exact_value;
+<-flight_speed;
+->[Начальная скорость — 702 м/с](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+flight_speed_600<-sc_node_not_relation;
+=> nrel_main_idtf: [600 м/с ] (*<- lang_ru;;*);
+<-exact_value;
+<-flight_speed;
+->[Начальная скорость — 600 м/с](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+width_shoe<-sc_node_not_relation;
+<-width;
+=> nrel_main_idtf: [Ширина башмака(мм)](*<- lang_ru;;*);;
+
+width_shoe_500<-sc_node_not_relation;
+=> nrel_main_idtf: [500 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-width_shoe;
+->[Ширина <b><sc_element sys_idtf="concept_shoe">башмака</b> - 500 мм](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+width_shoe_250<-sc_node_not_relation;
+=> nrel_main_idtf: [250 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-width_shoe;
+->[Ширина <b><sc_element sys_idtf="concept_shoe">башмака</b> - 250 мм](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+width_shoe_260<-sc_node_not_relation;
+=> nrel_main_idtf: [260 мм] (*<- lang_ru;;*);
+<-exact_value;
+<-width_shoe;
+->[Ширина <b><sc_element sys_idtf="concept_shoe">башмака</b> - 260 мм](* <- lang_ru;; => nrel_format: format_html;; *);;
+
+
+
+
+vertical_guidance<-sc_node_not_relation;
+=> nrel_main_idtf: [Вертикальное наведение орудия(°)] (*<- lang_ru;;*);;
+
+vertical_guidance_7_25<-sc_node_not_relation;
+=> nrel_main_idtf: [от -7 до +25°] (*<- lang_ru;;*);
+<-exact_value;
+<-vertical_guidance;
+->[Вертикальное наведение - от -7 до +25°];;
+
+vertical_guidance_5_25<-sc_node_not_relation;
+=> nrel_main_idtf: [от -5 до +25°] (*<- lang_ru;;*);
+<-exact_value;
+<-vertical_guidance;
+->[Вертикальное наведение - от -5 до +25°];;
+
+vertical_guidance_5_18<-sc_node_not_relation;
+=> nrel_main_idtf: [от -5 до + 18°] (*<- lang_ru;;*);
+<-exact_value;
+<-vertical_guidance;
+->[Вертикальное наведение - от -5 до +18°];;
+
+
+
+
+horizontal_guidance<-sc_node_not_relation;
+=> nrel_main_idtf: [Горизонтальное наведение орудия(°)] (*<- lang_ru;;*);;
+
+horizontal_guidance_45_45<-sc_node_not_relation;
+=> nrel_main_idtf: [45°] (*<- lang_ru;;*);
+<-exact_value;
+<-horizontal_guidance;
+->[Угол наведения орудия по горизонтали - 45° в обе стороны,];;
+
+
+
+
+
+
+
